@@ -1,0 +1,25 @@
+<config>
+    <!-- Immutable overlays must precede mutable ones -->
+    <overlay package="com.android.wifi.resources.eos" mutable="false" enabled="true" />
+    <overlay package="com.google.android.connectivity.resources.overlay" mutable="false" enabled="true" />
+    <overlay package="com.google.android.wearable.app.overlay.eos.wearmaterial" mutable="false" enabled="true" />
+    <overlay package="com.google.android.wearable.app.overlay.eos.tiles" mutable="false" enabled="true" />
+    <overlay package="com.google.android.apps.wearable.settings.overlay.eos.wearmaterial" mutable="false" enabled="true" />
+    <overlay package="com.google.android.apps.messaging.overlay.eos.wearmaterial" mutable="false" enabled="true" />
+    <overlay package="com.google.android.wearable.setupwizard.overlay.eos.wearmaterial" mutable="false" enabled="true" />
+    <overlay package="com.google.android.wearable.sysui.overlay.eos.experiences.charging" mutable="false" enabled="true" />
+    <overlay package="com.google.android.wearable.sysui.overlay.eos.experiences.globallauncher" mutable="false" enabled="true" />
+    <overlay package="com.google.android.wearable.sysui.overlay.eos.notification" mutable="false" enabled="true" />
+    <overlay package="com.google.android.wearable.sysui.overlay.eos.tiles" mutable="false" enabled="true" />
+    <overlay package="com.google.android.wearable.sysui.overlay.eos.wearmaterial" mutable="false" enabled="true" />
+    <overlay package="com.google.android.wearable.sysui.overlay.eos.all" mutable="false" enabled="true" />
+    <overlay package="com.google.android.deskclock.overlay.eos.all" mutable="false" enabled="true" />
+    <overlay package="com.google.android.safety.overlay.eos.all" mutable="false" enabled="true" />
+    <overlay package="com.google.android.permissioncontroller.overlay.eos.wearmaterial" mutable="false" enabled="true" />
+    <overlay package="com.google.android.wearable.watchface.rwf.overlay.eos.wearmaterial" mutable="false" enabled="true" />
+    <overlay package="com.google.android.inputmethod.latin.overlay.eos.wearmaterial" mutable="false" enabled="true" />
+    <overlay package="com.google.android.apps.wearable.systemui.eos.wearmaterial" mutable="false" enabled="true" />
+    <overlay package="com.google.android.apps.scone.coex.overlay.eos" mutable="false" enabled="true" />
+
+    <!-- Mutable overlays -->
+</config>
