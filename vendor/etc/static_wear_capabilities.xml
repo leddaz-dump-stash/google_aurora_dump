@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wear_capabilities>
+	<package name="vendor.qti.hardware.cacert.server">
+	</package>
+	<package name="com.qualcomm.qti.cne">
+	</package>
+	<package name="com.android.se.overlay.target">
+	</package>
+	<package name="com.qualcomm.timeservice">
+	</package>
+</wear_capabilities>

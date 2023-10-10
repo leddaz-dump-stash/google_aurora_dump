@@ -1,0 +1,12 @@
+#####################################################################
+# Copyright (c) 2021 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#####################################################################
+
+service slatedaemon /vendor/bin/slatedaemon
+    class hal
+    user system
+    group system wakelock
+    shutdown critical
+    capabilities BLOCK_SUSPEND

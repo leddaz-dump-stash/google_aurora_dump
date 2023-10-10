@@ -1,0 +1,6 @@
+service vendor.google.wearable.wac.whs-hal-1-0 /apex/com.google.wearable.wac.whshal/bin/hw/vendor.google.wearable.wac.whshal@1.0-service
+    class hal
+    user system
+    group system context_hub
+    file /dev/kmsg w
+    updatable
