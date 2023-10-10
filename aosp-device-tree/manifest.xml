@@ -1,0 +1,167 @@
+<manifest version="5.0" type="device" target-level="7">
+    <hal format="hidl">
+        <name>android.hardware.audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@7.1::IDevicesFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.audio.effect</name>
+        <transport>hwbinder</transport>
+        <fqname>@7.0::IEffectsFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.bluetooth</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IBluetoothHci/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.boot</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IBootControl/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.4::ICameraProvider/legacy/0</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.gatekeeper</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IGatekeeper/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.media.omx</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOmx/default</fqname>
+        <fqname>@1.0::IOmxStore/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.renderscript</name>
+        <transport arch="32+64">passthrough</transport>
+        <fqname>@1.0::IDevice/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::ISecureElement/eSE1</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.tetheroffload.config</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOffloadConfig/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.tetheroffload.control</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IOffloadControl/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>hardware.google.bluetooth.sar</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::IBluetoothSar/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.google_clockwork.displayoffload</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IDisplayOffload/default</fqname>
+        <fqname>@2.0::IDisplayOffload/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.data.factory</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.7::IFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.esepowermanager</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IEsePowerManager/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.audiohalext</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAudioHalExt/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.bluetooth_audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.bluetooth_offload</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IBluetoothOffload/default</fqname>
+        <fqname>@1.0::IBluetoothOffloadService/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.btconfigstore</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IBTConfigStore/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.cacert</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IService/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.camera.postproc</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IPostProcService/camerapostprocservice</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.dsp</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IDspService/dspservice</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.factory</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.iop</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IIop/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.powerstateservice</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IPowerStateService/default</fqname>
+        <fqname>@1.0::IPowerStateUtility/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.qccvndhal</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IQccvndhal/qccvndhal</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.qseecom</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IQSEECom/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.qteeconnector</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAppConnector/default</fqname>
+        <fqname>@1.0::IGPAppConnector/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.soter</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ISoter/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.wifi.wifilearner</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IWifiStats/wifiStats</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.power.pasrmanager</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IPasrManager/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.qspmhal</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IQspmhal/default</fqname>
+    </hal>
+</manifest>
