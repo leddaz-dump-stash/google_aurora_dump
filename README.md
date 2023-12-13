@@ -1,0 +1,14 @@
+# aurora-user 13 TWD9.231205.001 11045660 release-keys
+- manufacturer: google
+- platform: monaco
+- codename: aurora
+- flavor: aurora-user
+- release: 13
+- id: TWD9.231205.001
+- incremental: 11045660
+- tags: release-keys
+- fingerprint: google/aurora/aurora:13/TWD9.231205.001/11045660:user/release-keys
+- is_ab: true
+- brand: google
+- branch: aurora-user-13-TWD9.231205.001-11045660-release-keys
+- repo: google_aurora_dump

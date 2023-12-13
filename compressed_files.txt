@@ -1,0 +1,3 @@
+system/system/app/YouTubeMusicClockworkRetailMode/YouTubeMusicClockworkRetailMode.apk.xz
+system/system/app/YouTubeMusicClockworkRetailMode/oat/arm/YouTubeMusicClockworkRetailMode.odex.xz
+product/priv-app/PrebuiltGmsCoreForClockworkWearable/oat/arm/PrebuiltGmsCoreForClockworkWearable.odex.xz
