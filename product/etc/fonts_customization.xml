@@ -1,0 +1,30 @@
+<fonts-modification version="1">
+    <family customizationType="new-named-family" name="google-sans">
+        <font weight="400" style="normal">Wear-GoogleSans-Regular.ttf</font>
+        <font weight="400" style="italic">Wear-GoogleSans-Italic.ttf</font>
+        <font weight="500" style="normal">Wear-GoogleSans-Medium.ttf</font>
+        <font weight="500" style="italic">Wear-GoogleSans-MediumItalic.ttf</font>
+        <font weight="700" style="normal">Wear-GoogleSans-Bold.ttf</font>
+        <font weight="700" style="italic">Wear-GoogleSans-BoldItalic.ttf</font>
+    </family>
+
+    <alias name="google-sans-medium" to="google-sans" weight="500" />
+
+    <family customizationType="new-named-family" name="google-sans-text">
+        <font weight="400" style="normal">Wear-GoogleSansText-Regular.ttf</font>
+        <font weight="400" style="italic">Wear-GoogleSansText-Italic.ttf</font>
+        <font weight="500" style="normal">Wear-GoogleSansText-Medium.ttf</font>
+        <font weight="500" style="italic">Wear-GoogleSansText-MediumItalic.ttf</font>
+        <font weight="700" style="normal">Wear-GoogleSansText-Bold.ttf</font>
+        <font weight="700" style="italic">Wear-GoogleSansText-BoldItalic.ttf</font>
+    </family>
+
+    <alias name="google-sans-text-medium" to="google-sans-text" weight="500" />
+    <alias name="google-sans-text-bold" to="google-sans-text" weight="700" />
+
+    <family customizationType="new-named-family" name="google-sans-watch-clock">
+        <font weight="200" style="normal">GoogleSansWatchClock-ExtraLight.ttf</font>
+    </family>
+
+    <alias name="google-sans-watch-clock-extra-light" to="google-sans-watch-clock" weight="200" />
+</fonts-modification>
