@@ -1,0 +1,11 @@
+#
+# Copyright (c) 2022-2023, Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+service healthservices-hal-1-0 /vendor/bin/hw/vendor.qti.hardware.healthservices@1.0-service
+    class hal
+    user system
+    group system wakelock
+    capabilities BLOCK_SUSPEND

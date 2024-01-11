@@ -1,0 +1,25 @@
+# nfc permissions
+/dev/sn220                0660    nfc         nfc
+
+# eSE device
+/dev/p73                  0660    secure_element secure_element
+
+/sys/devices/virtual/devcoredump/devcd* data 0660 system system
+
+TODO(b/229774153): Move this config out of this file.
+# AP <-> MCU comms
+/dev/nanohub             0660   system     system
+/dev/nanohub_comms       0660   system     system
+/dev/nanohub_console     0660   system     system
+/dev/nanohub_display     0660   system     system
+/dev/nanohub_render      0660   system     system
+/dev/nanohub_brightness  0660   system     system
+
+# UWB
+/dev/srxxx    0660 uwb uwb
+
+# Allow access by dumpstate
+/dev/logbuffer_ssoc      0660   system     system
+
+# Firmware directory for MCU Play Store Update
+firmware_directories /data/vendor/mcu_firmware/
