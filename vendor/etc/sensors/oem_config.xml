@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2022-2023, Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<configuration type="WHS_exercise_tracking">
+    <datatypes>
+        <!-- Note : Value in data_type_value attribute should be in hex only -->
+        <datatype type = "EXERCISE_STEP_COUNT" data_source = "whs.workout.steps" data_type_value = "0x1000" sensor_type = "pedometer"></datatype>
+    </datatypes>
+    <goals>
+        <goal datatype = "EXERCISE_STEP_COUNT" data_type_value = "0x1000" threshold = "1"></goal>
+    </goals>
+
+    <autopauseExercisetype>
+    <!-- Note : Value in exercise_type_value attribute should be in int only -->
+    <!--
+        <exercisetype type = "WALKING" exercise_type_value = "01" sensor_type = "pedometer"></exercisetype>
+    -->
+    </autopauseExercisetype>
+</configuration>
+
+<configuration type="WHS_passive_monitoring">
+    <datatypes>
+        <datatype type = "PASSIVE_STEP_COUNT" data_source = "whs.passive.count" data_type_value = "0x0001" sensor_type = "pedometer"></datatype>
+    </datatypes>
+    <goals>
+        <goal datatype = "PASSIVE_STEP_COUNT" data_type_value = "0x0001" threshold = "1"></goal>
+    </goals>
+</configuration>
+
+<configuration type="WHS_sample_datatype">
+    <datatypes>
+        <datatype type = "LOCATION" data_source = "whs.location" data_type_value = "0x5001" sensor_type = "location"></datatype>
+    </datatypes>
+</configuration>
+
+<configuration type="WHS_oem_datatype">
+    <datatypes>
+    <!-- Note : OEM datatypes should be added here -->
+    <!--
+        <datatype type = "OEM_DATATYPE" data_type_value = "0x10001" sensor_type = "oemtype"></datatype>
+    -->
+    </datatypes>
+</configuration>
