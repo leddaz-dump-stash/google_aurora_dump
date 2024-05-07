@@ -1,0 +1,16 @@
+<manifest version="1.0" type="device">
+    <hal format="hidl">
+        <name>vendor.google_clockwork.wristorientation</name>
+        <transport>hwbinder</transport>
+        <impl level="generic"></impl>
+        <version>1.0</version>
+        <interface>
+            <name>IWristOrientation</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IWristOrientationCallback</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

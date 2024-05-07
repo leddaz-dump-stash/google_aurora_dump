@@ -1,0 +1,5 @@
+# The petc_input_filter driver replaces a scroll wheel event with a
+# a  DPAD Up/Down key if it's the first event in false interactive.
+
+key 103   DPAD_UP      WAKE GESTURE # Swipe Down, equivalent to pressing up key
+key 108   DPAD_DOWN    WAKE GESTURE # Swipe Up, equivalent to pressing down key
