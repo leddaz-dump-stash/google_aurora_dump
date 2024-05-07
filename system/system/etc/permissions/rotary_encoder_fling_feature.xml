@@ -1,0 +1,3 @@
+<config>
+    <feature name="android.software.rotary_encoder_fling" />
+</config>
