@@ -1,0 +1,11 @@
+#
+# Copyright (c) 2021 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+service vendor.bluetooth_offload-1-0-qti /vendor/bin/hw/vendor.qti.hardware.bluetooth_offload@1.0-service-qti
+    class hal
+    user bluetooth
+    group bluetooth system
+    writepid /dev/stune/foreground/tasks
+
