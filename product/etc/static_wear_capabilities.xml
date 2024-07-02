@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wear_capabilities>
+	<package name="com.google.android.wearable.protolayout.renderer">
+	</package>
+	<package name="com.google.android.apps.wearable.systemui.eos.wearmaterial">
+	</package>
+	<package name="com.google.android.configupdater">
+	</package>
+	<package name="com.google.android.connectivity.resources.overlay">
+	</package>
+	<package name="com.google.android.deskclock.overlay.eos.all">
+	</package>
+	<package name="com.google.android.wearable.diagnosticstool">
+	</package>
+	<package name="com.fitbit.FitbitMobile">
+		<capability name="nightlight"/>
+		<capability name="auth:1.1"/>
+		<capability name="sync/v1/request"/>
+		<capability name="curr_fitbit_user/v1/data"/>
+	</package>
+	<package name="com.fitbit.ecg">
+	</package>
+	<package name="com.google.android.wearable.fitbit.retaildemo">
+	</package>
+	<package name="com.google.android.grilservice.overlay.eos">
+	</package>
+	<package name="com.google.android.inputmethod.latin.overlay.eos.wearmaterial">
+	</package>
+	<package name="com.google.android.GoogleCamera">
+		<capability name="snapshot_from_wear"/>
+	</package>
+	<package name="com.google.android.contacts">
+		<capability name="has_wear_contacts_app"/>
+	</package>
+	<package name="com.google.android.apps.chromecast.app">
+	</package>
+	<package name="com.google.android.keep">
+		<capability name="keep_wear_device"/>
+	</package>
+	<package name="com.google.android.apps.photos">
+	</package>
+	<package name="com.google.android.grilservice.radio.overlay">
+	</package>
+	<package name="com.android.hotwordenrollment.okgoogle">
+	</package>
+	<package name="com.android.hotwordenrollment.xgoogle">
+	</package>
+	<package name="com.google.android.gms.policy_kids_not_phone">
+	</package>
+	<package name="com.google.android.wearable.fitbit.mcu.data">
+	</package>
+	<package name="com.google.android.wearable.fitbit.mcu.updater">
+	</package>
+	<package name="com.google.android.apps.messaging.overlay.eos.wearmaterial">
+	</package>
+	<package name="com.android.modulemetadata">
+	</package>
+	<package name="com.google.android.wearable.pixel.pdms">
+	</package>
+	<package name="com.google.android.permissioncontroller.overlay.eos.wearmaterial">
+	</package>
+	<package name="com.qualcomm.qti.poweroffalarm">
+	</package>
+	<package name="com.google.android.gms">
+		<capability name="wearable_rpc_support"/>
+		<capability name="fast_pair_support"/>
+	</package>
+	<package name="com.google.android.gms.dynamite_cronetdynamite">
+	</package>
+	<package name="com.google.android.gms.dynamite_dynamiteloader">
+	</package>
+	<package name="com.google.android.gms.dynamite_dynamitemodulesa">
+	</package>
+	<package name="com.google.android.gms.dynamite_dynamitemodulesc">
+	</package>
+	<package name="com.google.android.gms.dynamite_googlecertificates">
+	</package>
+	<package name="com.google.android.gms.dynamite_mapsdynamite">
+	</package>
+	<package name="com.google.android.wearable.watchface.rwf.overlay.eos.wearmaterial">
+	</package>
+	<package name="com.google.android.apps.scone">
+	</package>
+	<package name="com.google.SSRestartDetector">
+	</package>
+	<package name="com.google.android.safety.overlay.eos.all">
+	</package>
+	<package name="com.google.android.apps.scone.coex.overlay.eos">
+	</package>
+	<package name="com.google.android.apps.wearable.settings.overlay.eos.wearmaterial">
+	</package>
+	<package name="com.google.android.wearable.setupwizard.overlay.eos.wearmaterial">
+	</package>
+	<package name="com.google.android.wearable.sysui.overlay.eos.experiences.charging">
+	</package>
+	<package name="com.google.android.wearable.sysui.overlay.eos.experiences.globallauncher">
+	</package>
+	<package name="com.google.android.wearable.sysui.overlay.eos.notification">
+	</package>
+	<package name="com.google.android.wearable.sysui.overlay.eos.all">
+	</package>
+	<package name="com.google.android.wearable.sysui.overlay.eos.tiles">
+	</package>
+	<package name="com.google.android.wearable.sysui.overlay.eos.wearmaterial">
+	</package>
+	<package name="com.google.android.wearable.app.overlay.eos.tiles">
+	</package>
+	<package name="com.google.android.wearable.app.overlay.sysui.default">
+	</package>
+	<package name="com.google.android.wearable.app.overlay.eos.wearmaterial">
+	</package>
+	<package name="com.android.wifi.resources.eos">
+	</package>
+	<package name="com.google.android.wearable.cavalry">
+	</package>
+	<package name="com.qualcomm.uimremoteclient">
+	</package>
+	<package name="com.qualcomm.uimremoteserver">
+	</package>
+</wear_capabilities>

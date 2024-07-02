@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ This XML file declares the vendor apex package names eligible for installation.
+-->
+
+<config>
+<allowed-vendor-apex package="com.google.pixel.camera.hal" installerPackage="com.google.android.GoogleCamera" />
+<allowed-vendor-apex package="com.google.wearable.wac.whshal" installerPackage="com.google.android.wearable.fitbit.mcu.data" />
+</config>
