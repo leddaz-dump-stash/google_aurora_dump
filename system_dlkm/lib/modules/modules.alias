@@ -1,0 +1,3 @@
+# Aliases extracted from modules themselves.
+alias char-major-10-242 rfkill
+alias devname:rfkill rfkill
