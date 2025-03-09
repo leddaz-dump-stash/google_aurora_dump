@@ -1,0 +1,5 @@
+<config>
+  <!-- Only Immutable Overlays -->
+  <overlay package="com.google.clockwork.watchface.runtime.overlay" mutable="false" enabled="true" />
+  <overlay package="com.google.android.pixel.watch.wearable.resources.overlay" mutable="false" enabled="true" />
+</config>
