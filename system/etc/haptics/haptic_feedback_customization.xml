@@ -1,0 +1,41 @@
+<haptic-feedback-constants>
+  <constant id="1">
+    <vibration-effect>
+      <primitive-effect name="tick" />
+    </vibration-effect>
+  </constant>
+
+  <constant id="3">
+    <vibration-effect>
+      <primitive-effect name="tick" />
+    </vibration-effect>
+  </constant>
+
+  <constant id="16">
+    <vibration-effect>
+      <primitive-effect name="thud" />
+      <primitive-effect name="thud" delayMs="100" />
+    </vibration-effect>
+  </constant>
+
+  <constant id="17">
+    <vibration-effect>
+      <primitive-effect name="thud" />
+      <primitive-effect name="thud" delayMs="100" />
+      <primitive-effect name="thud" delayMs="100" />
+      <primitive-effect name="thud" delayMs="100" />
+    </vibration-effect>
+  </constant>
+
+  <constant id="18">
+    <vibration-effect>
+      <primitive-effect name="tick" />
+    </vibration-effect>
+  </constant>
+
+  <constant id="20">
+    <vibration-effect>
+      <primitive-effect name="thud" scale="0.5" />
+    </vibration-effect>
+  </constant>
+</haptic-feedback-constants>

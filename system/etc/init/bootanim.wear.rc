@@ -1,0 +1,16 @@
+
+on post-fs-data
+    # Init bootanim time data folders.
+    mkdir /data/misc/bootanim/time 0755 system system
+
+on boot && property:persist.sys.wrist_orientation=0
+    setprop ro.bootanim.set_orientation_logical_0 ORIENTATION_0
+
+on boot && property:persist.sys.wrist_orientation=1
+    setprop ro.bootanim.set_orientation_logical_0 ORIENTATION_180
+
+on boot && property:persist.sys.wrist_orientation=2
+    setprop ro.bootanim.set_orientation_logical_0 ORIENTATION_0
+
+on boot && property:persist.sys.wrist_orientation=3
+    setprop ro.bootanim.set_orientation_logical_0 ORIENTATION_180
