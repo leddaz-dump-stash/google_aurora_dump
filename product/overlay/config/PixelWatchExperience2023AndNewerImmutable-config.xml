@@ -1,0 +1,6 @@
+<config>
+  <!-- Only Immutable Overlays -->
+  <merge path="PixelWatchExperience2022AndNewerImmutable-config.xml" />
+  <overlay package="com.google.android.pixel.watch.android.config.overlay" mutable="false" enabled="true" />
+  <overlay package="com.google.wear.services.overlay2023" mutable="false" enabled="true" />
+</config>

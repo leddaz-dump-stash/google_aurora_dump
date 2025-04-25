@@ -1,0 +1,5 @@
+<config>
+  <!-- Only Mutable Overlays -->
+  <overlay package="com.google.android.wearable.settings.overlay.pdms.autobedtimemode" mutable="true" enabled="false" />
+  <merge path="PixelWatchExperience2022AndNewerMutable-config.xml" />
+</config>
