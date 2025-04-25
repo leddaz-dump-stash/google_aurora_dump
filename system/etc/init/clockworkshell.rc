@@ -1,0 +1,7 @@
+on post-fs-data
+    # Init clockwork shell data folders.
+    mkdir /data/vendor/clockworkshell 0770 shell system
+    # TODO(b/382312872): Investigate why execute permission is required
+    # This is to handle when the directory had already been created
+    chmod 0770 /data/vendor/clockworkshell
+    restorecon /data/vendor/clockworkshell

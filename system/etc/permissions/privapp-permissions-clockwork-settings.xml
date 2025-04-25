@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Contains the privapp-permissions for proprietary packages that may or may not be included on Wear. -->
+<permissions>
+    <privapp-permissions package="com.google.android.apps.wearable.settings">
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.GET_APP_OPS_STATS"/>
+        <permission name="android.permission.MANAGE_DEVICE_ADMINS"/>
+        <permission name="android.permission.MANAGE_USB"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.MASTER_CLEAR"/>
+        <permission name="android.permission.MODIFY_AUDIO_SETTINGS_PRIVILEGED"/>
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.SET_TIME"/>
+        <!-- Adding this permission in order to allow TimeSync services
+        when settings app is running in the background. TODO(b/346431394): Remove
+        permission when TimeSync is moved out of settings. -->
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="com.google.wear.permission.WRITE_FOCUS_MODES"/>
+        <permission name="com.google.wear.permission.WRITE_DISPLAY_CONFIG"/>
+        <permission name="com.google.wear.permission.WRITE_GESTURES_CONFIG"/>
+        <permission name="com.google.wear.permission.WRITE_BATTERY_SAVER"/>
+        <permission name="com.google.wear.permission.WRITE_TOUCH_LOCK"/>
+        <permission name="com.google.wear.permission.MANAGE_MUTED_APPS"/>
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.REQUEST_DELETE_PACKAGES"/>
+        <permission name="android.permission.MANAGE_TIME_AND_ZONE_DETECTION"/>
+        <permission name="android.permission.SUGGEST_EXTERNAL_TIME" />
+    </privapp-permissions>
+</permissions>
+
