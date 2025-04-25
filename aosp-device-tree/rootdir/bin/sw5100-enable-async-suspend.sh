@@ -1,0 +1,68 @@
+#!/bin/sh
+
+ASYNC_SUSPEND_RESUME_DEVS="
+  /sys/devices/platform
+  /sys/devices/platform/soc
+  /sys/devices/platform/soc/4744000.sdhci/mmc_host/mmc0
+  /sys/devices/platform/soc/4744000.sdhci/mmc_host/mmc0/mmc0:0001
+  /sys/devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a90000.spi/spi_master/spi*/spi*
+  /sys/devices/platform/soc/8048000.tmc
+  /sys/devices/platform/soc/1b20000.qcedev
+  /sys/devices/platform/soc/1b20000.qcedev/1b20000.qcedev:qcom_cedev_ns_cb
+  /sys/devices/platform/soc/1b20000.qcedev/1b20000.qcedev:qcom_cedev_s_cb
+  /sys/devices/platform/soc/4a00000.qcom,gpi-dma
+  /sys/devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se
+  /sys/devices/platform/soc/4e00000.hsusb/4e00000.dwc3
+  /sys/devices/platform/soc/5800000.qcom,ipa/5800000.qcom,ipa:ipa_smmu_ap
+  /sys/devices/platform/soc/5800000.qcom,ipa/5800000.qcom,ipa:ipa_smmu_uc
+  /sys/devices/platform/soc/5800000.qcom,ipa/5800000.qcom,ipa:ipa_smmu_wlan
+  /sys/devices/platform/soc/5a00000.qcom,vidc/5a00000.qcom,vidc:non_secure_cb
+  /sys/devices/platform/soc/5a00000.qcom,vidc/5a00000.qcom,vidc:secure_bitstream_cb
+  /sys/devices/platform/soc/5a00000.qcom,vidc/5a00000.qcom,vidc:secure_non_pixel_cb
+  /sys/devices/platform/soc/5a00000.qcom,vidc/5a00000.qcom,vidc:secure_pixel_cb
+  /sys/devices/platform/soc/c800000.qcom,icnss
+  /sys/devices/platform/soc/soc:qcom,msm_fastrpc/soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb1
+  /sys/devices/platform/soc/soc:qcom,msm_fastrpc/soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb2
+  /sys/devices/platform/soc/soc:qcom,msm_fastrpc/soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb3
+  /sys/devices/platform/soc/soc:qcom,msm_fastrpc/soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb4
+  /sys/devices/platform/soc/soc:qcom,msm_fastrpc/soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb5
+  /sys/devices/platform/soc/soc:qcom,smmu_sde_sec_cb
+  /sys/devices/platform/soc/soc:qcom,smmu_sde_unsec_cb
+  /sys/devices/platform/soc/c600000.apps-smmu/c7f5000.anoc_1_tbu
+  /sys/devices/platform/soc/c600000.apps-smmu/c7fd000.mm_nrt_tbu
+  /sys/devices/platform/soc/c600000.apps-smmu/c7f9000.mm_rt_tbu
+  /sys/devices/platform/soc/1400000.clock-controller
+  /sys/devices/platform/soc/45f01b8.interrupt-controller
+  /sys/devices/platform/soc/1880000.interconnect
+  /sys/devices/platform/soc/1900000.interconnect
+  /sys/devices/platform/soc/4480000.interconnect
+  /sys/devices/platform/soc/500000.pinctrl
+  /sys/devices/platform/soc/soc:interconnect
+  /sys/devices/platform/soc/soc:qcom,rpmcc
+  /sys/devices/platform/soc/soc:rpm-glink
+  /sys/devices/platform/soc/f111000.mailbox
+  /sys/devices/platform/soc/4744000.sdhci
+  /sys/devices/platform/soc/1b20000.qcrypto
+  /sys/devices/platform/soc/c600000.apps-smmu
+  /sys/devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a9c000.qcom,qup_uart_*
+  /sys/devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a90000.spi
+  /sys/devices/platform/soc/soc:rpm-glink/soc:*
+  /sys/devices/platform/soc/soc:spf_core_platform/soc:spf_core_platform:qcom,msm-audio-ion
+  /sys/bus/platform/drivers/qcom,rpm-smd-regulator-resource/soc:qcom,rpm-smd:rpm-regulator-smpa1
+  /sys/bus/platform/drivers/qcom,rpm-smd-regulator-resource/soc:qcom,rpm-smd:rpm-regulator-smpa1/soc:qcom,rpm-smd:rpm-regulator-smpa1:regulator-s1-level
+  /sys/bus/platform/drivers/qcom,rpm-smd-regulator-resource/soc:qcom,rpm-smd:rpm-regulator-smpa1/soc:qcom,rpm-smd:rpm-regulator-smpa1:regulator-s1-level/regulator/regulator.*
+  /sys/bus/platform/drivers/qcom,rpm-smd-regulator-resource/soc:qcom,rpm-smd:rpm-regulator-ldoa25
+  /sys/bus/platform/drivers/qcom,rpm-smd-regulator-resource/soc:qcom,rpm-smd:rpm-regulator-ldoa25/soc:qcom,rpm-smd:rpm-regulator-ldoa25:regulator-l25
+  /sys/bus/platform/drivers/qcom,rpm-smd-regulator-resource/soc:qcom,rpm-smd:rpm-regulator-ldoa25/soc:qcom,rpm-smd:rpm-regulator-ldoa25:regulator-l25/regulator/regulator.*
+  /sys/bus/platform/drivers/qcom,rpm-smd-regulator-resource/soc:qcom,rpm-smd:rpm-regulator-ldoa15
+  /sys/bus/platform/drivers/qcom,rpm-smd-regulator-resource/soc:qcom,rpm-smd:rpm-regulator-ldoa15/soc:qcom,rpm-smd:rpm-regulator-ldoa15:regulator-l15
+  /sys/bus/platform/drivers/qcom,rpm-smd-regulator-resource/soc:qcom,rpm-smd:rpm-regulator-ldoa15/soc:qcom,rpm-smd:rpm-regulator-ldoa15:regulator-l15/regulator/regulator.*
+  /sys/bus/platform/drivers/qcom,rpm-smd-regulator-resource/soc:qcom,rpm-smd:rpm-regulator-ldoa3
+  /sys/bus/platform/drivers/qcom,rpm-smd-regulator-resource/soc:qcom,rpm-smd:rpm-regulator-ldoa3/soc:qcom,rpm-smd:rpm-regulator-ldoa3:regulator-pm5100-l3-level
+  /sys/bus/platform/drivers/qcom,rpm-smd-regulator-resource/soc:qcom,rpm-smd:rpm-regulator-ldoa3/soc:qcom,rpm-smd:rpm-regulator-ldoa3:regulator-pm5100-l3-level/regulator/regulator.*
+  /sys/bus/rpmsg/drivers/qcom_rpm_smd/soc:*
+"
+
+for dev in ${ASYNC_SUSPEND_RESUME_DEVS}; do
+  echo "enabled" > ${dev}/power/async
+done

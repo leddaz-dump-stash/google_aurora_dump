@@ -1,0 +1,14 @@
+# aurora-user 15 BP1A.250305.019.W8 13310098 release-keys
+- manufacturer: google
+- platform: monaco
+- codename: aurora
+- flavor: aurora-user
+- release: 15
+- id: BP1A.250305.019.W8
+- incremental: 13310098
+- tags: release-keys
+- fingerprint: google/aurora/aurora:15/BP1A.250305.019.W8/13310098:user/release-keys
+- is_ab: true
+- brand: google
+- branch: aurora-user-15-BP1A.250305.019.W8-13310098-release-keys
+- repo: google_aurora_dump

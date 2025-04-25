@@ -1,0 +1,72 @@
+import /vendor/etc/init/hw/init.qcom.rc
+
+on property:ro.bootmode=usbradio && property:sys.usb.configfs=2
+    setprop sys.usb.config diag,adb
+
+on property:ro.bootmode=factory && property:sys.usb.configfs=2
+    setprop sys.usb.config diag,adb
+
+on property:ro.bootmode=retail
+    setprop ro.oem.locked_in_retail true
+
+# Select thermal configuration based on HW revision
+# default to v2 config and override for older hw revisions
+
+on init && property:ro.boot.revision=*
+    setprop vendor.thermal.config "thermal_info_config-v2.json"
+    setprop vendor.thermal.thermal-engine.config "thermal-engine-v2.conf"
+
+on init && property:ro.boot.revision=DEV2.0
+    setprop vendor.thermal.config "thermal_info_config-v1.json"
+    setprop vendor.thermal.thermal-engine.config "thermal-engine-v1.conf"
+
+on init && property:ro.boot.revision=PROTO2.0
+    setprop vendor.thermal.config "thermal_info_config-v1.json"
+    setprop vendor.thermal.thermal-engine.config "thermal-engine-v1.conf"
+
+on init && property:ro.boot.revision=PROTO2.1
+    setprop vendor.thermal.config "thermal_info_config-v1.json"
+    setprop vendor.thermal.thermal-engine.config "thermal-engine-v1.conf"
+
+on init && property:ro.boot.revision=PROTO2.2
+    setprop vendor.thermal.config "thermal_info_config-v1.json"
+    setprop vendor.thermal.thermal-engine.config "thermal-engine-v1.conf"
+
+on init && property:ro.boot.revision=EVT1.0
+    setprop vendor.thermal.config "thermal_info_config-v1.json"
+    setprop vendor.thermal.thermal-engine.config "thermal-engine-v1.conf"
+
+on init && property:ro.boot.revision=EVT1.1
+    setprop vendor.thermal.config "thermal_info_config-v1.json"
+    setprop vendor.thermal.thermal-engine.config "thermal-engine-v1.conf"
+
+# Touch (Set touch standby mode/touch lock based on property changed)
+on property:vendor.device.modules.ready=1
+    chown system system /sys/devices/virtual/input/nvt_touch/nvt_standby
+
+on property:vendor.all.modules.ready=1 && property:persist.sys.touch_standby=
+    write /sys/devices/virtual/input/nvt_touch/nvt_standby 1
+
+on property:vendor.all.modules.ready=1 && property:persist.sys.touch_standby=1
+    write /sys/devices/virtual/input/nvt_touch/nvt_standby 1
+
+on property:vendor.all.modules.ready=1 && property:persist.sys.touch_standby=0
+    write /sys/devices/virtual/input/nvt_touch/nvt_standby 0
+
+# Set Fast Pair ID based on provisioned case/band color
+
+# Black/Obsidian: BLK
+on property:ro.boot.hardware.strap_color=BLK
+    setprop ro.oem.fastpair_id AD4581
+
+# Silver/White: WHT
+on property:ro.boot.hardware.strap_color=WHT
+    setprop ro.oem.fastpair_id CBCB44
+
+# Gold/Hazel: HAZ
+on property:ro.boot.hardware.strap_color=HAZ
+    setprop ro.oem.fastpair_id 0F55B7
+
+# Silver/Sky: BUE
+on property:ro.boot.hardware.strap_color=BUE
+    setprop ro.oem.fastpair_id 38B14F
