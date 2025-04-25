@@ -1,0 +1,4 @@
+<config>
+  <!-- Only Mutable Overlays -->
+  <overlay package="com.google.android.permissioncontroller.overlay.pixel.watch.config" mutable="true" enabled="true" />
+</config>
