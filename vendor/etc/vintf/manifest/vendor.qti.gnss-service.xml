@@ -1,0 +1,11 @@
+<!--
+    Input:
+        vendor/qcom/sw5100/proprietary/gps/android/aidl-impl/vendor.qti.gnss-service.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.qti.gnss</name>
+        <version>6</version>
+        <fqname>ILocAidlGnss/default</fqname>
+    </hal>
+</manifest>
