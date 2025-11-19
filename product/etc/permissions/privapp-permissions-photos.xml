@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<permissions>
+    <privapp-permissions package="com.google.android.apps.photos">
+        <permission name="com.google.android.wearable.permission.RECEIVE_COMPLICATION_DATA_PRIVILEGED" />
+    </privapp-permissions>
+</permissions>
+
