@@ -1,0 +1,4 @@
+# Soft dependencies extracted from modules themselves.
+softdep smem pre: qcom_hwspinlock
+softdep dwc3_msm pre: phy-generic phy-msm-snps-hs phy-msm-ssusb-qmp eud
+softdep pinctrl_msm pre: qcom-pdc
