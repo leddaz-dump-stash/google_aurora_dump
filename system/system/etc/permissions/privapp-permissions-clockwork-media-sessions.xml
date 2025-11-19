@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contains the privapp-permissions for the Wear Media Sessions system app. -->
+<permissions>
+    <privapp-permissions package="com.google.android.wearable.media.sessions">
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+    </privapp-permissions>
+</permissions>
