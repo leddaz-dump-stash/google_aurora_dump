@@ -1,0 +1,14 @@
+# aurora-user 14 AW2A.241105.012 12502029 release-keys
+- manufacturer: google
+- platform: monaco
+- codename: aurora
+- flavor: aurora-user
+- release: 14
+- id: AW2A.241105.012
+- incremental: 12502029
+- tags: release-keys
+- fingerprint: google/aurora/aurora:14/AW2A.241105.012/12502029:user/release-keys
+- is_ab: true
+- brand: google
+- branch: aurora-user-14-AW2A.241105.012-12502029-release-keys
+- repo: google_aurora_dump

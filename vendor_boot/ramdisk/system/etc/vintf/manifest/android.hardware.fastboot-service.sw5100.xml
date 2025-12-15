@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/google_devices/sw5100/proprietary/fastboot/android.hardware.fastboot-service.sw5100.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.fastboot</name>
+        <fqname>IFastboot/default</fqname>
+    </hal>
+</manifest>

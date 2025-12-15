@@ -1,0 +1,4 @@
+import /init.recovery.qcom.rc
+
+on init
+    write /sys/devices/platform/soc/soc\:google,extcon-usb-shim/force_disable 0
