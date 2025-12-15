@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contains the privapp-permissions for the Default Weather Provider package. -->
+<permissions>
+    <privapp-permissions package="com.google.android.wearable.dwf.weather">
+        <permission name="com.google.wear.permission.SEND_WEATHER" fixed="true" />
+    </privapp-permissions>
+</permissions>
