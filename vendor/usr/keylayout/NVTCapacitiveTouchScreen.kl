@@ -1,0 +1,9 @@
+# Touch screen generates key events in Ambient for gestures
+
+key 103   DPAD_UP      WAKE GESTURE # Swipe Down, equivalent to pressing up key
+key 105   DPAD_LEFT    WAKE GESTURE # Swipe Right, equivalent to pressing left key
+key 106   DPAD_RIGHT   WAKE GESTURE # Swipe Left, equivalent to pressing right key
+key 108   DPAD_DOWN    WAKE GESTURE # Swipe Up, equivalent to pressing down key
+
+key 143   WAKEUP # Tap
+key 142   SLEEP # Palm
