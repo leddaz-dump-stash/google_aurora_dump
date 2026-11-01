@@ -1,0 +1,425 @@
+<fonts-modification version="1">
+  <family customizationType="new-named-family" name="google-sans">
+    <font supportedAxes="wght" style="normal">Wear-GoogleSans-Regular.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="18.0"/>
+    </font>
+    <font supportedAxes="wght" style="italic">Wear-GoogleSans-Italic.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="18.0"/>
+    </font>
+  </family>
+
+  <family-list customizationType="new-named-family" name="google-sans-flex">
+    <family>
+      <font supportedAxes="wght" style="normal">Wear-GoogleSansFlex-Regular.ttf</font>
+    </family>
+    <family>
+      <font supportedAxes="wght" style="normal">Wear-GoogleSans-Regular.ttf</font>
+    </family>
+  </family-list>
+
+  <family customizationType="new-named-family" name="google-sans-medium">
+    <font weight="500" style="normal">Wear-GoogleSans-Regular.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="18.0"/>
+      <axis tag="wght" stylevalue="500"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="google-sans-clock">
+    <font>Wear-GoogleSansClock-Regular.ttf</font>
+  </family>
+
+  <family customizationType="new-named-family" name="google-sans-bold">
+    <font weight="700" style="normal">Wear-GoogleSans-Regular.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="18.0"/>
+      <axis tag="wght" stylevalue="700"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="google-sans-text">
+    <font weight="400" style="normal">Wear-GoogleSans-Regular.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="17.0"/>
+      <axis tag="wght" stylevalue="400"/>
+    </font>
+    <font weight="500" style="normal">Wear-GoogleSans-Regular.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="17.0"/>
+      <axis tag="wght" stylevalue="500"/>
+    </font>
+    <font weight="700" style="normal">Wear-GoogleSans-Regular.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="17.0"/>
+      <axis tag="wght" stylevalue="700"/>
+    </font>
+    <font weight="400" style="italic">Wear-GoogleSans-Italic.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="17.0"/>
+      <axis tag="wght" stylevalue="400"/>
+    </font>
+    <font weight="500" style="italic">Wear-GoogleSans-Italic.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="17.0"/>
+      <axis tag="wght" stylevalue="500"/>
+    </font>
+    <font weight="700" style="italic">Wear-GoogleSans-Italic.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="17.0"/>
+      <axis tag="wght" stylevalue="700"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="google-sans-text-medium">
+    <font weight="500" style="normal">Wear-GoogleSans-Regular.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="17.0"/>
+      <axis tag="wght" stylevalue="500"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="google-sans-text-bold">
+    <font weight="700" style="normal">Wear-GoogleSans-Regular.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="17.0"/>
+      <axis tag="wght" stylevalue="700"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="google-sans-text-italic">
+    <font weight="400" style="italic">Wear-GoogleSans-Italic.ttf
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="opsz" stylevalue="17.0"/>
+      <axis tag="wght" stylevalue="400"/>
+    </font>
+  </family>
+
+  <!-- Font aliases to support OEM customization. OEMs may use these
+    font-family-*device-default typefaces in their respective 1P styles,
+    substituting their own fonts as needed. Note this is independent of
+    3P font styling & theming -->
+  <alias name="font-family-device-default" to="google-sans" />
+  <alias name="font-family-medium-device-default" to="google-sans-medium" />
+  <alias name="font-family-bold-device-default" to="google-sans-bold" />
+
+  <alias name="font-family-text-device-default" to="google-sans-text" />
+  <alias name="font-family-text-medium-device-default" to="google-sans-text-medium" />
+  <alias name="font-family-text-bold-device-default" to="google-sans-text-bold" />
+  <alias name="font-family-text-italic-device-default" to="google-sans-text-italic" />
+
+  <alias name="font-family-flex-device-default" to="google-sans-flex"/>
+
+  <alias name="font-family-system-surfaces-device-default" to="google-sans-flex"/>
+
+  <!-- start M3 type scale definitions -->
+
+  <!-- M3 display text styles -->
+  <family customizationType="new-named-family" name="mdw-display-large">
+    <font style="normal" weight="450">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="450"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="40.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-display-medium">
+    <font style="normal" weight="500">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="500"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="30.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-display-small">
+    <font style="normal" weight="500">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="500"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="24.0"/>
+    </font>
+  </family>
+
+  <!-- M3 title text styles -->
+  <family customizationType="new-named-family" name="mdw-title-large">
+    <font style="normal" weight="500">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="500"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="18.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-title-medium">
+    <font style="normal" weight="550">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="550"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="16.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-title-small">
+    <font style="normal" weight="550">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="550"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="14.0"/>
+    </font>
+  </family>
+
+  <!-- M3 label text styles -->
+  <family customizationType="new-named-family" name="mdw-label-large">
+    <font style="normal" weight="500">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="500"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="20.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-label-medium">
+    <font style="normal" weight="500">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="500"/>
+      <axis tag="wdth" stylevalue="90"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="15.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-label-small">
+    <font style="normal" weight="500">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="500"/>
+      <axis tag="wdth" stylevalue="84"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="13.0"/>
+    </font>
+  </family>
+
+  <!-- M3 body text styles -->
+  <family customizationType="new-named-family" name="mdw-body-large">
+    <font style="normal" weight="450">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="450"/>
+      <axis tag="wdth" stylevalue="90"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="16.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-body-large-prominent">
+    <font style="normal" weight="650">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="650"/>
+      <axis tag="wdth" stylevalue="90"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="16.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-body-medium">
+    <font style="normal" weight="450">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="450"/>
+      <axis tag="wdth" stylevalue="90"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="14.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-body-medium-prominent">
+    <font style="normal" weight="650">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="650"/>
+      <axis tag="wdth" stylevalue="90"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="14.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-body-small">
+    <font style="normal" weight="500">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="500"/>
+      <axis tag="wdth" stylevalue="86"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="12.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-body-small-prominent">
+    <font style="normal" weight="700">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="700"/>
+      <axis tag="wdth" stylevalue="86"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="12.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-body-extra-small">
+    <font style="normal" weight="500">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="500"/>
+      <axis tag="wdth" stylevalue="84"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="10.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-body-extra-small-prominent">
+    <font style="normal" weight="700">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="700"/>
+      <axis tag="wdth" stylevalue="84"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="10.0"/>
+    </font>
+  </family>
+
+  <!-- M3 numeral text styles -->
+  <family customizationType="new-named-family" name="mdw-numeral-extra-large">
+    <font style="normal" weight="550">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="550"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="60.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-numeral-extra-large-prominent">
+    <font style="normal" weight="750">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="750"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="60.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-numeral-large">
+    <font style="normal" weight="600">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="600"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="50.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-numeral-large-prominent">
+    <font style="normal" weight="800">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="800"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="50.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-numeral-medium">
+    <font style="normal" weight="600">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="600"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="40.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-numeral-medium-prominent">
+    <font style="normal" weight="800">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="800"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="40.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-numeral-small">
+    <font style="normal" weight="600">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="600"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="30.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-numeral-small-prominent">
+    <font style="normal" weight="800">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="800"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="30.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-numeral-extra-small">
+    <font style="normal" weight="550">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="550"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="24.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-numeral-extra-small-prominent">
+    <font style="normal" weight="750">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="750"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="24.0"/>
+    </font>
+  </family>
+  <!-- M3 arc text styles -->
+  <family customizationType="new-named-family" name="mdw-arc-large">
+    <font style="normal" weight="600">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="600"/>
+      <axis tag="wdth" stylevalue="100"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="20.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-arc-medium">
+    <font style="normal" weight="600">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="600"/>
+      <axis tag="wdth" stylevalue="90"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="15.0"/>
+    </font>
+  </family>
+
+  <family customizationType="new-named-family" name="mdw-arc-small">
+    <font style="normal" weight="550">Wear-GoogleSansFlex-Regular.ttf
+      <axis tag="wght" stylevalue="550"/>
+      <axis tag="wdth" stylevalue="90"/>
+      <axis tag="GRAD" stylevalue="0"/>
+      <axis tag="ROND" stylevalue="100"/>
+      <axis tag="opsz" stylevalue="14.0"/>
+    </font>
+  </family>
+
+  <!-- end M3 type scale definitions -->
+
+</fonts-modification>

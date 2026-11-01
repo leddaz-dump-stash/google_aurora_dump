@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- These are configurations that should exist on 2022 and newer Google Pixel Watch devices. -->
+<config>
+    <!-- This is meant to be the canonical feature identifying 2022 and newer Google Pixel Watch devices. -->
+    <feature name="com.google.android.feature.PIXEL_WATCH_2022_EXPERIENCE" />
+    <!-- This is meant to be the canonical feature identifying any Google Pixel Watch device. -->
+    <feature name="com.google.android.feature.PIXEL_WATCH_EXPERIENCE" />
+    <!-- Deprecated, don't use -->
+    <feature name="com.google.android.feature.PIXEL_EXPERIENCE_WATCH" />
+    <!-- Identifies devices supporting Pixel WF discovery. -->
+    <feature name="com.google.android.feature.PIXEL_WF_DISCOVERY_SUPPORT" />
+    <!-- Identifies devices supporting new granular HR permissions. -->
+    <feature name="com.google.android.feature.PIXEL_WF_READ_HR_PERMISSIONS_AVAILABLE" />
+</config>

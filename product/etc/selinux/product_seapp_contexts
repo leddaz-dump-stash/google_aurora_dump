@@ -1,0 +1,11 @@
+user=_app seinfo=platform name=com.qualcomm.qti.devicestatisticsservice domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.uim domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.uimGbaApp domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.uimremoteclient domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.uimremoteserver domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.lpa domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app isPrivApp=true name=com.google.android.wearable.pixel.pdms domain=pdms_app type=app_data_file levelFrom=all
+user=_app isPrivApp=true name=com.google.hardware.techeng.sensors.datacollection.weardcfreeliving domain=wear_dc_app type=privapp_data_file levelFrom=all
+user=system seinfo=platform isPrivApp=true name=com.google.android.wearable.fitbit.mcu.updater domain=mcu_updater_app type=system_app_data_file levelFrom=none level=s0
+user=_app isPrivApp=true name=com.google.android.wearable.watchface.rwf domain=rwf_app type=privapp_data_file levelFrom=all
+user=_app isPrivApp=true name=com.google.android.wearable.pixel.loguploader domain=loguploader_app type=privapp_data_file levelFrom=all

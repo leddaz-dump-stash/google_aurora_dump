@@ -1,0 +1,111 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.product.brand=google
+ro.product.product.device=aurora
+ro.product.product.manufacturer=Google
+ro.product.product.model=Google Pixel Watch 2
+ro.product.product.name=aurora
+ro.product.build.date=Mon Aug 10 18:59:08 UTC 2026
+ro.product.build.date.utc=1786388348
+ro.product.build.fingerprint=google/aurora/aurora:17/CP3A.260905.002.E1/16053217:user/release-keys
+ro.product.build.id=CP3A.260905.002.E1
+ro.product.build.uuid=rIayt8BPTM4dYGcJea29w8SqppfvKZ722K8ZYU_g2Ys
+ro.product.build.tags=release-keys
+ro.product.build.type=user
+ro.product.build.version.incremental=16053217
+ro.product.build.version.release=17
+ro.product.build.version.release_or_codename=17
+ro.product.build.version.sdk=37
+ro.product.build.version.sdk_full=37.1
+####################################
+# from gen_build_prop.py:generate_build_info
+####################################
+# begin build properties
+ro.build.id=CP3A.260905.002.E1
+ro.build.uuid=rIayt8BPTM4dYGcJea29w8SqppfvKZ722K8ZYU_g2Ys
+ro.build.display.id=CP3A.260905.002.E1
+ro.build.version.incremental=16053217
+ro.build.version.sdk=37
+ro.build.version.sdk_full=37.1
+ro.build.version.preview_sdk=0
+ro.build.version.preview_sdk_fingerprint=REL
+ro.build.version.codename=REL
+ro.build.version.all_codenames=REL
+ro.build.version.known_codenames=Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake,VanillaIceCream,Baklava,CANARY,CinnamonBun
+ro.build.version.release=17
+ro.build.version.release_or_codename=17
+ro.build.version.release_or_preview_display=17
+ro.build.version.security_patch=2026-08-05
+ro.build.version.base_os=
+ro.build.version.min_supported_target_sdk=28
+ro.build.date=Mon Aug 10 18:59:08 UTC 2026
+ro.build.date.utc=1786388348
+ro.build.type=user
+ro.build.user=android-build
+ro.build.host=b93662385795
+ro.build.tags=release-keys
+ro.build.flavor=aurora-user
+# ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
+# use ro.product.cpu.abilist instead.
+ro.product.cpu.abi=armeabi-v7a
+ro.product.cpu.abi2=armeabi
+ro.product.locale=en-US
+ro.wifi.channels=
+# Do not try to parse description or thumbprint
+ro.build.description=aurora-user 17 CP3A.260905.002.E1 16053217 release-keys
+# end build properties
+####################################
+# from vendor/google_devices/eos/prebuilts/sw5100-lw6_nonhlos_versions.prop
+####################################
+ro.vendor.qc_release.adsp=ADSP.IT.2.1.c1-00038-ATHERTON-1
+ro.vendor.qc_release.apps_kernel=KERNEL.PLATFORM.5.0.r17-02400-kernel.0-1
+ro.vendor.qc_release.apps=LW.UM.2.6.r1-02800-SW5100.0-1
+ro.vendor.qc_release.audio=AUDIO_IOT.LA.10.1.r1-01600-SW5100.0-1
+ro.vendor.qc_release.boot=BOOT.XF.4.3-00265-ATHERTONLAZ-4
+ro.vendor.qc_release.btfm=BTFM.CHE.2.1.7-00059-QCACHROMZ-1
+ro.vendor.qc_release.build=SW5100.LW.6.0 CS 0.0.011.1a OEM 5D002.c.1 412552
+ro.vendor.qc_release.display=DISPLAY.LA.6.12.r5-01700-SW5100.0-1
+ro.vendor.qc_release.glue=GLUE.ATHERTON_LW.2.0-00098-NOOP_TEST-1
+ro.vendor.qc_release.graphics=GRAPHICS.LA.16.1.r6-02000-SW5100.0-1
+ro.vendor.qc_release.modem=MPSS.HA.2.1-00391-ATHERTON_GEN_PACK-1
+ro.vendor.qc_release.rpm=RPM.BF.1.12-00112-ATHERTONAAAAANAZR-1
+ro.vendor.qc_release.tz_apps=TZ.APPS.2.0.1-00149-KAMORTAAAAAANAZT-2
+ro.vendor.qc_release.tz=TZ.XF.5.1.5-00362-ATHERTONAAAANBZT-1
+ro.vendor.qc_release.video=VIDEO.LA.2.4.r5-01100-SW5100.0-1
+ro.vendor.qc_release.wlan=WLAN.HL.3.4.1.c1-00259-QCAHLSWMTPLZ-3
+ro.vendor.qc_release.wlan=WLAN.HL.3.4.1.c1-00259-QCAHLSWMTPLZ-3
+####################################
+# from variable ADDITIONAL_PRODUCT_PROPERTIES
+####################################
+ro.product.page_size=4096
+ro.build.characteristics=nosdcard,watch
+ro.product.ab_ota_partitions=abl,adsp_oda,boot,devcfg,dtbo,eseproxy,eseservice,hyp,imagefv,init_boot,keymaster,modem,multiimgoem,odm,product,qupfw,rpm,system,system_dlkm,system_ext,tz,uefisecapp,vbmeta,vbmeta_system,vendor,vendor_boot,vendor_dlkm,vendor_kernel_boot,xbl,xbl_config
+ro.product.cpu.pagesize.max=4096
+# Value overridden by post_process_props.py. Original value: default
+ro.dalvik.vm.enable_uffd_gc=true
+####################################
+# from variable PRODUCT_PRODUCT_PROPERTIES
+####################################
+ro.oem.enable_fido_smart_setup=true
+ro.product.bootanim.file=bootanimation-eos-384.zip
+audio.offload.min.duration.secs=30
+android.transparency.roots_url=https://android.googleapis.com/attestation/root
+persist.traced.enable=1
+ro.com.google.ime.system_lm_dir=/product/usr/share/ime/google/wear_lms
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.avrcp.target.enabled=true
+bluetooth.profile.avrcp.controller.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hfp.hf.enabled=true
+audio.offload.min.duration.secs=30
+ro.lmk.log_stats=true
+mmd.zram.enabled=true
+mmd.zram.size=1610612736
+mmd.zram.comp_algorithm=lz4
+mmd.zram.recompression.enabled=false
+# end of file
+

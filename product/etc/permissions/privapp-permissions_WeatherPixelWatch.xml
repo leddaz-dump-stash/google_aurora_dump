@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<permissions>
+    <privapp-permissions package="com.google.android.apps.weather">
+        <permission name="com.google.wear.permission.SEND_WEATHER" fixed="false"/>
+        <permission name="com.google.wear.permission.SET_COMPLICATION_EXTRAS" fixed="false"/>
+    </privapp-permissions>
+</permissions>

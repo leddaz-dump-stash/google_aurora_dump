@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- This should be used to exclude kidsmode packages from modem-less targets. -->
+    <disabled-in-sku package="com.google.android.wearable.sysui.overlay.kidsmode.pixelwatch" />
+    <disabled-in-sku package="com.google.frameworks.resources.overlay.kidsmode.pixelwatch" />
+    <disabled-in-sku package="com.google.wear.services.overlay.kidsmode.pixelwatch" />
+    <disabled-in-sku package="com.google.wearable.settings.overlay.kidsmode.pixelwatch" />
+    <disabled-in-sku package="com.google.android.setupwizard.overlay.kidsmode.pixelwatch" />
+    <disabled-in-sku package="com.google.frameworks.resources.overlay.kidsmode.dynamic.pixelwatch" />
+</config>

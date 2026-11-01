@@ -1,0 +1,4 @@
+<config>
+    <feature name="com.fitbit.wear.software.app" />
+    <feature name="com.google.android.wearable.fitbit.raw_health_sensors_permission" />
+</config>

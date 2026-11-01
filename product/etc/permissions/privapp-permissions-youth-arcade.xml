@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<permissions>
+   <privapp-permissions package="com.google.android.apps.youth.arcade">
+      <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+      <permission name="com.google.android.wearable.healthservices.permission.OEM_OPAQUE_DATA_ACCESS" fixed="true"/>
+      <permission name="com.google.android.wearable.healthservices.permission.SET_OPAQUE_CONFIGURATION" fixed="true"/>
+   </privapp-permissions>
+</permissions>

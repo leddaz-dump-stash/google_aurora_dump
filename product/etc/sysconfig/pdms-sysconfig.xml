@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- Let "Pixel Device Management Service" run in the background and monitor
+         internet connectivity continuously. -->
+    <allow-in-power-save package="com.google.android.wearable.pixel.pdms" />
+    <allow-in-data-usage-save package="com.google.android.wearable.pixel.pdms" />
+
+    <feature name="com.google.android.wearable.pixel.pdms" />
+
+    <!-- With the introduction of smart replies, PDMS gets bound by Android as a system classifier
+    (http://ag/30088905) with the BIND_RESTRICT_ASSOCIATIONS flag. At that moment, bindings to other
+    apps have to be explicitly allowed. -->
+    <allow-association target="com.google.android.wearable.pixel.pdms" allowed="com.android.phone" />
+    <allow-association target="com.google.android.wearable.pixel.pdms" allowed="com.fitbit.FitbitMobile" />
+    <allow-association target="com.google.android.wearable.pixel.pdms" allowed="com.google.android.apps.safetyhub" />
+    <allow-association target="com.google.android.wearable.pixel.pdms" allowed="com.google.android.apps.wearable.systemui" />
+    <allow-association target="com.google.android.wearable.pixel.pdms" allowed="com.google.android.crossdeviceaccessservice" />
+    <allow-association target="com.google.android.wearable.pixel.pdms" allowed="com.google.android.gms" />
+    <allow-association target="com.google.android.wearable.pixel.pdms" allowed="com.google.android.pixelsystemservice" />
+    <allow-association target="com.google.android.wearable.pixel.pdms" allowed="com.google.android.wearable.diagnosticstool" />
+    <allow-association target="com.google.android.wearable.pixel.pdms" allowed="com.google.android.wearable.sysui" />
+    <allow-association target="com.google.android.wearable.pixel.pdms" allowed="com.google.hardware.techeng.sensors.datacollection.weardcfreeliving" />
+</config>

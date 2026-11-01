@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<exceptions>
+    <exception package="com.google.android.wearable.pixel.aspen">
+        <permission name="android.permission.ACTIVITY_RECOGNITION" fixed="false"/>
+        <permission name="android.permission.BLUETOOTH_ADVERTISE" fixed="false"/>
+        <permission name="android.permission.BLUETOOTH_CONNECT" fixed="false"/>
+        <permission name="android.permission.BODY_SENSORS" fixed="false"/>
+        <permission name="android.permission.BODY_SENSORS_BACKGROUND" fixed="false"/>
+        <permission name="android.permission.health.READ_HEART_RATE" fixed="false"/>
+        <permission name="android.permission.health.READ_HEALTH_DATA_IN_BACKGROUND" fixed="false"/>
+        <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>\
+    </exception>
+</exceptions>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- This should be used to exclude these packages from modem-less targets. -->
+    <disabled-in-sku package="com.qti.phone" />
+    <disabled-in-sku package="com.android.calllogbackup" />
+    <disabled-in-sku package="com.android.omadm.service" />
+    <disabled-in-sku package="com.google.android.satellite" />
+    <disabled-in-sku package="com.android.mms.service" />
+    <disabled-in-sku package="com.google.android.cellbroadcastreceiver" />
+    <disabled-in-sku package="com.qualcomm.qti.confdialer" />
+    <disabled-in-sku package="com.qti.qualcomm.datastatusnotification" />
+    <disabled-in-sku package="com.qualcomm.qti.ims" />
+    <disabled-in-sku package="com.android.carrierdefaultapp" />
+    <disabled-in-sku package="com.android.phone.auto_generated_characteristics_rro" />
+    <disabled-in-sku package="com.google.android.cellbroadcastservice" />
+    <disabled-in-sku package="com.android.sdm.plugins.diagmon" />
+    <disabled-in-sku package="com.google.android.euicc.wear" />
+    <disabled-in-sku package="com.qualcomm.qti.telephonyservice" />
+    <disabled-in-sku package="com.android.sdm.plugins.connmo" />
+    <disabled-in-sku package="org.codeaurora.ims" />
+    <disabled-in-sku package="com.google.android.apps.carrier.log" />
+    <disabled-in-sku package="com.android.ons" />
+    <disabled-in-sku package="com.android.providers.telephony" />
+    <disabled-in-sku package="com.android.phone" />
+    <disabled-in-sku package="com.android.cellbroadcastreceiver" />
+    <disabled-in-sku package="com.qti.telephonysettings" />
+    <disabled-in-sku package="com.google.omadm.trigger" />
+    <disabled-in-sku package="com.android.sdm.plugins.dcmo" />
+    <disabled-in-sku package="com.google.android.connectivitymonitor" />
+    <disabled-in-sku package="com.google.android.apps.stargate" />
+    <disabled-in-sku package="com.google.android.carrier" />
+    <disabled-in-sku package="com.android.providers.telephony.auto_generated_characteristics_rro" />
+    <disabled-in-sku package="com.android.wearable.resources.overlay.telephony.pixelwatch" />
+</config>

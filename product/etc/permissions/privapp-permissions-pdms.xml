@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<permissions>
+  <privapp-permissions package="com.google.android.wearable.pixel.pdms">
+    <permission name="android.permission.BIND_TELECOM_CONNECTION_SERVICE" />
+    <permission
+        name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS" />
+    <permission name="android.permission.MODIFY_PHONE_STATE" />
+    <permission name="android.permission.CHANGE_NETWORK_STATE" />
+    <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    <permission name="android.permission.MANAGE_NOTIFICATIONS" />
+    <permission name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME" />
+    <permission name="android.permission.READ_PRECISE_PHONE_STATE" />
+    <permission name="com.google.wear.permission.GATHER_OEM_DATA" />
+    <permission name="android.permission.BACKUP" />
+    <permission name="com.google.wear.permission.WRITE_FOCUS_MODES" />
+    <permission name="android.permission.ACCESS_CONTEXT_HUB" />
+    <permission name="android.permission.CHANGE_OVERLAY_PACKAGES" />
+    <permission name="com.google.wear.permission.MANAGE_SUBMERSION_STATE" />
+    <permission name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <permission name="com.google.pixelwatch.permission.READ_PRIVATE_SENSORS" />
+    <permission name="com.google.wear.permission.READ_SOS_MODE" />
+    <permission name="android.permission.SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE" />
+    <permission name="com.google.android.clockwork.systemui.KEYGUARD_PASSWORD_SET" />
+    <permission name="android.permission.INSTALL_PACKAGES" />
+    <permission name="android.permission.CONTROL_INCALL_EXPERIENCE" />
+    <permission name="android.permission.REBOOT" />
+    <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    <permission name="android.permission.LOCATION_HARDWARE"/>
+    <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+  </privapp-permissions>
+</permissions>

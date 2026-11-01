@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- Allow PDMS to install the Pixel Watch Ambient apex -->
+    <allowed-vendor-apex package="com.google.pixelwatchambient" installerPackage="com.google.android.wearable.pixel.pdms" />
+    <!-- Allow PDMS to install the APEX without rebooting. -->
+    <whitelisted-staged-installer package="com.google.android.wearable.pixel.pdms" />
+</config>

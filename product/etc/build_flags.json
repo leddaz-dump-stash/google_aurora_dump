@@ -1,0 +1,6906 @@
+{
+  "flags": [
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ACONFIG_DEFAULT_ALLOW_JAVA_IMPL_INTERFACE_REMOVAL",
+        "namespace": "system_performance",
+        "description": "When true, default to allowing removal of unnecessary internal Java aconfig codegen whenever possible.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ACONFIG_FINALIZE_NON_API_FLAGS",
+        "namespace": "core_experiments_team_internal",
+        "description": "When true, non-API exported flags will be provided to record-finalized-flags.",
+        "value": {
+          "Val": {
+            "BoolValue": true
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ACONFIG_FINGERPRINT_CPP",
+        "namespace": "core_experiments_team_internal",
+        "description": "Control checking the fingerprint in the cpp codegen.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ACONFIG_FLAG_DEFAULT_PERMISSION",
+        "namespace": "android_UNKNOWN",
+        "description": "The default permission for all flags",
+        "value": {
+          "Val": {
+            "StringValue": "READ_WRITE"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "READ_ONLY"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ACONFIG_OPTIMIZE_READ_ONLY_JAVA",
+        "namespace": "system_performance",
+        "description": "When true, read-only Java flag reads will return their default value directly, bypassing any test override support.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ACONFIG_REQUIRE_ALL_READ_ONLY",
+        "namespace": "android_UNKNOWN",
+        "description": "If true, it is an error to set the permission of any aconfig flags to READ_WRITE.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ACONFIG_STORAGE_VERSION",
+        "namespace": "core_experiments_team_internal",
+        "description": "Control storage file version for aconfig flags.",
+        "value": {
+          "Val": {
+            "StringValue": "2"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ACONFIG_VALUE_SETS",
+        "namespace": "build",
+        "description": "Aconfig value sets assembled by release-config",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "system",
+          "system_ext",
+          "product",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "aconfig_value_set-platform_build_release-ap3a aconfig_value_set-platform_vendor_google_release-ap3a aconfig_value_set-platform_vendor_google_shared_wear_release-ap3a aconfig_value_set-platform_build_release-ap4a aconfig_value_set-platform_vendor_google_release-ap4a aconfig_value_set-platform_vendor_google_shared_wear_release-ap4a aconfig_value_set-platform_build_release-bp1a aconfig_value_set-platform_vendor_google_release-bp1a aconfig_value_set-platform_vendor_google_shared_wear_release-bp1a aconfig_value_set-platform_build_release-bp2a aconfig_value_set-platform_vendor_google_release-bp2a aconfig_value_set-platform_vendor_google_shared_wear_release-bp2a aconfig_value_set-platform_build_release-bp3a aconfig_value_set-platform_vendor_google_release-bp3a aconfig_value_set-platform_vendor_google_shared_wear_release-bp3a aconfig_value_set-platform_build_release-user aconfig_value_set-platform_build_release-bp4a aconfig_value_set-platform_vendor_google_release-bp4a aconfig_value_set-platform_vendor_google_shared_wear_release-bp4a aconfig_value_set-platform_build_release-mainline_2026_01 aconfig_value_set-platform_build_release-mainline_2026_02 aconfig_value_set-platform_build_release-cp1a aconfig_value_set-platform_vendor_google_release-cp1a aconfig_value_set-platform_vendor_google_shared_wear_release-cp1a aconfig_value_set-platform_build_release-mainline_2026_03 aconfig_value_set-platform_build_release-mainline_2026_04 aconfig_value_set-platform_build_release-cp2a aconfig_value_set-platform_vendor_google_release-cp2a aconfig_value_set-platform_vendor_google_shared_wear_release-cp2a aconfig_value_set-platform_build_release-mainline_2026_06 aconfig_value_set-platform_build_release-mainline_2026_07 aconfig_value_set-platform_build_release-cp3a aconfig_value_set-platform_vendor_google_release-cp3a aconfig_value_set-platform_vendor_google_shared_wear_release-cp3a"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_AIDL_USE_UNFROZEN",
+        "namespace": "android_UNKNOWN",
+        "description": "Enables the use of the unfrozen versions of AIDL interfaces. When this is `False` the libraries of the latest unfrozen version of a stable interface will behave like the last frozen version. When this is `True` the libraries behave like the lastest unfrozen version like they always have.",
+        "value": {
+          "Val": {
+            "BoolValue": true
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": false
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ANDROID_ONBOARDING_OSMIGRATION_ENABLED",
+        "namespace": "onboarding",
+        "description": "Enable or disable the OSMigration experience in the onboarding flow.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ANDROID_ONBOARDING_SUW_COMPLIANCE_DATE",
+        "namespace": "onboarding",
+        "description": "The version of the Onboarding Library that SetupWizard has been tested against. This is used to flag behaviour changes in the library in the same way as targetSdkVersion is used in the platform.",
+        "value": {
+          "Val": {
+            "StringValue": "2024-01-01"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2026-04-01"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ANDROID_SETUP_WIZARD_VERSION",
+        "namespace": "onboarding",
+        "description": "Specify the version of the SetupWizardPrebuilt application to be installed.",
+        "value": {
+          "Val": {
+            "StringValue": "v821016347"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "v940906682"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ANOMALY_DETECTOR",
+        "namespace": "backstage_power",
+        "description": "Flag will control the release of the anomaly detector inside the Profiling module apex.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_BOOT_JARS_PREBUILT_EXCLUDED_LIST",
+        "namespace": "android_UNKNOWN",
+        "description": "jars need to be excluded from Apex Boot Jars for targets with mainline prebuilts enabled.",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CODECS",
+        "namespace": "codec_fwk",
+        "description": "If true, then the ApexCodecs is enabled",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor",
+          "com.android.media.swcodec"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_ADBD",
+        "namespace": "android_UNKNOWN",
+        "description": "The contributions made by apexes (source or prebuilts) to the rest of the build.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_ADSERVICES",
+        "namespace": "android_UNKNOWN",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_APPSEARCH",
+        "namespace": "android_UNKNOWN",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_ART",
+        "namespace": "android_UNKNOWN",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_BLUETOOTH",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_CAPTIVEPORTALLOGIN",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_CELLBROADCAST",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_CONFIGINFRASTRUCTURE",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_CONNECTIVITY",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_CONSCRYPT",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_CRASHRECOVERY",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_DOCUMENTSUIGOOGLE",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_EXTSERVICES",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_HEALTHFITNESS",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_IPSEC",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_MEDIA",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_MEDIAPROVIDER",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_MODULE_METADATA",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_NETWORKSTACKGOOGLE",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_NEURALNETWORKS",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_NFC",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_ONDEVICEPERSONALIZATION",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_PERMISSION",
+        "namespace": "android_UNKNOWN",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_PROFILING",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_REMOTEKEYPROVISIONING",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_RESOLV",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_SCHEDULING",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_SDKEXTENSIONS",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_STATSD",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_SWCODEC",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_TELEPHONY2",
+        "namespace": "telephony",
+        "description": "The contributions made by apexes (source or prebuilts) to the rest of the build.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_TZDATA",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_UPROBESTATS",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_UWB",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_APEX_CONTRIBUTIONS_WIFI",
+        "namespace": "android_UNKNOWN",
+        "description": "Specify whether to use prebuilts or source this module",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ART_COMPILE_BCP_APEX_SPEED_PROFILE",
+        "namespace": "art_cloud",
+        "description": "b/342163020: Flag to enable ART Speed Profile compilation for BCP Apex modules.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_AVATAR_PICKER_APP",
+        "namespace": "android_UNKNOWN",
+        "description": "Move User avatar picker from SettingsLib to preinstalled app.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_AVF_ENABLE_DEVICE_ASSIGNMENT",
+        "namespace": "virtualization",
+        "description": "Enables assigning hardware devices to the guest VMs. If this flag is enabled, then RELEASE_AVF_ENABLE_MICRODROID_VENDOR_MODULES must also be enabled.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_AVF_ENABLE_DICE_CHANGES",
+        "namespace": "virtualization",
+        "description": "Enables new DICE functionality in Microdroid VMs.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_AVF_ENABLE_LLPVM_CHANGES",
+        "namespace": "virtualization",
+        "description": "Enables new llPvm functionality in Microdroid VMs.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_AVF_ENABLE_REMOTE_ATTESTATION",
+        "namespace": "virtualization",
+        "description": "Enables pVM remote attestation in Microdroid VM.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_AVF_ENABLE_VENDOR_MODULES",
+        "namespace": "virtualization",
+        "description": "Enables loading vendor modules (both kernel \u0026 userspace) in Microdroid VM.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_AVF_ENABLE_VIRT_CPUFREQ",
+        "namespace": "virtualization",
+        "description": "Enables Virtual Cpufreq support in Microdroid VM.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_AVF_SUPPORT_CUSTOM_VM_WITH_PARAVIRTUALIZED_DEVICES",
+        "namespace": "virtualization",
+        "description": "Enable running custom VMs with paravirtualized devices.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_AVF_VM_PROFILES",
+        "namespace": "virtualization",
+        "description": "Adds support for VM profiles",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_BINDER_DEATH_RECIPIENT_WEAK_FROM_JNI",
+        "namespace": "android_UNKNOWN",
+        "description": "If enabled, DeathRecipient is not strongly referenced from JNI.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_BLUETOOTH_LPP_SERVICE_INSTANCE",
+        "namespace": "bluetooth",
+        "description": "Enables Bluetooth Low Power Processor Service Instance",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_BOARD_API_LEVEL",
+        "namespace": "android_UNKNOWN",
+        "description": "The API level of current vendor API surface. It has YYYYMM format.",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "202604"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_BOARD_API_LEVEL_FROZEN",
+        "namespace": "android_UNKNOWN",
+        "description": "Set to True to freeze the board API level with vendor FRC",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_BUILD_AFDO_PROFILE_VERSION",
+        "namespace": "llvm_and_toolchains",
+        "description": "Control which version of AFDO profiles is used",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "15713426-next"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_BUILD_CLANG_VERSION",
+        "namespace": "llvm_and_toolchains",
+        "description": "Control which version of Clang is used to build the platform",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "clang-r584948b"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_BUILD_CPP_STD_VERSION",
+        "namespace": "llvm_and_toolchains",
+        "description": "Control which C++ standard version is used to build the platform",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "gnu++23"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_BUILD_FLAGS_IN_PROTOBUF",
+        "namespace": "android_UNKNOWN",
+        "description": "Enable protobuf version of build flag processing. When true, the canonical source of truth for build flags is in the protobuf version of the data.",
+        "value": {
+          "Val": {
+            "BoolValue": true
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_BUILD_PURGE_PRODUCT_ADB_KEYS",
+        "namespace": "android_UNKNOWN",
+        "description": "Remove product ADB keys from the build",
+        "value": {
+          "Val": {
+            "BoolValue": true
+          }
+        },
+        "workflow": 5,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_BUILD_USE_VARIANT_FLAGS",
+        "namespace": "android_UNKNOWN",
+        "description": "Whether to use BUILD_VARIANT overrides if available",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_CLOCKWORK_USE_GOOGLE_APPS_DAILY_CHANNEL",
+        "namespace": "android_UNKNOWN",
+        "description": "Control whether daily/dogfood apps or stable apps are built into Wear devices Default to True (use daily apps) for dev configs Override to False for quarterly releases",
+        "value": {
+          "Val": {
+            "BoolValue": true
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_CLOCKWORK_USE_MATERIAL3_BOOT_ANIMATION",
+        "namespace": "wear_frameworks",
+        "description": "Controls whether or not the Material 3 boot animation will be used.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_CREATE_ACONFIG_STORAGE_FILE",
+        "namespace": "android_UNKNOWN",
+        "description": "Enable build system to create new aconfig storage files.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_DEFAULT_MODULE_BUILD_FROM_SOURCE",
+        "namespace": "android_UNKNOWN",
+        "description": "The behavior for the tree wrt building mainline modules or using prebuilts",
+        "value": {
+          "Val": {
+            "BoolValue": true
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_DEFAULT_UPDATABLE_MODULE_VERSION",
+        "namespace": "modularization",
+        "description": "Use this flag to set version code for updatable apk and apex. This version code will be used only if the version field in module's manifest file is set to 0.",
+        "value": {
+          "Val": {
+            "StringValue": "352090000"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "371899999"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_DEPRECATE_VNDK",
+        "namespace": "android_UNKNOWN",
+        "description": "feature flag to deprecate VNDK",
+        "value": {
+          "Val": {
+            "BoolValue": true
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_DISABLE_VERIFY_OVERLAPS_CHECK",
+        "namespace": "android_UNKNOWN",
+        "description": "Disable verify_overlaps check for mainline prebuilts. Only used in non-AOSP builds.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_DISPLAY_AMBIENCE",
+        "namespace": "pixel_display",
+        "description": "Enables Display integration with AmbienceHub",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ENABLE_SUPPLEMENTAL_FONT_FOR_DESKTOP",
+        "namespace": "text",
+        "description": "Enables supplemental fonts for desktop builds.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_ENABLE_SYSTEM_ACONFIGD_SOCKET",
+        "namespace": "android_UNKNOWN",
+        "description": "Control if we should turn on system aconfigd socket.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": false
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_EXP",
+        "namespace": "pixel_display",
+        "description": "feature flag for b/377864265",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_AICORE",
+        "namespace": "ondeviceintelligence",
+        "description": "Control which version of AI Core APK is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "AICorePrebuilt"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "AICorePrebuilt-aicore_20260302.01_RC00"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_INCLUDE_ASTREA_AL",
+        "namespace": "android_system_intelligence",
+        "description": "Controls inclusion of Astrea allow-associations",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_PIXEL_ACE_PCC_ENFORCEMENT_DISABLED",
+        "namespace": "pixel_pearl",
+        "description": "Control the ACE PCC enforcement disablement state.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_PIXEL_BATTERY_LOTX_OVERLAY",
+        "namespace": "pixel_energizer",
+        "description": "Control the presence of battery charging warnings for LotX on Pixel devices.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PixelBatteryLotXOverlay"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_PIXEL_CREDENTIALMANAGER_LAUNCHER",
+        "namespace": "password_manager_mobile",
+        "description": "Enable the Credential Manager launcher icon on Pixel devices.",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "CredentialManagerPrebuilt_credentialmanager.android_20260520.00_p0"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_PIXEL_FIND_MY_DEVICE_PREBUILT",
+        "namespace": "phone_find_hub",
+        "description": "Control the presence of Find My Device as a prebuilt package on Pixel devices.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "FindMyDevicePrebuilt-3-1-621-1"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_PIXEL_PEARL_ENABLED",
+        "namespace": "pixel_pearl",
+        "description": "Control the presence of Pixel Pearl on device.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_PIXEL_PEARL_OVERLAY",
+        "namespace": "pixel_pearl",
+        "description": "Control the inclusion of PearlOverlay in Pixel Products.",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PearlOverlay2024"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_PIXEL_PEARL_PREBUILT_MODULE",
+        "namespace": "pixel_pearl",
+        "description": "Control the prebuilt Pearl module name.",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PixelAIPrebuilt"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_PIXEL_SETUP_WIZARD_OVERLAY_FELIX",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the PixelSetupWizardOverlayFelix app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PixelSetupWizardOverlayFelix"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_PIXEL_SETUP_WIZARD_OVERLAY_TANGORPRO",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the PixelSetupWizardOverlayTangorpro app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PixelSetupWizardOverlayTangorpro"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_PIXEL_SPOON_ENABLED",
+        "namespace": "pixel_pearl",
+        "description": "Control the presence of Pixel Spoon on device.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_GOOGLE_SEARCH_SELECTOR",
+        "namespace": "unified_compliance_engine",
+        "description": "Control which version of SearchSelector APK is installed",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "1.36.932215516"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_HARDWARE_AUDIO_USE_CAP_AIDL",
+        "namespace": "media_audio",
+        "description": "Enables use of Configurable Audio Policy via AIDL HAL. When the flag is 'false' the framework falls back to loading the CAP config directly from the vendor partition (as it used to be with HIDL).",
+        "value": {
+          "Val": {
+            "BoolValue": true
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_HARDWARE_BLUETOOTH_RANGING_SERVICE",
+        "namespace": "android_UNKNOWN",
+        "description": "Enables Bluetooth Ranging Service",
+        "value": {
+          "Val": {
+            "BoolValue": true
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_HIDDEN_API_EXPORTABLE_STUBS",
+        "namespace": "android_UNKNOWN",
+        "description": "b/319697968: Flag to determine the dependency of hiddenapi to the stubs that contain all flagged apis (\"everything\" stubs), or to the stubs that contain only the enabled flagged apis (\"exportable\" stubs).",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_INSTALL_APEX_SYSTEMSERVER_DEXPREOPT_SAME_PARTITION",
+        "namespace": "android_UNKNOWN",
+        "description": "If true, the dexpreopt files of apex system server jars will be installed in the same partition as the apex.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_KOTLIN_LANG_VERSION",
+        "namespace": "android_UNKNOWN",
+        "description": "Which Kotlin Language version to target.",
+        "value": {
+          "Val": {
+            "StringValue": "1.9"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_MAINLINE_BETA_NAMESPACE_CONFIG",
+        "namespace": "core_experiments_team_internal",
+        "description": "Mainline beta namespace configuration",
+        "value": {
+          "Val": {
+            "StringValue": "build/tools/aconfig/aconfig/config/mainline_beta_namespaces.json"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "build/tools/aconfig/aconfig/config/mainline_beta_namespaces.json"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_MAINLINE_MODULE_PREBUILT_VERSION",
+        "namespace": "android_UNKNOWN",
+        "description": "The version of mainline prebuilts used when prebuilts are enabled.",
+        "value": {
+          "Val": {
+            "StringValue": "mainline_module_prebuilt_nightly"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "mainline_module_prebuilt_nightly"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_NPUMANAGER_MODULE",
+        "namespace": "machine_learning",
+        "description": "If true, then npumanager module is enabled as an apex",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_ANDROID_DEVICE_POLICY",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the DevicePolicyPrebuilt app is installed",
+        "value": {
+          "Val": {
+            "StringValue": "DevicePolicyPrebuilt"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "DevicePolicyPrebuilt-v10572820"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_ANDROID_SETUP_WIZARD",
+        "namespace": "onboarding",
+        "description": "Control which version of the SetupWizardPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "SetupWizardPrebuilt_versioned"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "SetupWizardPrebuilt_versioned"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_ANDROID_SYSTEM_INTELLIGENCE_PIXEL",
+        "namespace": "android_system_intelligence",
+        "description": "Control which version of the Android System Intelligence app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "playstore_aiai_20250306.00_RC10"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "y2026/playstore_aiai_20260430.00_RC06"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_ANDROID_SYSTEM_INTELLIGENCE_PIXEL_2020",
+        "namespace": "android_system_intelligence",
+        "description": "Control which version of the Android System Intelligence app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "DevicePersonalizationPrebuiltPixel2020-T.41_U.16_playstore_aiai_heimdall_20231130.00_RC07"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_ANDROID_SYSTEM_INTELLIGENCE_PIXEL_2021",
+        "namespace": "android_system_intelligence",
+        "description": "Build flag for Android System Intelligence package for P21 devices",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "DevicePersonalizationPrebuiltPixel2021-playstore_aiai_20250306.00_RC10"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_ANDROID_SYSTEM_INTELLIGENCE_PIXEL_2022",
+        "namespace": "android_system_intelligence",
+        "description": "Build flag for Android System Intelligence package for P22 devices",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "DevicePersonalizationPrebuiltPixel2022-playstore_aiai_20250306.00_RC10"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_ANDROID_SYSTEM_INTELLIGENCE_PIXEL_2023",
+        "namespace": "android_system_intelligence",
+        "description": "Build flag for Android System Intelligence package for P23 devices",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "DevicePersonalizationPrebuiltPixel2023-playstore_aiai_20250306.00_RC10"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_ANDROID_SYSTEM_INTELLIGENCE_PIXEL_2024",
+        "namespace": "android_system_intelligence",
+        "description": "Build flag for Android System Intelligence package for P24 devices",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "DevicePersonalizationPrebuiltPixel2024-playstore_aiai_20250306.00_RC10"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_ANDROID_SYSTEM_INTELLIGENCE_PIXEL_2025",
+        "namespace": "android_system_intelligence",
+        "description": "Build flag for Android System Intelligence package for P25 devices",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "DevicePersonalizationPrebuiltPixel2025-playstore_aiai_20250306.00_RC10"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_ANDROID_SYSTEM_INTELLIGENCE_PIXEL_TABLET_2023",
+        "namespace": "android_system_intelligence",
+        "description": "Build flag for Android System Intelligence package for P23 tablet devices",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "DevicePersonalizationPrebuiltPixelTablet2023-playstore_aiai_20250306.00_RC10"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_ARCORE",
+        "namespace": "arcore",
+        "description": "Control which version of the Google ARCore library is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "arcore"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "arcore-1.48"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_BETA_FEEDBACK",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the Beta Feedback app is installed for DP and Beta release.",
+        "value": {
+          "Val": {
+            "StringValue": "BetaFeedback"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "BetaFeedback"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_BETTER_BUG",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the BetterBug app is pre-installed.",
+        "value": {
+          "Val": {
+            "StringValue": "BetterBug"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "BetterBug"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_CALENDAR_WEAR",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the Google Calendar app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "WearCalendar_2025.13.1-744700532"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_CREATIVE_ASSISTANT",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the Creative Assistant app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "CreativeAssistant"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "CreativeAssistant"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_DIGITAL_WELLBEING",
+        "namespace": "wellbeing",
+        "description": "Control which version of the Digital Wellbeing prebuilt app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "WellbeingPrebuilt_1.26"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "WellbeingPrebuilt_1.27"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GLASSES_CORE",
+        "namespace": "xr",
+        "description": "Control which version of the GlassesCorePrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "AndroidGlassesCoreStub"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GLASSES_EMULATOR_COMPANION_VERSION",
+        "namespace": "microxr",
+        "description": "Control which version of the Glasses Companion app is installed on emulator.",
+        "value": {
+          "Val": {
+            "StringValue": "GlassesCompanion"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "platinum_20260312-0130_RC01"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GLASSES_EMULATOR_CORE_VERSION",
+        "namespace": "microxr",
+        "description": "Control which version of the Glasses Core app is installed on emulator.",
+        "value": {
+          "Val": {
+            "StringValue": "AndroidGlassesCoreEmulator"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "AndroidGlassesCoreEmulator_platinum_00_20260312_RC000"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GMAIL_WEAR",
+        "namespace": "wear_gmail",
+        "description": "Control which version of Gmail Wear app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2026.02.09.868790926-release-wear"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GMSSYSTEM_AUTOMOTIVE_VARIANT",
+        "namespace": "gms_system",
+        "description": "Control which GMS System APEX to be included in the automotive system build.",
+        "value": {
+          "Val": {
+            "StringValue": "GmsCoreAuto"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "GmsCoreAuto"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GMSSYSTEM_VARIANT",
+        "namespace": "gms_system",
+        "description": "Control which GMS System APEX to be included in the system build.",
+        "value": {
+          "Val": {
+            "StringValue": "PrebuiltGmsCoreVic"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "com.google.android.gmssystem.prodvic"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GMS_CORE",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the GmsCorePrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "y2023"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "y2026/26.22.36"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GMS_CORE_VARIANT",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which variant of the GmsCorePrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "PrebuiltGmsCoreSc"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "com.google.android.gmssystem.prodvic"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GOOGLE_CAMERA_WEAR",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the Wear Camera app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "GoogleCameraWearableRelease_alldpi_signed_v9.4.020"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GOOGLE_FI",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the Google Fi app is installed on Pixel devices.",
+        "value": {
+          "Val": {
+            "StringValue": "Tycho"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "Tycho"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GOOGLE_HOME_WEAR",
+        "namespace": "wear_google_home",
+        "description": "Control which version of the Google Home app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2735702"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GOOGLE_KEEP",
+        "namespace": "google_keep",
+        "description": "Control which version of the keep notes app to use.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "5.26.181"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GOOGLE_KEEP_WEAR",
+        "namespace": "google_keep",
+        "description": "Control which version of the Google Keep app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "5.26.061"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GOOGLE_RESTORE",
+        "namespace": "onboarding",
+        "description": "Control which version of the GoogleRestorePrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "GoogleRestorePrebuilt-v1068888"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GOOGLE_VERIFIER",
+        "namespace": "verifier",
+        "description": "Control which version of the Verifier app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "1.0.STUB"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GOOGLE_WATCH_FACES_V2",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the Google Watch Faces V2 app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2.4.86"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_GOOGLE_WATCH_FACES_V3",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the Google Watch Faces V3 app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "3.0.66"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_KIDS_ISOLATED",
+        "namespace": "supervision",
+        "description": "Control which version of the kids isolated prebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2026w22_1"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_KIDS_MODULE",
+        "namespace": "supervision",
+        "description": "Control which version of the kids module prebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2024_Q"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_LIVE_TRANSCRIBE",
+        "namespace": "accessibility",
+        "description": "Control which version of the Live Transcribe app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "ScribePrebuilt"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "ScribePrebuilt_v8.7.880674799"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_MARKUP",
+        "namespace": "systemui",
+        "description": "Control Markup version installed",
+        "value": {
+          "Val": {
+            "StringValue": "MarkupGoogle"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "MarkupGoogle_v2"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_MEET",
+        "namespace": "google_meet",
+        "description": "Control which version of Google Meet is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "MeetPrebuilt_stubapp"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "MeetPrebuilt_20260216"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_MESSAGEQUEUE_IMPLEMENTATION",
+        "namespace": "system_performance",
+        "description": "Which MessageQueue implementation to use.",
+        "value": {
+          "Val": {
+            "StringValue": "LegacyMessageQueue/MessageQueue.java"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "CombinedDeliMessageQueue/*.java"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_MESSAGES",
+        "namespace": "messages",
+        "description": "Control which version of the messages prebuilt app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "2025.05.11"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2026.03.31"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_NOTES_ROLE_OVERLAY",
+        "namespace": "note",
+        "description": "Control the presence of default notes role holder.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PixelNotesRoleOverlay"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_OOBCONFIG",
+        "namespace": "pixel_telephony",
+        "description": "Control which version of the Pixel SimLock (OobConfig/OTAConfigNoZeroTouchPrebuilt) app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "OTAConfigNoZeroTouchPrebuilt-v664"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_APK_PHONE",
+        "namespace": "pixel_telephony",
+        "description": "Build flags for Paris. See go/project-paris-site.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "CarrierSettings_signed_61.0.881556095"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_APK_WEAR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "CarrierSettingsGwear_signed_61.w.881556095"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "Control which version of PARIS data is used for Pixel devices.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2020M_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2020_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2021M_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2021_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2022F_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2022_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2023F_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2023M_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2023_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2024M_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2024_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2025M_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2025_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "Control which version of PARIS data is used for Pixel 2025 device.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXEL2026M_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXELWEAR2021_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXELWEAR2023M_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXELWEAR2023_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXELWEAR2024_CONFIG_DIR",
+        "namespace": "android_UNKNOWN",
+        "description": "Paris Config for P24+",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y25q4/paris_data_y25q4_20251001"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_PIXELWEAR2024_WATCH_CONFIG_DIR",
+        "namespace": "pmw",
+        "description": "Paris Config for P24+ on Gantry",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y25q4/paris_data_y25q4_20250827"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARIS_WEAR_CONFIG_DIR",
+        "namespace": "pixel_telephony",
+        "description": "Control which version of PARIS data is used for Pixel Wear devices.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "paris_data_y26q3/paris_data_y26q3_20260730"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PARTNERSETUP",
+        "namespace": "partnersetup",
+        "description": "Control which version of the PartnerSetupPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "740019329"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PHONESKY",
+        "namespace": "android_UNKNOWN",
+        "description": "Controls which version of Phonesky APK is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "85180930"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PHOTOS",
+        "namespace": "photos",
+        "description": "Control which version of the Photos prebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "7.67.0"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_AI_ICONS",
+        "namespace": "ailabs",
+        "description": "Control the prebuilt version of Pixel AI Icons.",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "AiIconsPrebuilt_20260121"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_CALCULATOR",
+        "namespace": "pixel_calculator",
+        "description": "Control which version of the CalculatorGooglePrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "CalculatorGooglePrebuilt_85011599"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_CAMERA_SERVICES",
+        "namespace": "camera_services",
+        "description": "Version tag for PixelCameraServices prebuilt APK in CIPD.",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PCS_3.3_googlecamera-extensions-release_20260510.02_RC12"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_CLOCK",
+        "namespace": "pixel_clock",
+        "description": "Control which version of the PixelClockPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "PrebuiltDeskClockGoogle_76042511"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PrebuiltDeskClockGoogle_76060331"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_CORE_SERVICES",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the PrebuiltPixelCoreServices app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PrebuiltPixelCoreServices"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_CUSTOMIZATION_PACKS",
+        "namespace": "pixel_customization",
+        "description": "Control which version of the CustomizationPacks prebuilt app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "CustomizationBundlePrebuiltFullVersion"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_FAMILY_SPACE",
+        "namespace": "globalintl",
+        "description": "Control which version of the FamilySpacePrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "FamilySpacePrebuilt-v2026"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_HEALTH",
+        "namespace": "pixel_health",
+        "description": "Control the preloaded version of Pixel Health application.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "HealthIntelligencePrebuilt-1"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_LIVE_WALLPAPER",
+        "namespace": "pixel_customization",
+        "description": "Control which version of the PixelLiveWallpaperPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PixelLiveWallpaperPrebuilt-27000055"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_NOWPLAYING",
+        "namespace": "nowplaying",
+        "description": "Control which version of the NowPlaying app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "NowPlayingPrebuilt"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_PAI",
+        "namespace": "pixel_pai",
+        "description": "Control the version of Pixel PAI (play auto install) app.",
+        "value": {
+          "Val": {
+            "StringValue": "PlayAutoInstallConfig"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PlayAutoInstallConfig"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_PERSONAL_SAFETY",
+        "namespace": "personal_safety",
+        "description": "Control which version of the Android Personal Safety APK is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2026.05.28"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_RECORDER",
+        "namespace": "pixel_recorder",
+        "description": "Control which version of the RecorderPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "RecorderPrebuilt_725581069"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "RecorderPrebuilt_847964105"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_RECORDER_WEAR",
+        "namespace": "wear_recorder",
+        "description": "Control which version of the PixelWatchRecorderPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PixelWatchRecorderPrebuilt_20260317_00_RC00"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_RELATIONSHIPS",
+        "namespace": "android_UNKNOWN",
+        "description": "Control the preloaded version of Pixel Relationships application.",
+        "value": {
+          "Val": {
+            "StringValue": "RelationshipsPrebuilt-301"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "RelationshipsPrebuilt-301"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_SETUP_WIZARD",
+        "namespace": "onboarding_experience",
+        "description": "Control which version of the Pixel overlay setup wizard prebuilt app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "SetupWizardPixelPrebuilt_versioned"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "SetupWizardPixelPrebuilt_versioned"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_SFPS_ENROLL_REFINEMENT",
+        "namespace": "android_UNKNOWN",
+        "description": "Using this flag to control sfps enroll refine",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PixelSfpsEnrollRefinement_24Q2"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_SOUND_PICKER",
+        "namespace": "pixel_customization",
+        "description": "Control which version of the SoundPickerPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "SoundPickerPrebuilt_33000332"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "SoundPickerPrebuilt_3.4"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_STAND",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the DreamlinerPrebuilt(Pixel Stand) app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "DreamlinerPrebuilt"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "DreamlinerPrebuilt_22000020"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_STAND_DREAMS",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the DreamlinerDreamsPrebuilt app (Dreams for Pixel Stand) is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "DreamlinerDreamsPrebuilt_100894"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_SUBZERO",
+        "namespace": "pixel_system_service",
+        "description": "Control which version of SubZero APK is installed.",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "SubzeroPrebuilt-stub-v2"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_TIPS",
+        "namespace": "pixel_tips",
+        "description": "Control which version of the TipsPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "TipsPrebuilt_v8.5.3.926490587"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_VPN",
+        "namespace": "pixel_vpn",
+        "description": "Control the preloaded version of Pixel VPN application.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "AdaptiveVPNPrebuilt-111042"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_WALLPAPER_AI",
+        "namespace": "pixel_customization",
+        "description": "Control which version of the WallpaperAIPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "WallpaperAIPrebuilt_10000372"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_WALLPAPER_EMOJI",
+        "namespace": "pixel_customization",
+        "description": "Control which version of the WallpaperEmojiPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "WallpaperEmojiPrebuilt-p26-foldable-wallpaper"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_WATCH_WEATHER",
+        "namespace": "pixel_wear_weather",
+        "description": "Control which version of the Pixel Wear Weather apk is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "pixel-wear-weather_20260419.00_RC01"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_WEATHER",
+        "namespace": "pixel_weather",
+        "description": "Control which version of the WeatherPixelPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "WeatherPixelPrebuilt"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "WeatherPixelPrebuilt_10008663"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PIXEL_WEATHER_2024",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the WeatherPixelPrebuilt app is installed on p24s and above.",
+        "value": {
+          "Val": {
+            "StringValue": "WeatherPixelPrebuilt_24D1"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "WeatherPixelPrebuilt_24D1"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PRIVATE_COMPUTE_SERVICES",
+        "namespace": "android_system_intelligence",
+        "description": "Control which version of the Private Compute Services app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "astrea_20240329.00_RC02"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "playstore_astrea_20260430.00_RC02"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_PROFILING_MODULE",
+        "namespace": "android_UNKNOWN",
+        "description": "Flag will control the release of the Profiling module apex.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_SCONE_PHONE",
+        "namespace": "pixel_telephony",
+        "description": "Control which version of the Adaptive Connectivity Services (SCONE) app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "SCONE-v71525"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_SCONE_WEAR",
+        "namespace": "pixel_telephony",
+        "description": "",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "SCONE-WEAR-v78669"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_SOUND_AMPLIFIER",
+        "namespace": "accessibility",
+        "description": "Control which version of the Sound Amplifier app is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "SoundAmplifierPrebuilt"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "SoundAmplifierPrebuilt_v4.91.886631805"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_SOUND_PICKER",
+        "namespace": "android_UNKNOWN",
+        "description": "This flag will control the rollout of new versions of the SoundPicker app.",
+        "value": {
+          "Val": {
+            "StringValue": "SoundPicker"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "SoundPicker"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_STARGATE_PHONE",
+        "namespace": "pixel_telephony",
+        "description": "Control which version of the Satellite Gateway (Stargate) app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "SatelliteGateway-Phone-v91522000"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_SWITCH_ACCESS",
+        "namespace": "accessibility",
+        "description": "Control which version of Switch Access is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "SwitchAccessPrebuilt"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "SwitchAccessPrebuilt_1.17.0.877181440"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_TALKBACK",
+        "namespace": "accessibility",
+        "description": "Control which version of the TalkBack is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "14.2.0.618048417"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "17.0.0.889642762"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_TZDATA_MODULE",
+        "namespace": "android_UNKNOWN",
+        "description": "tzdata to be installed to the system image.",
+        "value": {
+          "Val": {
+            "StringValue": "com.android.tzdata"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "com.android.tzdata"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_VOICE_ACCESS",
+        "namespace": "accessibility",
+        "description": "Control which version of Voice Access APK is installed.",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "17_0"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_CONTACTS",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the GoogleContactsClockwork app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "1.106.0"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_DWF_WEATHER_PROVIDER",
+        "namespace": "wear_watchfaces",
+        "description": "Control which version of the Default Weather Provider is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "vdwf_weather_release_20240403_050257_RC00"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_FIND_MY_DEVICE",
+        "namespace": "wear_find_hub",
+        "description": "Control the presence of Find My Device as a prebuilt package on Pixel watch devices.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "1.0.303-.1"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_FITBIT",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the Fitbit app prebuilt is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "3.16.0.580562021.release"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_FITBIT_ECG",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the Fitbit ECG app prebuilt is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "1.0.2012.s"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_GBOARD",
+        "namespace": "wear_gboard",
+        "description": "Control which version of the Wear Gboard apk is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "wear_gboard_20260614_195619_RC09"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_GMS_CORE",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the Wear GMS Core apk is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "26.19.34"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_LLM_WIDGETS",
+        "namespace": "wear_llm_widgets",
+        "description": "Control which version of the Wear LLM Widgets apk is installed.",
+        "value": {
+          "Val": {
+            "StringValue": "807626596.3-release"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "889768767.6-release"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_MEDIA_SESSIONS",
+        "namespace": "wear_media",
+        "description": "Control which version of the Wear Media Sessions apk is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "clockwork.media_20260414.00_RC00"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_PERSONAL_CONTEXT",
+        "namespace": "wear_frameworks",
+        "description": "Version of the Wear Personal Context to include in the device image.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "true"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_PROTOLAYOUT_RENDERER",
+        "namespace": "wear_system_managed_surfaces",
+        "description": "Control which version of the Wear ProtoLayout Renderer apk is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "v1.6.0.12.875720666"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_WALLET",
+        "namespace": "wear_wallet",
+        "description": "Control which version of the Wear Wallet apk is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "WearWallet_26.13.897213825"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEAR_WEATHER",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the Wear Weather apk is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "wear-weather_20240714.02_RC04"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WEBVIEW_VERSION",
+        "namespace": "webview",
+        "description": "The version of WebView to include in the build",
+        "value": {
+          "Val": {
+            "StringValue": "128.0.6613.88"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "149.0.7827.5"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_WORK_PROFILE_NOTES_ROLE_OVERLAY",
+        "namespace": "note",
+        "description": "Control the presence of work profile notes role holder.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "PixelWorkProfileNotesRoleOverlay"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_YOUTUBE_MUSIC",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the YouTube Music app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "9.10"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_YOUTUBE_MUSIC_CLOCKWORK",
+        "namespace": "wear_ytm_integrations",
+        "description": "Control which version of the YouTubeMusicClockwork app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "v6.40.41"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PACKAGE_YOUTUBE_MUSIC_CLOCKWORK_RETAIL_MODE",
+        "namespace": "wear_ytm_integrations",
+        "description": "Control which version of the YouTubeMusicClockworkRetailMode app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "v1.08.06"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_ADAPTIVE_HAPTICS_ENABLED",
+        "namespace": "android_UNKNOWN",
+        "description": "Using this flag to control the presence of Pixel Adaptive Haptics module in PersistentBackgroundServices for SYSTEM_EXT and preloaded_nanoapps for VENDOR.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_DEFAULT_SOUNDS_2025",
+        "namespace": "android_UNKNOWN",
+        "description": "Control the presence of 2025 default sounds",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_ONE_HANDED_GESTURES_ENABLED",
+        "namespace": "android_UNKNOWN",
+        "description": "Determine which platform to enable OHG support in.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "vendor",
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_ONE_HANDED_GESTURES_ENABLED_SELUNA",
+        "namespace": "android_UNKNOWN",
+        "description": "Determine which platform to enable OHG support in.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "vendor",
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_PDMS_PATH",
+        "namespace": "pixel_watch_frameworks",
+        "description": "Control which version of the PixelWatchPDMSPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "prebuilts/pdms"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_SETUP_WIZARD_VERSION",
+        "namespace": "onboarding_experience",
+        "description": "Specify the version of the SetupWizardPixelPrebuilt application to be installed.",
+        "value": {
+          "Val": {
+            "StringValue": "v821013193"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "v937054664"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_VPN_ON_TABLET_ENABLED",
+        "namespace": "android_UNKNOWN",
+        "description": "A flag to allow preloaded Pixel VPN apk on Pixel tablets. This flag sets value of TARGET_NO_PIXEL_VPN.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_ACE_ARCADE_DIR",
+        "namespace": "pixel_watch_project_eleven",
+        "description": "Control which version of the AceArcadeWearPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "26.0524"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_ACE_ARCADE_EOS_ENABLED",
+        "namespace": "pixel_watch_project_eleven",
+        "description": "Control if the YouthArcadeWearPrebuilt app is preinstalled on Eos.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "true"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_AUDIO_TESTER_DIR",
+        "namespace": "pixel_watch_audio_haptics",
+        "description": "Control which version of the PixelWatchAudioTestPrebuilt app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "pixel_watch_audio_test_app_20250827_RC00"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_BOOTANIMATION_EOS_DIR",
+        "namespace": "pixel_watch_bsp",
+        "description": "Selects the bootanimation prebuilt for eos.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2025_03_19_material3"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_BOOTANIMATION_GOTERIA_DIR",
+        "namespace": "pixel_watch_bsp",
+        "description": "Selects the bootanimation prebuilt for goteria.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2026_06_09_gi"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_BOOTANIMATION_MENARI_DIR",
+        "namespace": "pixel_watch_bsp",
+        "description": "Selects the bootanimation prebuilt for menari.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2026_06_09_gi"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_BOOTANIMATION_SELUNA_DIR",
+        "namespace": "pixel_watch_bsp",
+        "description": "Selects the bootanimation prebuilt for seluna.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2025_03_19_material3"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_CAMERA_DIR",
+        "namespace": "pixel_watch_camera",
+        "description": "Control which version of the Pixel Watch Camera app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "prebuilt/GoogleCameraWearableRelease_alldpi_signed_20260129.00_RC00"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_CONNECTED_FITNESS_DIR",
+        "namespace": "pixel_watch_comms_experiences",
+        "description": "Control which version of the watch Connected Fitness app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "aspen_wearos_20260624_RC00"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_DIAGNOSTICS_DIR",
+        "namespace": "pixel_watch_frameworks",
+        "description": "Control which version of the Pixel Watch Diagnostics app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "prebuilts-559739933"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_FITBIT_DIR",
+        "namespace": "pixel_watch_fitbit_nightlight",
+        "description": "Control which version of the Fitbit app prebuilt is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "4.01.1.934919422.release"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_FITBIT_ECG_DIR",
+        "namespace": "pixel_watch_fitbit_ecg",
+        "description": "Control which version of the Fitbit ECG app prebuilt is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "1.0.2017.s"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_GOOGLE_PHOTOS",
+        "namespace": "pixel_watch_watchfaces",
+        "description": "Control which version of the watch specific Google Photos app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "7.70.0.907045865"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_MMD_ENABLED",
+        "namespace": "watch_software_performance",
+        "description": "Enables MMD for Pixel Watch",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_PRELOADED_SPEECH_LANGUAGE_PACK",
+        "namespace": "android_UNKNOWN",
+        "description": "Whether to include the en-US speech recognition language pack in the device image (otherwise, one must always be downloaded)",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_SMART_REPLY_ML_MODEL_ENABLED",
+        "namespace": "android_UNKNOWN",
+        "description": "Whether to include Smart Reply local ML model in the device image.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_TEALGORUNNER_DIR",
+        "namespace": "pixel_watch_techeng_sensors",
+        "description": "Control which version of the PixelWatchTEAlgoRunnerPrebuilt is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "techeng_algorunner_20250102_0031_RC00"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_WATCHFACES_V2_DIR",
+        "namespace": "pixel_watch_watchfaces",
+        "description": "Control which version of the Pixel Watch Watchfaces V2 app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "clockwork.first_party_watch_faces.rwf_20260211.00_RC22"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_WATCHFACES_V3_DIR",
+        "namespace": "pixel_watch_watchfaces",
+        "description": "Control which version of the Pixel Watch Watchfaces V3 app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "clockwork.first_party_watch_faces.rwf_20260211.00_RC22"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_WATCHFACES_V4_DIR",
+        "namespace": "pixel_watch_watchfaces",
+        "description": "Control which version of the Pixel Watch Watchfaces V4 app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "clockwork.first_party_watch_faces.rwf_20260211.00_RC22"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_WATCHFACES_V5_DIR",
+        "namespace": "pixel_watch_watchfaces",
+        "description": "Control which version of the Pixel Watch Watchfaces V5 app is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "clockwork.first_party_watch_faces.rwf_20260313.00_RC20"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_WATER_LOCK",
+        "namespace": "android_UNKNOWN",
+        "description": "Controls whether the Water Lock overall resources (icons, strings, etc) are displayed or not",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_WEARDC_DIR",
+        "namespace": "pixel_watch_techeng_sensors",
+        "description": "Control which version of the PixelWatchWearDCPrebuilt is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "techeng_weardc_20260504_0803_RC00"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_WEAR_WEATHER_STUB",
+        "namespace": "android_UNKNOWN",
+        "description": "Control which version of the stub wear weather apk is installed.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "stub-wear-weather_20241215.00_RC00"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PIXEL_WATCH_WSG_WATCHFACES_MODULE",
+        "namespace": "android_UNKNOWN",
+        "description": "Determine if WearServicesGoogle uses PixelWatchFaceHiltModule instead of WatchFaceHiltModule.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_BASE_SDK_EXTENSION_VERSION",
+        "namespace": "android_sdk",
+        "description": "The sdk extension version that shipped with current RELEASE_PLATFORM_SDK_VERSION. This flag is only updated when RELEASE_PLATFORM_SDK_VERSION is updated.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "23"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_PREVIEW_SDK_INT",
+        "namespace": "android_sdk",
+        "description": "The value of Build.VERSION.PREVIEW_SDK_INT. Must be 0 on if the SDK is finalized, should be non-zero otherwise.",
+        "value": {
+          "Val": {
+            "StringValue": "1"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "0"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_PROSPECTIVE_SDK_VERSION_FULL",
+        "namespace": "android_sdk",
+        "description": "The prospective major and minor SDK versions of the platform, e.g. 35.0 or 123.45. This is used to determine the SDK version of the APIs found in source (as opposed to prebuilts) should be attributed to. If the release has been finalized, this flag is not set and metalava should not use the sources to determine the API surface. Note: the prospective SDK value is a build time implementation detail, and must never be visible on device.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": ""
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_SDK_EXTENSION_VERSION",
+        "namespace": "android_sdk",
+        "description": "The sdk extension version of this release configuration.",
+        "value": {
+          "Val": {
+            "StringValue": "12"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "23"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_SDK_VERSION",
+        "namespace": "android_sdk",
+        "description": "The SDK version of the platform, e.g. 34 for UDC. This should only be increased when the API is finalized and the codename is set to rel, not during development.",
+        "value": {
+          "Val": {
+            "StringValue": "34"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "37"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_SDK_VERSION_FULL",
+        "namespace": "android_sdk",
+        "description": "The major and minor SDK versions of the platform, e.g. 35.0 or 123.45. This should only be modified when the SDK API is finalized.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "37.1"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_SECURITY_PATCH",
+        "namespace": "android_UNKNOWN",
+        "description": "Used to indicate the security patch that has been applied to the device. It must signify that the build includes all security patches issued up through the designated Android Public Security Bulletin. It must be of the form \"YYYY-MM-DD\" on production devices. It must match one of the Android Security Patch Level strings of the Public Security Bulletins. If there is no $PLATFORM_SECURITY_PATCH set, keep it empty.",
+        "value": {
+          "Val": {
+            "StringValue": "2023-12-05"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "2026-08-05"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_VERSION",
+        "namespace": "android_UNKNOWN",
+        "description": "The platform version. This is the 4 letter code, e.g. UD1A, UPB1, ZP1A, etc.",
+        "value": {
+          "Val": {
+            "StringValue": "ZP1A"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "CP3A"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_VERSION_ALL_CODENAMES",
+        "namespace": "android_sdk",
+        "description": "A comma separated list of all codenames that are in preview. This variable is sort of a lie for historical reasons and only includes codenames up to and including the currently active codename",
+        "value": {
+          "Val": {
+            "StringValue": "VanillaIceCream"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "REL"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_VERSION_ALL_PREVIEW_CODENAMES",
+        "namespace": "android_sdk",
+        "description": "A comma separated list of all preview codenames the platform will accept apps built against",
+        "value": {
+          "Val": {
+            "StringValue": "VanillaIceCream"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "REL"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_VERSION_CODENAME",
+        "namespace": "android_sdk",
+        "description": "Set to REL for production platform builds, otherwise the codename string, e.g. UpsideDownCake or VanillaIceCream",
+        "value": {
+          "Val": {
+            "StringValue": "VanillaIceCream"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "REL"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_VERSION_KNOWN_CODENAMES",
+        "namespace": "android_sdk",
+        "description": "A comma separated list of all known codenames. For REL (finalized) configurations, it has to only contain finalized codenames.",
+        "value": {
+          "Val": {
+            "StringValue": "Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake,VanillaIceCream"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake,VanillaIceCream,Baklava,CANARY,CinnamonBun"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_VERSION_LAST_STABLE",
+        "namespace": "android_sdk",
+        "description": "The last stable version name of the platform that was released.  During development, this stays at that previous version, while the codename indicates further work based on the previous version.",
+        "value": {
+          "Val": {
+            "StringValue": "14"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "17"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_PLATFORM_VNDK_VERSION",
+        "namespace": "android_UNKNOWN",
+        "description": "The PLATFORM_VNDK_VERSION will be set to this version when the PLATFORM_VERSION_CODENAME is REL. This VNDK version flag will be removed when the VNDK is deprecated",
+        "value": {
+          "Val": {
+            "StringValue": "35"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "35"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_READ_FROM_NEW_STORAGE",
+        "namespace": "android_UNKNOWN",
+        "description": "Control if we should read from new storage.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_REDACT_FLAGS_WITHOUT_OVERRIDE",
+        "namespace": "build",
+        "description": "Remove empty build flags w/o overrides from on-device artifacts",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_SELINUX_DATA_DATA_IGNORE",
+        "namespace": "android_UNKNOWN",
+        "description": "Ignore /data/data relabelling in libselinux.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_SOONG_FNO_COMMON_FOR_3P_CODE",
+        "namespace": "build",
+        "description": "Sets -fno-common in third-party C/C++ code to disables legacy global variable merging behavior.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_SOONG_INCREMENTAL_ANALYSIS",
+        "namespace": "build",
+        "description": "Enables Soong incremental analysis",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_SOONG_NINJA",
+        "namespace": "build",
+        "description": "The default value for SOONG_NINJA",
+        "value": {
+          "Val": {
+            "StringValue": "ninja"
+          }
+        },
+        "workflow": 3,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "ninja"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_SOONG_ONLY_BLAZER",
+        "namespace": "build",
+        "description": "Enables building blazer with soong-only (no make) builds",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_SOONG_ONLY_CUTTLEFISH",
+        "namespace": "android_UNKNOWN",
+        "description": "Enables building cuttlefish devices with soong-only (no make) builds",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_SOONG_ONLY_FRANKEL",
+        "namespace": "build",
+        "description": "Enables building frankel with soong-only (no make) builds",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_SOONG_ONLY_MUSTANG",
+        "namespace": "build",
+        "description": "Enables building mustang with soong-only (no make) builds",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_SOONG_UNCOMPRESSED_FONTS",
+        "namespace": "system_performance",
+        "description": "Enables uncompressed fonts in APKs produced by Soong",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_SRC_DIR_IS_READ_ONLY",
+        "namespace": "build",
+        "description": "Whether the source tree is read-only.  This can be overridden with BUILD_BROKEN_SRC_DIR_IS_WRITABLE.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_TELECOM_MAINLINE_MODULE",
+        "namespace": "telecom",
+        "description": "b/400503648: Flag to enable Telecom mainline module",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_TELEPHONY_MODULE",
+        "namespace": "telephony",
+        "description": "If true, then telephony module is enabled as an apex",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_TELEPHONY_MODULE_FRAMEWORK_OPTIMIZATION",
+        "namespace": "telephony",
+        "description": "This flag guards turning on code optimization to framework telephony of telephonycore module",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_TEST_BOOLEAN_BUILD_FLAG",
+        "namespace": "gantry",
+        "description": "Used by the gantry team to test launch build flag convergence.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_TEST_BUILD_FLAG_PREBUILT_RELEASE_AWARE",
+        "namespace": "gantry",
+        "description": "This flag is only used by the gantry team for testing build flag release aware automation in Gantry",
+        "bugs": [
+          "401638438"
+        ],
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "test-prebuilt-standard-launch"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_UI_SOUNDS_DIR",
+        "namespace": "systemui",
+        "description": "Specify an alternate location for UI sounds.",
+        "value": {
+          "Val": {
+            "StringValue": ""
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "effects2025"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_UPROBESTATS_BRIDGE_SERVICE",
+        "namespace": "responsible_apis",
+        "description": "If true, then the system service UprobeStatsBridgeService is enabled",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor",
+          "com.android.uprobestats"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_UPROBESTATS_MODULE",
+        "namespace": "system_performance",
+        "description": "If true, then uprobestats module is enabled as an apex",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_UPROBESTATS_SERVICE",
+        "namespace": "responsible_apis",
+        "description": "If true, then the system service UprobeStatsService is enabled",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor",
+          "com.android.uprobestats"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_USE_OPTIMIZED_RESOURCE_SHRINKING_BY_DEFAULT",
+        "namespace": "android_UNKNOWN",
+        "description": "feature flag for enabling optimized_shrink_resources: true by default",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_USE_RESOURCE_PROCESSOR_BY_DEFAULT",
+        "namespace": "android_UNKNOWN",
+        "description": "feature flag for enabling use_resource_processor: true by default",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_USE_RUST_BZIP2",
+        "namespace": "security",
+        "description": "Use Rust implementation of bzip2 library",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_USE_RUST_BZIP2_CLI",
+        "namespace": "security",
+        "description": "Use Rust implementation of bzip2 command-line utility",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_USE_STANDALONE_WEBVIEW",
+        "namespace": "webview",
+        "description": "Controls whether to use standalone WebView instead of TrichromeWebView.",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_USE_TRANSITIVE_JARS_IN_CLASSPATH",
+        "namespace": "android_UNKNOWN",
+        "description": "feature flag for enabling building with transitive classpaths",
+        "value": {
+          "Val": {
+            "UnspecifiedValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_USE_TURBINE_APT_JAVAC",
+        "namespace": "build",
+        "description": "Whether to use turbine-apt in javac",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_VABC_UBLK_ENABLE_FLAG",
+        "namespace": "android_kernel",
+        "description": "Enables UBLK based OTA on capable devices",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "system",
+          "vendor",
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_WEAR_ENABLE_BLUECHIP",
+        "namespace": "android_UNKNOWN",
+        "description": "Control roll out of material3 update on Wear.",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_WEAR_ENABLE_PLAYSTORE_UPDATES",
+        "namespace": "android_UNKNOWN",
+        "description": "Control if wear devices can update apps from playstore",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_WEAR_ENABLE_SHELL_TRANSIT_MIGRATION",
+        "namespace": "android_UNKNOWN",
+        "description": "Wear build flag to control shell transition migration",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_WEAR_GMSSYSTEM_WEARABLE_VARIANT",
+        "namespace": "gms_system",
+        "description": "Controls whether the GMSSystem APEX for Wearable or the GMSCore APK is included in the system build.",
+        "value": {
+          "Val": {
+            "StringValue": "PrebuiltGmsCoreForClockworkWearable"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "com.google.android.gmssystem.wearable"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_WEAR_PLATFORM_RELEASE_VERSION",
+        "namespace": "android_UNKNOWN",
+        "description": "Wear platform/sdk versioning control. These should only be incremented when the API is finalized and the codename is set to rel, not during development.",
+        "value": {
+          "Val": {
+            "StringValue": "1"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "1"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_WEAR_SDK_VERSION",
+        "namespace": "android_UNKNOWN",
+        "description": "",
+        "value": {
+          "Val": {
+            "StringValue": "6"
+          }
+        },
+        "workflow": 2,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "StringValue": "10"
+        }
+      }
+    },
+    {
+      "flag_declaration": {
+        "name": "RELEASE_WEBAPP_MODULE",
+        "namespace": "lse_desktop_experience",
+        "description": "If true, then webapp module is enabled as an apex",
+        "value": {
+          "Val": {
+            "BoolValue": false
+          }
+        },
+        "workflow": 1,
+        "containers": [
+          "product",
+          "system",
+          "system_ext",
+          "vendor"
+        ]
+      },
+      "value": {
+        "Val": {
+          "BoolValue": true
+        }
+      }
+    }
+  ]
+}
