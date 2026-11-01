@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config>
+    <!-- Allow the DWF runtime to hold wake locks in idle mode. -->
+    <allow-in-power-save package="com.google.wear.watchface.runtime"/>
+</config>

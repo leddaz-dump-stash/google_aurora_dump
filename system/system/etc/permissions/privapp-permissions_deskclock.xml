@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<permissions>
+  <privapp-permissions package="com.google.android.deskclock">
+    <permission name="android.permission.ACCESS_CONTEXT_HUB"/>
+    <permission name="com.google.wear.permission.SET_COMPLICATION_EXTRAS"/>
+  </privapp-permissions>
+</permissions>

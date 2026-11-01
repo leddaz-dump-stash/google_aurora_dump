@@ -1,0 +1,10 @@
+service omapi /system/bin/omapi
+    class early_hal
+    user nobody
+    disabled
+
+on property:persist.sys.secure_element.backend=rust
+    start omapi
+
+on property:persist.sys.secure_element.backend=java
+    stop omapi

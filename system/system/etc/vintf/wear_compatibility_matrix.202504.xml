@@ -1,0 +1,36 @@
+<!--
+    Input:
+        device/google/clockwork/compatibility_matrices/wear_compatibility_matrix.202504.xml
+-->
+<compatibility-matrix version="9.0" type="framework" level="202504">
+    <hal format="aidl">
+        <name>vendor.google_clockwork.displayoffload2</name>
+        <interface>
+            <name>IDisplayOffload</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.google_clockwork.healthservices</name>
+        <version>3</version>
+        <interface>
+            <name>IHealthServices</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.google_clockwork.wristorientation</name>
+        <interface>
+            <name>IWristOrientation</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.google_clockwork.wristorientation</name>
+        <version>1.0</version>
+        <interface>
+            <name>IWristOrientation</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>

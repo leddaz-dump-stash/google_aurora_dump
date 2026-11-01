@@ -1,0 +1,6 @@
+service sysproxyd /system/bin/sysproxyd
+    class main
+    user root
+    group root
+    oneshot
+    priority -2

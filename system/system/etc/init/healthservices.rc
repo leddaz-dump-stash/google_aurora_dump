@@ -1,0 +1,6 @@
+on post-fs-data
+    # Init healthservices data folders.
+    mkdir /data/vendor/healthservices 0770 system system
+    # This is to handle when the directory had already been created
+    chmod 0770 /data/vendor/healthservices
+    restorecon --recursive /data/vendor/healthservices

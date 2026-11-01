@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.google.android.wearable.assistant">
+        <permission name="com.google.pixelwatch.permission.READ_PRIVATE_SENSORS"/>
+    </privapp-permissions>
+</permissions>

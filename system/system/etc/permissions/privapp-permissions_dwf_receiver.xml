@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contains the privapp-permissions for the Watch Face Receiver package. -->
+<permissions>
+    <privapp-permissions package="com.google.android.wearable.dwf.receiver">
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <permission name="com.google.wear.permission.ACCESS_WEAR_SYSTEM_SERVICE" />
+    </privapp-permissions>
+</permissions>

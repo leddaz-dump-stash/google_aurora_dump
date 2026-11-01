@@ -1,0 +1,57 @@
+# Copyright (C) 2026 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# 8BitDo Pro 2 Controller - Bluetooth and Wired Connections
+
+# Standard face buttons
+key 304   BUTTON_A    # BTN_SOUTH
+key 305   BUTTON_B    # BTN_EAST
+key 308   BUTTON_X    # BTN_NORTH
+key 307   BUTTON_Y    # BTN_WEST
+
+# Shoulder buttons
+key 310   BUTTON_L1   # BTN_TL
+key 311   BUTTON_R1   # BTN_TR
+key 312   BUTTON_L2   # BTN_TL2
+key 313   BUTTON_R2   # BTN_TR2
+
+# Back paddle buttons
+key 309   BUTTON_Z    # BTN_Z (Left Back Paddle)
+key 306   BUTTON_C    # BTN_C (Right Back Paddle)
+
+# Special buttons
+key 314   BUTTON_SELECT
+key 315   BUTTON_START
+key 316   BUTTON_MODE
+
+# Thumbstick buttons
+key 317   BUTTON_THUMBL
+key 318   BUTTON_THUMBR
+
+# Analog Sticks
+# The device reports axes in a range of 0-255.
+# The 'flat 15' value is taken directly from the device's ABS_INFO
+# report for these axes, indicating the driver-suggested dead zone.
+axis 0x00 X flat 15  # ABS_X
+axis 0x01 Y flat 15  # ABS_Y
+axis 0x02 Z flat 15  # ABS_Z
+axis 0x05 RZ flat 15 # ABS_RZ
+
+# Analog Triggers
+axis 0x0a LTRIGGER     # ABS_BRAKE
+axis 0x09 RTRIGGER     # ABS_GAS
+
+# D-Pad
+axis 0x10 HAT_X
+axis 0x11 HAT_Y

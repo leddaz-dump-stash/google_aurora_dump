@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<exceptions>
+    <exception package="com.google.wear.watchface.runtime">
+        <permission name="android.permission.ACTIVITY_RECOGNITION" fixed="false"/>
+        <permission name="android.permission.BODY_SENSORS" fixed="false"
+            featureFlag="!android.permission.flags.replace_body_sensor_permission_enabled" />
+        <permission name="android.permission.BODY_SENSORS_BACKGROUND" fixed="false"
+            featureFlag="!android.permission.flags.replace_body_sensor_permission_enabled" />
+        <permission name="android.permission.health.READ_HEART_RATE" fixed="false"
+            featureFlag="android.permission.flags.replace_body_sensor_permission_enabled" />
+        <permission name="android.permission.health.READ_HEALTH_DATA_IN_BACKGROUND" fixed="false"
+            featureFlag="android.permission.flags.replace_body_sensor_permission_enabled" />
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" fixed="false"/>
+        <permission name="android.permission.POST_NOTIFICATIONS" fixed="true"/>
+    </exception>
+</exceptions>
