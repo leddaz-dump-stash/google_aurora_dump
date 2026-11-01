@@ -1,0 +1,4 @@
+/system/lib/modules/rfkill.ko:
+/system/lib/modules/tipc.ko:
+/system/lib/modules/zsmalloc.ko:
+/system/lib/modules/zram.ko: /system/lib/modules/zsmalloc.ko

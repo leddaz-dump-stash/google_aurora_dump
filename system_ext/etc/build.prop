@@ -1,0 +1,33 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.system_ext.brand=google
+ro.product.system_ext.device=aurora
+ro.product.system_ext.manufacturer=Google
+ro.product.system_ext.model=Google Pixel Watch 2
+ro.product.system_ext.name=aurora
+ro.system_ext.build.date=Mon Aug 10 18:59:08 UTC 2026
+ro.system_ext.build.date.utc=1786388348
+ro.system_ext.build.fingerprint=google/aurora/aurora:17/CP3A.260905.002.E1/16053217:user/release-keys
+ro.system_ext.build.id=CP3A.260905.002.E1
+ro.system_ext.build.uuid=rIayt8BPTM4dYGcJea29w8SqppfvKZ722K8ZYU_g2Ys
+ro.system_ext.build.tags=release-keys
+ro.system_ext.build.type=user
+ro.system_ext.build.version.incremental=16053217
+ro.system_ext.build.version.release=17
+ro.system_ext.build.version.release_or_codename=17
+ro.system_ext.build.version.sdk=37
+ro.system_ext.build.version.sdk_full=37.1
+####################################
+# from variable PRODUCT_SYSTEM_EXT_PROPERTIES
+####################################
+ro.audio.ihaladaptervendorextension_enabled=true
+ro.audio.ihaladaptervendorextension_libname=libaudiohalvendorextn_wear.so
+config.enable_display_offload=1
+persist.vendor.dpm.feature=0
+telephony.active_modems.max_count=2
+ro.clockwork.esim_version=V1
+ro.adb.secure=1
+# end of file
+

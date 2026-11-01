@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This should be used to exclude these packages from modem-less targets. -->
+
+<config>
+    <!-- From proprietary/telephony-apps/etc/telephony_packages.xml -->
+    <install-in-user-type package="com.android.carrierdefaultapp" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.cellbroadcastreceiver" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.cellbroadcastreceiver.module" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.cellbroadcastservice" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.dialer" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.imsserviceentitlement" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.mms" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.mms.service" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.MultiplePdpTest" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.ons" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.phone" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.phone.overlay.common" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.providers.telephony" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.stk" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qti.confuridialer" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qti.phone" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qti.telephonysettings" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qti.qualcomm.carriertest" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qti.qualcomm.datastatusnotification" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qti.qualcomm.deviceinfo" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qti.xdivert" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.atfwd" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.atfwd2" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.embms" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.embmstest" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qcrilmsgtunnel" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.callfeaturessetting" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.confdialer" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.devicestatisticsservice" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.euiccresource" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.ims" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.lpa" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.modemtestmode" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.remoteSimlockAuth" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.ridemodeaudio" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.simcontacts" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.telephonyservice" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.uimGbaApp" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.qti.uimlpatest" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.uimremoteclient" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.qualcomm.uimremoteserver" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="org.codeaurora.dialer" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="org.codeaurora.ims" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <!-- Additional qcom packages -->
+    <install-in-user-type package="com.qualcomm.qti.dctestapp" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="vendor.qti.data.ntnsatapp" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="vendor.qti.iwlan" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <!-- Additional android and google packages -->
+    <install-in-user-type package="com.android.calllogbackup" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.omadm.service" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.phone.auto_generated_characteristics_rro" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.providers.telephony.auto_generated_characteristics_rro" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.sdm.plugins.connmo" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.sdm.plugins.dcmo" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.sdm.plugins.diagmon" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.wearable.resources.overlay.telephony.pixelwatch" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.android.apps.carrier.log" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.android.apps.stargate" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.android.carrier" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.android.cellbroadcastreceiver" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.android.cellbroadcastservice" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.android.connectivitymonitor" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.android.euicc.wear" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.android.satellite" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.omadm.trigger" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+</config>

@@ -1,0 +1,84 @@
+<!--
+    Input:
+        device/google/sw5100/manifest-7.xml
+        device/google/sw5100/bsp/sw5100-lw6/manifest_swp5100.xml
+        device/google/sw5100/bsp/sw5100-lw6/manifest_low_ram.xml
+-->
+<manifest version="9.0" type="device" target-level="7">
+    <hal format="aidl" override="true">
+        <name>android.hardware.radio.config</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.radio.data</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.radio.messaging</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.radio.modem</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.radio.network</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.radio.sap</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.radio.sim</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.radio.voice</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.secure_element</name>
+        <fqname>ISecureElement/eSE1</fqname>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.google.radio_ext</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.data.connectionaidl</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.data.connectionfactory</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.data.iwlandata</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.display.color</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.display.postproc</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.radio.am</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.radio.ims</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.radio.lpa</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.radio.qcrilhook</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.radio.qtiradio</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.radio.qtiradioconfig</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.radio.uim</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.radio.uim_remote_client</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.radio.uim_remote_server</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.ims.factoryaidlservice</name>
+    </hal>
+</manifest>

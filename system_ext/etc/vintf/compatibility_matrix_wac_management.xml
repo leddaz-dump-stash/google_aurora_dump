@@ -1,0 +1,14 @@
+<!--
+    Input:
+        vendor/google/apps/PersistentBackgroundServices/pdms/wacmanagement/compatibility_matrix_wac_management.xml
+-->
+<compatibility-matrix version="9.0" type="framework">
+    <hal format="aidl">
+        <name>com.google.android.wearable.pixel.wac.aidl</name>
+        <version>1-2</version>
+        <interface>
+            <name>IWacManagementService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>

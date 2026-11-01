@@ -1,0 +1,24 @@
+{
+    "Image_Build_IDs": {
+        "adsp": "ADSP.IT.2.1.c1-00036-ATHERTON-1",
+        "apps": "LW.UM.2.6.r1-02200-SW5100.0-1",
+        "apps_kernel": "KERNEL.PLATFORM.5.0.r17-01900-kernel.0-1",
+        "audio": "AUDIO_IOT.LA.10.1.r1-01500-SW5100.0-1",
+        "boot": "BOOT.XF.4.3-00264-ATHERTONLAZ-1",
+        "common": "SW5100.LW.6.0-00008-STD.PROD-1",
+        "display": "DISPLAY.LA.6.12.r5-01500-SW5100.0-1",
+        "glue": "GLUE.ATHERTON_LW.2.0-00098-NOOP_TEST-1",
+        "graphics": "GRAPHICS.LA.16.1.r6-01500-SW5100.0-1",
+        "modem": "MPSS.HA.2.1-00388-ATHERTON_GEN_PACK-1",
+        "rpm": "RPM.BF.1.12-00111-ATHERTONAAAAANAZR-1",
+        "tz": "TZ.XF.5.1.5-00360-ATHERTONAAAANBZT-1",
+        "tz_apps": "TZ.APPS.2.0.1-00144-KAMORTAAAAAANAZT-2",
+        "video": "VIDEO.LA.2.4.r5-00900-SW5100.0-1"
+    },
+    "Metabuild_Info": {
+        "Meta_Build_ID": "SW5100.LW.6.0-00008-STD.PROD-1",
+        "Product_Flavor": "asic",
+        "Time_Stamp": "2026-07-24 23:19:16"
+    },
+    "Version": "1.0"
+}

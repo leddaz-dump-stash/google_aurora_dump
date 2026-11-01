@@ -1,0 +1,19 @@
+<!--
+    Input:
+        device/google/sw5100/manifest-7.xml
+        device/google/sw5100/bsp/sw5100-lw6/manifest_sdw5100.xml
+        device/google/sw5100/bsp/sw5100-lw6/manifest_low_ram.xml
+-->
+<manifest version="9.0" type="device" target-level="7">
+    <hal format="aidl" override="true">
+        <name>android.hardware.secure_element</name>
+        <fqname>ISecureElement/SIM1</fqname>
+        <fqname>ISecureElement/eSE1</fqname>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.display.color</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.qti.hardware.display.postproc</name>
+    </hal>
+</manifest>

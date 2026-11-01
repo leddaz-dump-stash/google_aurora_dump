@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+    All rights reserved.
+    Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<permissions>
+    <!-- This should be used to exclude these features from modem targets. -->
+    <unavailable-feature name="android.hardware.telephony.cdma" />
+    <unavailable-feature name="android.hardware.touchscreen.multitouch.jazzhand" />
+</permissions>

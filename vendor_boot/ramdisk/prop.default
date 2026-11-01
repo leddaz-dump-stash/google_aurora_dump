@@ -1,0 +1,1075 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.system.brand=google
+ro.product.system.device=aurora
+ro.product.system.manufacturer=Google
+ro.product.system.model=Google Pixel Watch 2
+ro.product.system.name=aurora
+ro.system.product.cpu.abilist=armeabi-v7a,armeabi
+ro.system.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.system.product.cpu.abilist64=
+ro.system.build.date=Mon Aug 10 18:59:08 UTC 2026
+ro.system.build.date.utc=1786388348
+ro.system.build.fingerprint=google/aurora/aurora:17/CP3A.260905.002.E1/16053217:user/release-keys
+ro.system.build.id=CP3A.260905.002.E1
+ro.system.build.uuid=rIayt8BPTM4dYGcJea29w8SqppfvKZ722K8ZYU_g2Ys
+ro.system.build.tags=release-keys
+ro.system.build.type=user
+ro.system.build.version.incremental=16053217
+ro.system.build.version.release=17
+ro.system.build.version.release_or_codename=17
+ro.system.build.version.sdk=37
+ro.system.build.version.sdk_full=37.1
+####################################
+# from gen_build_prop.py:generate_build_info
+####################################
+# begin build properties
+ro.build.id=CP3A.260905.002.E1
+ro.build.uuid=rIayt8BPTM4dYGcJea29w8SqppfvKZ722K8ZYU_g2Ys
+ro.build.display.id=CP3A.260905.002.E1
+ro.build.version.incremental=16053217
+ro.build.version.sdk=37
+ro.build.version.sdk_full=37.1
+ro.build.version.preview_sdk=0
+ro.build.version.preview_sdk_fingerprint=REL
+ro.build.version.codename=REL
+ro.build.version.all_codenames=REL
+ro.build.version.known_codenames=Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake,VanillaIceCream,Baklava,CANARY,CinnamonBun
+ro.build.version.release=17
+ro.build.version.release_or_codename=17
+ro.build.version.release_or_preview_display=17
+ro.build.version.security_patch=2026-08-05
+ro.build.version.base_os=
+ro.build.version.min_supported_target_sdk=28
+ro.build.date=Mon Aug 10 18:59:08 UTC 2026
+ro.build.date.utc=1786388348
+ro.build.type=user
+ro.build.user=android-build
+ro.build.host=b93662385795
+ro.build.tags=release-keys
+ro.build.flavor=aurora-user
+# ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
+# use ro.product.cpu.abilist instead.
+ro.product.cpu.abi=armeabi-v7a
+ro.product.cpu.abi2=armeabi
+ro.product.locale=en-US
+ro.wifi.channels=
+# Do not try to parse description or thumbprint
+ro.build.description=aurora-user 17 CP3A.260905.002.E1 16053217 release-keys
+# end build properties
+####################################
+# from device/google/eos/system.prop
+####################################
+# Copyright (c) 2018 - 2019, 2021 The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted (subject to the limitations in the
+# disclaimer below) provided that the following conditions are met:
+#
+#    * Redistributions of source code must retain the above copyright
+#      notice, this list of conditions and the following disclaimer.
+#
+#    * Redistributions in binary form must reproduce the above
+#      copyright notice, this list of conditions and the following
+#      disclaimer in the documentation and/or other materials provided
+#      with the distribution.
+#
+#    * Neither the name of The Linux Foundation nor the names of its
+#      contributors may be used to endorse or promote products derived
+#      from this software without specific prior written permission.
+#
+# NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE
+# GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT
+# HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+# IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+# ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+# GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+# IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# system.prop for bengal
+#
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+#rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+dev.pm.dyn_samplingrate=1
+#ro.hdmi.enable=true
+#persist.speaker.prot.enable=false
+qcom.hw.aac.encoder=true
+#
+# system props for the cne module
+#
+persist.vendor.cne.feature=1
+#system props for the MM modules
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+#13631487 is decimal sum of supported codecs in AAL
+#codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE DSD MOV XVID
+vendor.mm.enable.qcom_parser=1040479
+persist.mm.enable.prefetch=true
+#
+# system props for the data modules
+#
+ro.vendor.use_data_netmgrd=true
+persist.data.netmgrd.qos.enable=true
+persist.vendor.data.mode=concurrent
+#system props for time-services
+persist.timed.enable=true
+# system property for maximum number of HFP client connections
+bt.max.hfpclient.connections=1
+#
+# System props for telephony
+# System prop to turn on CdmaLTEPhone always
+telephony.lteOnCdmaDevice=1
+#Simulate sdcard on /data/media
+#
+persist.fuse_sdcard=true
+# enable tunnel encoding for amrwb
+tunnel.audio.encode=true
+#Buffer size in kbytes for compress offload playback
+audio.offload.buffer.size.kb=32
+#Enable offload audio video playback by default
+av.offload.enable=true
+#enable voice path for PCM VoIP by default
+use.voice.path.for.pcm.voip=true
+# system prop for NFC DT
+ro.nfc.port=I2C
+#enable dsp gapless mode by default
+audio.offload.gapless.enabled=true
+#initialize QCA1530 detection
+sys.qca1530=detect
+#Enable stm events
+persist.debug.coresight.config=stm-events
+#hwui properties
+ro.hwui.texture_cache_size=72
+ro.hwui.layer_cache_size=48
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.path_cache_size=32
+ro.hwui.gradient_cache_size=1
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_small_cache_height=1024
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_large_cache_height=1024
+config.disable_rtt=true
+#Bringup properties
+persist.sys.force_sw_gles=1
+persist.vendor.radio.atfwd.start=true
+ro.kernel.qemu.gles=0
+#Expose aux camera for below packages
+vendor.camera.aux.packagelist=org.codeaurora.snapcam
+#Bluetooth
+persist.bluetooth.bqr.event_mask=30
+persist.bluetooth.bqr.min_interval_ms=1000
+persist.vendor.service.bdroid.fwsnoop=true
+persist.vendor.service.bdroid.snooplog=true
+persist.vendor.service.bdroid.ssrlvl=3
+log.tag.HeadsetClientStateMachine=INFO
+bluetooth.btm.sec.delay_auth_ms.value=500
+# Set supported Bluetooth profiles to enabled
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.avrcp.target.enabled=true
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.hfp.hf.enabled=true
+bluetooth.profile.hid.device.enabled=true
+# hf_client_features is a mask of:
+# BTA_HF_CLIENT_FEAT_ECNR   0x001
+# BTA_HF_CLIENT_FEAT_CLI    0x004
+# BTA_HF_CLIENT_FEAT_VOL    0x010
+# BTA_HF_CLIENT_FEAT_ECS    0x020
+# BTA_HF_CLIENT_FEAT_CODEC  0x080
+# BTA_HF_CLIENT_FEAT_HF_IND 0x100
+bluetooth.hfp.hf_client_features.config=0x1b5
+# hf_features is a mask of:
+# BTA_AG_FEAT_ECNR   0x00000002
+# BTA_AG_FEAT_REJECT 0x00000020
+# BTA_AG_FEAT_ECS    0x00000040
+# BTA_AG_FEAT_EXTERR 0x00000100
+# BTA_AG_FEAT_CODEC  0x00000200
+# BTA_AG_FEAT_BTRH   0x00010000
+# BTA_AG_FEAT_UNAT   0x00020000
+bluetooth.hfp.hf_features.config=0x30362
+# set priority to -1 for unsupported BT audio codecs
+ro.bluetooth.a2dp_source_codec_priority_aptx=-1
+ro.bluetooth.a2dp_source_codec_priority_aptx_hd=-1
+ro.bluetooth.a2dp_source_codec_priority_ldac=-1
+ro.bluetooth.a2dp_source_codec_priority_lc3=-1
+####################################
+# from device/google/eos/bluetooth/bluetooth.prop
+####################################
+# Bluetooth
+bluetooth.bta_fts_ops_idle_to_sniff_delay_ms.config=2000
+bluetooth.bta_ftc_idle_to_sniff_delay_ms.config=1000
+# The Hci command timeout value for BT stack
+bluetooth.hci.timeout_milliseconds=5000
+####################################
+# from build/make/target/board/go_defaults_common.prop
+####################################
+#
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# Sets Android Go recommended default values for propreties.
+# Set lowram options
+ro.lmk.critical_upgrade=true
+ro.lmk.upgrade_pressure=40
+ro.lmk.downgrade_pressure=60
+ro.lmk.kill_heaviest_task=false
+# set threshold to filter unused apps
+pm.dexopt.downgrade_after_inactive_days=10
+# set the compiler filter for shared apks to quicken.
+# Rationale: speed has a lot of dex code expansion, it uses more ram and space
+# compared to quicken. Using quicken for shared APKs on Go devices may save RAM.
+# Note that this is a trade-off: here we trade clean pages for dirty pages,
+# extra cpu and battery. That's because the quicken files will be jit-ed in all
+# the processes that load of shared apk and the code cache is not shared.
+# Some notable apps that will be affected by this are gms and chrome.
+# b/65591595.
+pm.dexopt.shared=quicken
+# Default heap sizes. Allow up to 256m for large heaps to make sure a single app
+# doesn't take all of the RAM.
+dalvik.vm.heapgrowthlimit=128m
+dalvik.vm.heapsize=256m
+####################################
+# from device/google/clockwork/bluetooth/bluetooth.prop
+####################################
+ro.bluetooth.hfp.ver=1.6
+#AdvertiseSettings.ADVERTISE_TX_POWER
+ro.oem.ble_advertising_tx_power=3
+persist.bluetooth.maxconnectedaudiodevices=1
+bluetooth.auto_connect_profiles.enabled=true
+bluetooth.avrcp.absolute_volume.enabled=false
+bluetooth.avrcp.browsable_media_player.enabled=false
+bluetooth.ble.random_address_rotation_interval_min=55
+bluetooth.ble.random_address_rotation_interval_max=60
+bluetooth.bta.disable_delay.millis=1000
+bluetooth.bta_hs_sniff_delay_ms.config=1000
+bluetooth.bta_jv_pm_idle_timeout_ms.config=0
+bluetooth.btm.sec.concurrent_peer_auth.enabled=false
+# Removed by post_process_props.py because overridden by bluetooth.btm.sec.delay_auth_ms.value=500
+#bluetooth.btm.sec.delay_auth_ms.value?=200
+bluetooth.btm.sec.handle_unexpected_encryption_change.enabled=true
+bluetooth.core.smp.le.ctkd.initiator_key_distribution=3
+bluetooth.core.smp.le.ctkd.responder_key_distribution=3
+bluetooth.device.class_of_device=10,7,4
+bluetooth.force_pm_timer=2000
+bluetooth.gatt.check_encrypted_link.enabled=false
+bluetooth.gatt.default_start_handle_for_srvc_change.value=20
+bluetooth.gatt.delay_close.enabled=false
+bluetooth.gatt.load_bonded.enabled=true
+bluetooth.gatt.over_bredr.enabled=false
+bluetooth.hardware.degraded_performance_mode.enabled=true
+bluetooth.headset_client.audio_policy.connecting_time.config=2
+bluetooth.headset_client.audio_policy.force_enabled=true
+bluetooth.headset_client.audio_policy.in_band_ringtone.config=2
+bluetooth.headset_client.disable_indicator.position=1
+bluetooth.headset_client.exit_sniff_while_ring=true
+bluetooth.headset_client.initial_audio_route.enabled=true
+bluetooth.headset_client.three_way_calling.enabled=false
+bluetooth.hfp.clcc_poll_during_call.enabled=false
+bluetooth.hfp.reject_sco_if_hfpc_connected=true
+bluetooth.hfp.version.config=0x0108
+# Don't publish SDP records for HSP, just publish HFP.
+bluetooth.hfp.hf_services_mask.config=0x00000040
+bluetooth.hfp_volume_control.enabled=false
+bluetooth.l2cap.le.credit_default.value=0xffff
+bluetooth.l2cap.le.credit_threshold.value=0x40
+# Reserve 4 L2CAP PSMs (252-255) for system usage in all wear devices:
+# 252: Reserved for future use
+# 253: Wearable data layer MCU connection
+# 254: Wearable data layer AP connection
+# 255: Testing only
+bluetooth.ble.lecoc.fixed_psm_slots.config=4
+bluetooth.powertelemetry.enabled=true
+bluetooth.restrict_discovered_device.enabled=true
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.hfp.hf.enabled=true
+bluetooth.profile.hid.device.enabled=true
+bluetooth.profile.map_client.sms_receiver_package="com.google.wear.services"
+# RFCOMM collision timeout
+bluetooth.rfcomm.collision_timeout=3
+bluetooth.rfcomm.sysproxy.rx.exit_sniff=true
+# Bluetooth Page scan Interval time = N * 0.625 ms
+# Range: 0x0012 to 0x1000, Default value: 0x400
+bluetooth.btm.pagescan_interval=2048
+# Primary BLE Supervision timeout: interval = N * 10msec
+bluetooth.ble.primary_supervision_timeout.config=800
+# Primary BLE Parameter: interval = N * 1.25msec
+bluetooth.gatt.low_priority_min.interval.primary=24
+bluetooth.gatt.low_priority_max.interval.primary=24
+bluetooth.gatt.low_priority.latency.primary=49
+bluetooth.gatt.balanced_priority.min_interval.primary=24
+bluetooth.gatt.balanced_priority.max_interval.primary=24
+bluetooth.gatt.balanced_priority.latency.primary=15
+bluetooth.gatt.high_priority.min_interval.primary=24
+bluetooth.gatt.high_priority.max_interval.primary=24
+bluetooth.gatt.high_priority.latency.primary=3
+# Update BLE Subrating Parameters - subrate manager will override
+bluetooth.ble.client.subrate_mode_low_min_subrate.config=48
+bluetooth.ble.client.subrate_mode_low_max_subrate.config=50
+bluetooth.ble.client.subrate_mode_low_latency.config=0
+bluetooth.ble.client.subrate_mode_low_cont_number.config=7
+bluetooth.ble.client.subrate_mode_balanced_min_subrate.config=15
+bluetooth.ble.client.subrate_mode_balanced_max_subrate.config=17
+bluetooth.ble.client.subrate_mode_balanced_latency.config=0
+bluetooth.ble.client.subrate_mode_balanced_cont_number.config=9
+bluetooth.ble.client.subrate_mode_high_min_subrate.config=3
+bluetooth.ble.client.subrate_mode_high_max_subrate.config=5
+bluetooth.ble.client.subrate_mode_high_latency.config=0
+bluetooth.ble.client.subrate_mode_high_cont_number.config=2
+# Subrate manager ratio overrides
+bluetooth.ble.sm.low_mode_cont_num_ratio.config=20
+bluetooth.ble.sm.balanced_mode_cont_num_ratio.config=40
+bluetooth.ble.sm.high_mode_cont_num_ratio.config=60
+####################################
+# from variable ADDITIONAL_SYSTEM_PROPERTIES
+####################################
+ro.treble.enabled=true
+ro.llndk.api_level=202604
+ro.actionable_compatible_property.enabled=true
+ro.postinstall.fstab.prefix=/system
+ro.secure=1
+security.perf_harden=1
+ro.adb.secure=1
+ro.allow.mock.location=0
+ro.debuggable=0
+net.bt.name=Android
+ro.force.debuggable=0
+####################################
+# from variable PRODUCT_SYSTEM_PROPERTIES
+####################################
+persist.wear_audio_balance_feature_enabled=true
+ro.oem.home_package_names=com.google.android.wearable.pixel.pdms;com.google.android.wearable.sysui;com.google.android.apps.safetyhub
+ro.config.notification_sound=Tethys.ogg
+ro.config.ringtone=IncomingCall.ogg
+config.enable_wristorientation=1
+ro.setupwizard_shipmode_after_inactivity_timeout=true
+ro.retail_mode_date=1614159000000
+ro.power.location.x=384
+ro.power.location.y=192
+ro.stem_primary.location.x=358
+ro.stem_primary.location.y=96
+bluetooth.gd.hci.event_mask=4449521247469961215
+sensors.aosp_low_power_sensor_fusion.maximum_rate=100
+persist.vendor.touch_offload=1
+config.use_aidl_api_for_display_offload=1
+ro.charger_mode_autoboot=true
+persist.sys.ttw_optimization_enabled=true
+persist.sys.battery_saver_mode_v1_enabled=true
+apexd.config.boot_activation.threads=4
+apexd.config.loop_wait.attempts=64
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3
+dalvik.vm.boot-dex2oat-threads=4
+dalvik.vm.dex2oat-cpu-set=2,3
+dalvik.vm.dex2oat-swap=true
+dalvik.vm.dex2oat-threads=2
+dalvik.vm.systemuicompilerfilter=speed
+debug.sf.prime_shader_cache.clipped_dimmed_image_layers=0
+debug.sf.prime_shader_cache.clipped_layers=0
+debug.sf.prime_shader_cache.edge_extension_shader=0
+debug.sf.prime_shader_cache.hole_punch=0
+debug.sf.prime_shader_cache.image_dimmed_layers=0
+debug.sf.prime_shader_cache.image_layers=1
+debug.sf.prime_shader_cache.pip_image_layers=0
+debug.sf.prime_shader_cache.shadow_layers=0
+debug.sf.prime_shader_cache.solid_dimmed_layers=0
+debug.sf.prime_shader_cache.solid_layers=1
+debug.sf.prime_shader_cache.transparent_image_dimmed_layers=1
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.first-boot=verify
+pm.dexopt.install=speed-profile
+pm.dexopt.shared=quicken
+ro.config.low_ram=true
+ro.config.max_starting_bg=8
+ro.config.small_battery=true
+ro.lmk.delay_monitors_until_boot=true
+ro.surface_flinger.prime_shader_cache.ultrahdr=0
+ro.view.vrr.enabled=false
+suspend.disable_sync_on_suspend=true
+sys.system_server_inherit_rt=true
+sys.use_fifo_ui=1
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapminfree=1m
+# Removed by post_process_props.py because overridden by dalvik.vm.heapgrowthlimit=128m
+#dalvik.vm.heapgrowthlimit?=180m
+# Removed by post_process_props.py because overridden by dalvik.vm.heapsize=256m
+#dalvik.vm.heapsize?=256m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapmaxfree=32m
+dalvik.vm.foreground-heap-growth-multiplier=2.0
+dalvik.vm.enable_time_based_gc_trigger=true
+hwservicemanager.always_sets_disabled=true
+debug.atrace.tags.enableflags=0
+persist.traced.enable=1
+ro.surface_flinger.game_default_frame_rate_override=60
+persist.pcc.audit_mode.enabled=0
+persist.pcc.audit_mode.max_log_files=10
+persist.pcc.audit_mode.max_log_file_size_kb=10240
+persist.pcc.audit_mode.batching.enabled=1
+persist.pcc.audit_mode.batching.max_batch_size=100
+persist.pcc.audit_mode.batching.flush_time_ms=10000
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=512m
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.usejit=true
+dalvik.vm.dexopt.secondary=true
+dalvik.vm.dexopt.thermal-cutoff=2
+dalvik.vm.appimageformat=lz4
+ro.dalvik.vm.native.bridge=0
+pm.dexopt.post-boot=verify
+# Removed by post_process_props.py because overridden by pm.dexopt.first-boot=verify
+#pm.dexopt.first-boot?=verify
+pm.dexopt.boot-after-ota=verify
+pm.dexopt.boot-after-mainline-update=verify
+# Removed by post_process_props.py because overridden by pm.dexopt.install=speed-profile
+#pm.dexopt.install?=speed-profile
+pm.dexopt.install-fast=skip
+pm.dexopt.install-bulk=speed-profile
+pm.dexopt.install-bulk-secondary=verify
+pm.dexopt.install-bulk-downgraded=verify
+pm.dexopt.install-bulk-secondary-downgraded=verify
+# Removed by post_process_props.py because overridden by pm.dexopt.bg-dexopt=speed-profile
+#pm.dexopt.bg-dexopt?=speed-profile
+pm.dexopt.ab-ota=speed-profile
+pm.dexopt.inactive=verify
+pm.dexopt.cmdline=verify
+# Removed by post_process_props.py because overridden by pm.dexopt.shared=quicken
+#pm.dexopt.shared?=speed
+dalvik.vm.dex2oat-resolve-startup-strings=true
+dalvik.vm.dex2oat-max-image-block-size=524288
+dalvik.vm.minidebuginfo=true
+dalvik.vm.dex2oat-minidebuginfo=true
+dalvik.vm.madvise.vdexfile.size=104857600
+dalvik.vm.madvise.odexfile.size=104857600
+dalvik.vm.usap_pool_enabled=false
+dalvik.vm.usap_refill_threshold=1
+dalvik.vm.usap_pool_size_max=3
+dalvik.vm.usap_pool_size_min=1
+dalvik.vm.usap_pool_refill_delay_ms=3000
+dalvik.vm.useartservice=true
+dalvik.vm.enable_pr_dexopt=true
+ro.cp_system_other_odex=1
+ro.apex.updatable=true
+ro.carrier=unknown
+ro.cw_build.wear_sdk.version=10
+persist.adb.notify=0
+config.disable_rtt=true
+contacts.display_photo_size=512
+ro.cw.home_package_names=com.google.wear.services;com.google.android.wearable.media.sessions;com.google.android.wearable.setupwizard;com.google.android.tts
+ro.input.rsb.resolution.low=true
+ro.tether.denied=true
+config.disable_cameraservice=true
+ro.config.alarm_alert=Oxygen.ogg
+ro.cw.bt.ios_sysproxy_version=5
+ro.cw.sysproxy.incoming_packets_wakelock=1
+persist.sys.bootanim.clock.enabled=true
+persist.a11y_vibration_watch_feature_enabled=true
+persist.tts_prewarm_feature_enabled=true
+persist.a11y_magnification_settings_screen_enabled=true
+persist.a11y_reduce_motion_feature_enabled=true
+ro.control_privapp_permissions=enforce
+persist.wm.enable_remote_keyguard_animation=0
+ro.system_settings.service.odp_enabled=false
+ro.system_settings.service.backgound_install_control_enabled=false
+ro.system_settings.service.adservices_enabled=false
+ro.system_settings.service.disable_parallelize_onbootphase=true
+persist.wm.debug.predictive_back=1
+persist.wm.debug.predictive_back_anim=1
+persist.wm.debug.predictive_back_fallback_window_attribute=1
+debug.sf.show_refresh_rate_overlay_in_middle=true
+persist.use_legacy_dnd=false
+persist.sys.phone_switching_supported=true
+persist.wm.enable_remote_anim_transitions=0
+persist.wm.debug.shell_transit=1
+persist.cw_build.bluechip.enabled=1
+persist.sys.checkin_mediator_supported=true
+debug.disable_screen_decorations=true
+remote_provisioning.strongbox.rkp_only=true
+ro.khungtask.enable=true
+ro.khungtask.timeout=120
+ro.cw.bt.proxy_service=6a1eafb1-61c0-42a0-8bb0-a336fb1c3f00
+ro.prefetch_boot.enabled=true
+ro.prefetch_boot.max_fds=4096
+ro.prefetch_boot.io_depth=1
+ro.prefetch_boot.duration_s=40
+ro.wear.comms.offload.nanoappid=0x476f6f676c001052
+ro.audio.flinger_standbytime_ms=200
+audio.timecheck.timeout_duration_ms=5000
+audio.timecheck.second_chance_duration_ms=5000
+persist.sys.bootanim.play_sound=1
+persist.sys.bootanim.vibration=1
+apexd.config.compressed_apex=false
+####################################
+# from variable PRODUCT_SYSTEM_DEFAULT_PROPERTIES
+####################################
+ro.adb.secure=1
+ro.cw_build.platform_qpr.version=1
+####################################
+# Adding footer from :applied_backported_fixes
+# with path out/soong/.intermediates/build/make/backported_fixes/applied_backported_fixes/gen/applied_backported_fixes.prop
+####################################
+# The following backported fixes have been applied
+# https://issuetracker.google.com/issues/350037023 with alias 1
+# https://issuetracker.google.com/issues/385124056 with alias 4
+# https://issuetracker.google.com/issues/398591036 with alias 5
+# https://issuetracker.google.com/issues/452390376 with alias 6
+ro.build.backported_fixes.alias_bitset.long_list=114
+# end of file
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.vendor.brand=google
+ro.product.vendor.device=aurora
+ro.product.vendor.manufacturer=Google
+ro.product.vendor.model=Google Pixel Watch 2
+ro.product.vendor.name=aurora
+ro.vendor.product.cpu.abilist=armeabi-v7a,armeabi
+ro.vendor.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.vendor.product.cpu.abilist64=
+ro.vendor.build.date=Mon Aug 10 18:59:08 UTC 2026
+ro.vendor.build.date.utc=1786388348
+ro.vendor.build.fingerprint=google/aurora/aurora:17/CP3A.260905.002.E1/16053217:user/release-keys
+ro.vendor.build.id=CP3A.260905.002.E1
+ro.vendor.build.uuid=rIayt8BPTM4dYGcJea29w8SqppfvKZ722K8ZYU_g2Ys
+ro.vendor.build.tags=release-keys
+ro.vendor.build.type=user
+ro.vendor.build.version.incremental=16053217
+ro.vendor.build.version.release=17
+ro.vendor.build.version.release_or_codename=17
+ro.vendor.build.version.sdk=37
+ro.vendor.build.version.sdk_full=37.1
+####################################
+# from device/google/sw5100/ota/virtual_ab.prop
+####################################
+# Low memory device configuration for OTA.
+# Extracted from: build/make/target/product/virtual_ab_ota/vabc_features.mk
+ro.virtual_ab.read_ahead_size=16
+ro.virtual_ab.o_direct.enabled=true
+ro.virtual_ab.merge_thread_priority=19
+ro.virtual_ab.worker_thread_priority=0
+ro.virtual_ab.num_worker_threads=3
+ro.virtual_ab.num_merge_threads=1
+ro.virtual_ab.num_verify_threads=1
+ro.virtual_ab.cow_op_merge_size=16
+ro.virtual_ab.verify_threshold_size=1073741824
+ro.virtual_ab.verify_block_size=1048576
+ro.virtual_ab.compression.xor.enabled=false
+####################################
+# from device/google/sw5100/haptics/haptics.prop
+####################################
+ro.vendor.vibrator.hal.v_tick=5 95
+ro.vendor.vibrator.hal.v_click=5 95
+ro.vendor.vibrator.hal.v_long=5 95
+####################################
+# from android-info.prop
+####################################
+ro.build.expect.bootloader=eos-6.08-15857178
+ro.build.expect.baseband=g5100-00388-260724-W-15940437
+####################################
+# from variable ADDITIONAL_VENDOR_PROPERTIES
+####################################
+ro.bionic.arch=arm
+ro.bionic.cpu_variant=cortex-a53
+ro.bionic.2nd_arch=
+ro.bionic.2nd_cpu_variant=
+dalvik.vm.isa.arm.variant=cortex-a53
+dalvik.vm.isa.arm.features=default
+ro.minui.pixel_format=RGBX_8888
+ro.boot.dynamic_partitions=true
+ro.product.first_api_level=33
+ro.board.api_level=202604
+ro.board.api_frozen=true
+ro.vendor.build.security_patch=2026-08-05
+ro.product.board=aurora
+ro.board.platform=monaco
+ro.hwui.use_vulkan=
+ro.build.ab_update=true
+ro.vendor.build.ab_ota_partitions=abl,adsp_oda,boot,devcfg,dtbo,eseproxy,eseservice,hyp,imagefv,init_boot,keymaster,modem,multiimgoem,odm,product,qupfw,rpm,system,system_dlkm,system_ext,tz,uefisecapp,vbmeta,vbmeta_system,vendor,vendor_boot,vendor_dlkm,vendor_kernel_boot,xbl,xbl_config
+ro.product.build.16k_page.enabled=false
+####################################
+# from variable PRODUCT_VENDOR_PROPERTIES
+####################################
+ro.oem.supports_emergency_calls=true
+ro.ambient.offwrist_timeout_min=1
+ro.oem.companion_package=com.google.android.apps.wear.companion
+ro.oem.companion_digest=78f631ae7d905e163085a790049b875db65cab52
+ro.virtual_ab.merge_delay_seconds=180
+ro.sf.lcd_density=320
+vendor.bluetooth.region_table.enabled=true
+persist.vendor.bluetooth.region_table=US,67,56,65,EU,61,53,48,JP,48,49,29
+persist.vendor.bluetooth.region_table.default=48,49,29
+persist.vendor.bluetooth.max_txpower=48,36,48
+persist.vendor.qbg.ibatt_full_delta_ma=15
+ro.vendor.touch.dump_path=/sys/devices/virtual/input/nvt_touch/nvt_dump_data
+ro.strongbox.manufacturer=NXP
+ro.strongbox.model=SN220U
+ro.soc.manufacturer=QTI
+ro.soc.model=monaco
+ro.boot.product.vendor.sku=monaco
+persist.vendor.qbg.ignore_shutdown_ocv_inc_mv=500
+ro.incremental.enable=yes
+dalvik.vm.dex2oat-threads=4
+dalvik.vm.boot-dex2oat-threads=4
+ro.vendor.qspm.enable=true
+dalvik.vm.foreground-heap-growth-multiplier=2.0
+persist.vendor.sensors.enable.bypass_worker=true
+ro.vendor.sensors.wearqstp=1
+ro.vendor.sensors.wearqstp.lock=0
+ro.virtual_ab.enabled=true
+ro.virtual_ab.compression.enabled=true
+ro.virtual_ab.userspace.snapshots.enabled=true
+ro.virtual_ab.batch_writes=true
+ro.virtual_ab.io_uring.enabled=true
+# Removed by post_process_props.py because overridden by ro.virtual_ab.compression.xor.enabled=false
+#ro.virtual_ab.compression.xor.enabled?=true
+ro.virtual_ab.ublk.enabled=true
+ro.virtual_ab.skip_verification=true
+vendor.audio.hdr.spf.record.enable=false
+vendor.audio.hdr.record.enable=false
+vendor.audio.offload.buffer.size.kb=128
+vendor.audio.compress_capture.enabled=true
+vendor.audio.compress_capture.aac=true
+persist.vendor.audio.induce_crash=true
+persist.sys.dalvik.vm.lib.2=libart.so
+ro.recovery.usb.vid=18D1
+ro.recovery.usb.adb.pid=D001
+ro.recovery.usb.fastboot.pid=4EE0
+ro.zygote=zygote32
+ro.surface_flinger.supports_background_blur=1
+vendor.mediacodec.binder.size=256
+persist.vendor.usb.config=adb
+persist.sys.usb.usbradio.func=adb
+persist.sys.usb.factory.func=adb
+persist.vendor.usb.config.extra=none
+ro.vendor.vibrator.hal.passthrough_i2s_supported=true
+ro.vendor.bt.bdaddr_path=/proc/device-tree/chosen/config/bt_addr
+persist.vendor.qcom.bluetooth.soc=cherokee
+ro.bluetooth.a2dp_offload.supported=true
+persist.bluetooth.a2dp_offload.disabled=false
+persist.bluetooth.a2dp_offload.cap=sbc-aac
+persist.vendor.qcom.bluetooth.scram.enabled=true
+debug.sf.enable_gl_backpressure=1
+log.tag.GPQTEEC=ERROR
+log.tag.vendor.qti.hardware.qteeconnector@1.0-gp=ERROR
+ro.oem_unlock_supported=1
+persist.vendor.qbg.batt_id_tolerance=20
+ro.vendor.pmic.apsd_enable_path=/sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/0-00/1c40000.qcom,spmi:qcom,pm5100@0:qcom,qpnp-smblite/apsd_en
+persist.vendor.radio.enableadvancedscan=true
+camera.disable_zsl_mode=1
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.allow_encrypt_override=true
+persist.vendor.ssr.enable_ramdumps=0
+persist.vendor.ssr.restart_level=mss
+persist.vendor.sys.modem.diag.mdlog=false
+persist.vendor.sys.modem.diag.mdlog_br_num=5
+persist.vendor.verbose_logging_enabled=false
+persist.vendor.radio.value_add_atfwd=false
+vendor.audio.hdr.spf.record.enable=false
+vendor.audio.hdr.record.enable=false
+vendor.audio.offload.buffer.size.kb=128
+vendor.audio.compress_capture.enabled=true
+vendor.audio.compress_capture.aac=true
+vendor.audio.hdr.spf.record.enable=false
+vendor.audio.hdr.record.enable=false
+vendor.audio.offload.buffer.size.kb=128
+vendor.audio.compress_capture.enabled=true
+vendor.audio.compress_capture.aac=true
+ro.usb.uvc.enabled=true
+ro.vendor.mcu.uart.dev.path=/dev/ttyHS1
+ro.vendor.gptee.ta.path=/vendor/firmware/image
+ro.config.vc_call_vol_steps=15
+ro.config.per_app_memcg=false
+external_storage.projid.enabled=1
+external_storage.casefold.enabled=1
+external_storage.sdcardfs.enabled=0
+ro.lmk.psi_partial_stall_ms=250
+ro.lmk.psi_complete_stall_ms=500
+ro.lmk.kill_timeout_ms=200
+ro.lmk.critical=200
+ro.lmk.pressure_after_kill_min_score=1000
+ro.lmk.swap_compression_ratio=265
+ro.lmk.swap_compression_ratio_div=100
+ro.lmk.kill_heaviest_task=true
+dalvik.vm.madvise.vdexfile.size=8388608
+dalvik.vm.madvise.odexfile.size=8388608
+####################################
+# from variable PRODUCT_DEFAULT_PROPERTY_OVERRIDES
+####################################
+ro.oem_unlock_supported=1
+vendor.usb.diag.func.name=diag
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
+ro.surface_flinger.protected_contents=false
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.max_virtual_display_dimension=4096
+ro.surface_flinger.clear_slots_with_set_layer_buffer=false
+ro.surface_flinger.game_default_frame_rate_override=60
+debug.sf.enable_adpf_cpu_hint=true
+debug.hwui.use_hint_manager=true
+####################################
+# from variable PRODUCT_PROPERTY_OVERRIDES
+####################################
+ro.hardware.nfc_nci=nqx.default
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+ro.vendor.extension_library=libqti-perfd-client.so
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.sib16_support=1
+persist.vendor.radio.rat_on=combine
+persist.backup.ntpServer=0.pool.ntp.org
+sys.vendor.shutdown.waittime=500
+persist.vendor.radio.procedure_bytes=SKIP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+vendor.audio_hal.period_size=192
+vendor.audio.offload.track.enable=true
+vendor.audio.offload.multiple.enabled=false
+vendor.audio.flac.sw.decoder.24bit=true
+ro.bluetooth.a2dp_offload.supported=true
+persist.bluetooth.a2dp_offload.disabled=false
+vendor.audio.use.sw.alac.decoder=true
+vendor.audio.use.sw.ape.decoder=true
+vendor.audio.use.sw.mpegh.decoder=true
+vendor.audio.hw.aac.encoder=false
+vendor.audio.adm.buffering.ms=2
+vendor.audio.volume.headset.gain.depcal=true
+vendor.audio.hal.output.suspend.supported=true
+persist.vendor.bt.aac_frm_ctl.enabled=true
+vendor.audio.feature.a2dp_offload.enable=true
+vendor.audio.feature.battery_listener.enable=true
+vendor.audio.feature.hfp.enable=true
+vendor.audio.feature.kpi_optimize.enable=false
+vendor.audio.gsl.shmem.dmaheap.uncached=true
+aaudio.mmap_policy=2
+aaudio.mmap_exclusive_policy=2
+aaudio.hw_burst_min_usec=2000
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+ro.vendor.bluetooth.wipower=false
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
+ro.hardware.vulkan=adreno
+ro.hardware.egl=adreno
+ro.opengles.version=196609
+graphics.gpu.profiler.support=true
+vendor.audio_hal.period_size=192
+vendor.audio.offload.track.enable=true
+vendor.audio.offload.multiple.enabled=false
+vendor.audio.flac.sw.decoder.24bit=true
+ro.bluetooth.a2dp_offload.supported=true
+persist.bluetooth.a2dp_offload.disabled=false
+vendor.audio.use.sw.alac.decoder=true
+vendor.audio.use.sw.ape.decoder=true
+vendor.audio.use.sw.mpegh.decoder=true
+vendor.audio.hw.aac.encoder=false
+vendor.audio.adm.buffering.ms=2
+vendor.audio.volume.headset.gain.depcal=true
+vendor.audio.hal.output.suspend.supported=true
+persist.vendor.bt.aac_frm_ctl.enabled=true
+vendor.audio.feature.a2dp_offload.enable=true
+vendor.audio.feature.battery_listener.enable=true
+vendor.audio.feature.hfp.enable=true
+vendor.audio.feature.kpi_optimize.enable=false
+vendor.audio.gsl.shmem.dmaheap.uncached=true
+aaudio.mmap_policy=2
+aaudio.mmap_exclusive_policy=2
+aaudio.hw_burst_min_usec=2000
+drm.service.enabled=true
+persist.sys.sf.color_saturation=1.0
+persist.sys.sf.color_mode=9
+debug.sf.hw=0
+debug.egl.hw=0
+debug.sf.latch_unsignaled=0
+debug.sf.auto_latch_unsignaled=1
+debug.mdpcomp.logs=0
+vendor.gralloc.disable_ubwc=0
+vendor.gralloc.enable_logs=0
+vendor.display.disable_scaler=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.comp_mask=0
+vendor.display.enable_optimize_refresh=0
+vendor.display.use_smooth_motion=1
+vendor.display.disable_stc_dimming=1
+vendor.display.enable_dpps_dynamic_fps=1
+debug.sf.disable_client_composition_cache=1
+debug.sf.enable_gl_backpressure=1
+vendor.display.vds_allow_hwc=1
+debug.sf.use_phase_offsets_as_durations=1
+debug.sf.late.app.duration=20500000
+debug.sf.early.app.duration=33500000
+debug.sf.earlyGl.app.duration=38000000
+vendor.display.enable_async_vds_creation=1
+vendor.display.enable_rounded_corner=1
+vendor.display.disable_3d_adaptive_tm=1
+vendor.display.disable_sdr_dimming=0
+vendor.display.enable_rc_support=1
+vendor.display.disable_sdr_histogram=1
+vendor.display.enable_hdr10_gpu_target=1
+debug.sf.predict_hwc_composition_strategy=0
+debug.sf.treat_170m_as_sRGB=1
+debug.graphics.game_default_frame_rate.disabled=1
+vendor.display.enable_display_extensions=1
+vendor.gralloc.enable_snapalloc=1
+vendor.display.disable_fp16_support=1
+debug.sf.early.sf.duration=16500000
+debug.sf.earlyGl.sf.duration=13500000
+debug.sf.late.sf.duration=15000000
+vendor.display.disable_rotator_ubwc=1
+debug.sf.enable_hwc_vds=0
+vendor.display.disable_layer_stitch=1
+vendor.display.secure_preview_buffer_format=420_sp
+vendor.gralloc.secure_preview_buffer_format=420_sp
+vendor.display.disable_idle_time_hdr=1
+vendor.display.disable_idle_time_video=1
+vendor.display.enable_camera_smooth=1
+vendor.display.enable_posted_start_dyn=1
+vendor.display.enhance_idle_time=1
+vendor.display.lcd_density=160
+vendor.display.enable_async_powermode=0
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.enable_early_wakeup=1
+persist.vendor.dpm.vndr.feature=0
+persist.vendor.rcs.singlereg.feature=2
+vendor.keymint.retry_timer=5
+ro.hardware.keystore_desede=true
+ro.crypto.metadata_init_delete_all_keys.enabled=true
+vendor.gatekeeper.is_security_level_spu=0
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+media.c2.hal.selection=aidl
+debug.stagefright.c2inputsurface=-1
+debug.stagefright.ccodec=4
+debug.c2.use_dmabufheaps=1
+vendor.usb.rndis.func.name=gsi
+vendor.usb.rmnet.func.name=gsi
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.dpl.inst.name=dpl
+vendor.usb.controller=4e00000.dwc3
+vendor.usb.qdss.inst.name=qdss_sw
+vendor.usb.diag.func.name=diag
+vendor.usb.use_ffs_mtp=1
+sys.usb.mtp.batchcancel=1
+vendor.usb.use_gadget_hal=1
+vendor.debug.ssrdump.type=ramdump
+# end of file
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.odm.brand=google
+ro.product.odm.device=aurora
+ro.product.odm.manufacturer=Google
+ro.product.odm.model=Google Pixel Watch 2
+ro.product.odm.name=aurora
+ro.odm.product.cpu.abilist=armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist64=
+ro.odm.build.date=Mon Aug 10 18:59:08 UTC 2026
+ro.odm.build.date.utc=1786388348
+ro.odm.build.fingerprint=google/aurora/aurora:17/CP3A.260905.002.E1/16053217:user/release-keys
+ro.odm.build.id=CP3A.260905.002.E1
+ro.odm.build.uuid=rIayt8BPTM4dYGcJea29w8SqppfvKZ722K8ZYU_g2Ys
+ro.odm.build.tags=release-keys
+ro.odm.build.type=user
+ro.odm.build.version.incremental=16053217
+ro.odm.build.version.release=17
+ro.odm.build.version.release_or_codename=17
+ro.odm.build.version.sdk=37
+ro.odm.build.version.sdk_full=37.1
+####################################
+# from variable PRODUCT_ODM_PROPERTIES
+####################################
+# end of file
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.product.brand=google
+ro.product.product.device=aurora
+ro.product.product.manufacturer=Google
+ro.product.product.model=Google Pixel Watch 2
+ro.product.product.name=aurora
+ro.product.build.date=Mon Aug 10 18:59:08 UTC 2026
+ro.product.build.date.utc=1786388348
+ro.product.build.fingerprint=google/aurora/aurora:17/CP3A.260905.002.E1/16053217:user/release-keys
+ro.product.build.id=CP3A.260905.002.E1
+ro.product.build.uuid=rIayt8BPTM4dYGcJea29w8SqppfvKZ722K8ZYU_g2Ys
+ro.product.build.tags=release-keys
+ro.product.build.type=user
+ro.product.build.version.incremental=16053217
+ro.product.build.version.release=17
+ro.product.build.version.release_or_codename=17
+ro.product.build.version.sdk=37
+ro.product.build.version.sdk_full=37.1
+####################################
+# from gen_build_prop.py:generate_build_info
+####################################
+# begin build properties
+ro.build.id=CP3A.260905.002.E1
+ro.build.uuid=rIayt8BPTM4dYGcJea29w8SqppfvKZ722K8ZYU_g2Ys
+ro.build.display.id=CP3A.260905.002.E1
+ro.build.version.incremental=16053217
+ro.build.version.sdk=37
+ro.build.version.sdk_full=37.1
+ro.build.version.preview_sdk=0
+ro.build.version.preview_sdk_fingerprint=REL
+ro.build.version.codename=REL
+ro.build.version.all_codenames=REL
+ro.build.version.known_codenames=Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake,VanillaIceCream,Baklava,CANARY,CinnamonBun
+ro.build.version.release=17
+ro.build.version.release_or_codename=17
+ro.build.version.release_or_preview_display=17
+ro.build.version.security_patch=2026-08-05
+ro.build.version.base_os=
+ro.build.version.min_supported_target_sdk=28
+ro.build.date=Mon Aug 10 18:59:08 UTC 2026
+ro.build.date.utc=1786388348
+ro.build.type=user
+ro.build.user=android-build
+ro.build.host=b93662385795
+ro.build.tags=release-keys
+ro.build.flavor=aurora-user
+# ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
+# use ro.product.cpu.abilist instead.
+ro.product.cpu.abi=armeabi-v7a
+ro.product.cpu.abi2=armeabi
+ro.product.locale=en-US
+ro.wifi.channels=
+# Do not try to parse description or thumbprint
+ro.build.description=aurora-user 17 CP3A.260905.002.E1 16053217 release-keys
+# end build properties
+####################################
+# from vendor/google_devices/eos/prebuilts/sw5100-lw6_nonhlos_versions.prop
+####################################
+ro.vendor.qc_release.adsp=ADSP.IT.2.1.c1-00038-ATHERTON-1
+ro.vendor.qc_release.apps_kernel=KERNEL.PLATFORM.5.0.r17-02400-kernel.0-1
+ro.vendor.qc_release.apps=LW.UM.2.6.r1-02800-SW5100.0-1
+ro.vendor.qc_release.audio=AUDIO_IOT.LA.10.1.r1-01600-SW5100.0-1
+ro.vendor.qc_release.boot=BOOT.XF.4.3-00265-ATHERTONLAZ-4
+ro.vendor.qc_release.btfm=BTFM.CHE.2.1.7-00059-QCACHROMZ-1
+ro.vendor.qc_release.build=SW5100.LW.6.0 CS 0.0.011.1a OEM 5D002.c.1 412552
+ro.vendor.qc_release.display=DISPLAY.LA.6.12.r5-01700-SW5100.0-1
+ro.vendor.qc_release.glue=GLUE.ATHERTON_LW.2.0-00098-NOOP_TEST-1
+ro.vendor.qc_release.graphics=GRAPHICS.LA.16.1.r6-02000-SW5100.0-1
+ro.vendor.qc_release.modem=MPSS.HA.2.1-00391-ATHERTON_GEN_PACK-1
+ro.vendor.qc_release.rpm=RPM.BF.1.12-00112-ATHERTONAAAAANAZR-1
+ro.vendor.qc_release.tz_apps=TZ.APPS.2.0.1-00149-KAMORTAAAAAANAZT-2
+ro.vendor.qc_release.tz=TZ.XF.5.1.5-00362-ATHERTONAAAANBZT-1
+ro.vendor.qc_release.video=VIDEO.LA.2.4.r5-01100-SW5100.0-1
+ro.vendor.qc_release.wlan=WLAN.HL.3.4.1.c1-00259-QCAHLSWMTPLZ-3
+ro.vendor.qc_release.wlan=WLAN.HL.3.4.1.c1-00259-QCAHLSWMTPLZ-3
+####################################
+# from variable ADDITIONAL_PRODUCT_PROPERTIES
+####################################
+ro.product.page_size=4096
+ro.build.characteristics=nosdcard,watch
+ro.product.ab_ota_partitions=abl,adsp_oda,boot,devcfg,dtbo,eseproxy,eseservice,hyp,imagefv,init_boot,keymaster,modem,multiimgoem,odm,product,qupfw,rpm,system,system_dlkm,system_ext,tz,uefisecapp,vbmeta,vbmeta_system,vendor,vendor_boot,vendor_dlkm,vendor_kernel_boot,xbl,xbl_config
+ro.product.cpu.pagesize.max=4096
+# Value overridden by post_process_props.py. Original value: default
+ro.dalvik.vm.enable_uffd_gc=true
+####################################
+# from variable PRODUCT_PRODUCT_PROPERTIES
+####################################
+ro.oem.enable_fido_smart_setup=true
+ro.product.bootanim.file=bootanimation-eos-384.zip
+audio.offload.min.duration.secs=30
+android.transparency.roots_url=https://android.googleapis.com/attestation/root
+persist.traced.enable=1
+ro.com.google.ime.system_lm_dir=/product/usr/share/ime/google/wear_lms
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.avrcp.target.enabled=true
+bluetooth.profile.avrcp.controller.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hfp.hf.enabled=true
+audio.offload.min.duration.secs=30
+ro.lmk.log_stats=true
+mmd.zram.enabled=true
+mmd.zram.size=1610612736
+mmd.zram.comp_algorithm=lz4
+mmd.zram.recompression.enabled=false
+# end of file
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.system_ext.brand=google
+ro.product.system_ext.device=aurora
+ro.product.system_ext.manufacturer=Google
+ro.product.system_ext.model=Google Pixel Watch 2
+ro.product.system_ext.name=aurora
+ro.system_ext.build.date=Mon Aug 10 18:59:08 UTC 2026
+ro.system_ext.build.date.utc=1786388348
+ro.system_ext.build.fingerprint=google/aurora/aurora:17/CP3A.260905.002.E1/16053217:user/release-keys
+ro.system_ext.build.id=CP3A.260905.002.E1
+ro.system_ext.build.uuid=rIayt8BPTM4dYGcJea29w8SqppfvKZ722K8ZYU_g2Ys
+ro.system_ext.build.tags=release-keys
+ro.system_ext.build.type=user
+ro.system_ext.build.version.incremental=16053217
+ro.system_ext.build.version.release=17
+ro.system_ext.build.version.release_or_codename=17
+ro.system_ext.build.version.sdk=37
+ro.system_ext.build.version.sdk_full=37.1
+####################################
+# from variable PRODUCT_SYSTEM_EXT_PROPERTIES
+####################################
+ro.audio.ihaladaptervendorextension_enabled=true
+ro.audio.ihaladaptervendorextension_libname=libaudiohalvendorextn_wear.so
+config.enable_display_offload=1
+persist.vendor.dpm.feature=0
+telephony.active_modems.max_count=2
+ro.clockwork.esim_version=V1
+ro.adb.secure=1
+# end of file
+#
+# RECOVERY UI BUILD PROPERTIES
+#
+ro.recovery.ui.margin_height=45
+ro.recovery.ui.margin_width=60
+ro.recovery.ui.menu_unusable_rows=8
+ro.recovery.ui.progress_bar_baseline=240
+ro.recovery.ui.brightness_normal_percent=12
+ro.recovery.ui.brightness_dimmed_percent=2
+

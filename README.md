@@ -1,0 +1,14 @@
+# aurora-user 17 CP3A.260905.002.E1 16053217 release-keys
+- manufacturer: google
+- platform: monaco
+- codename: aurora
+- flavor: aurora-user
+- release: 17
+- id: CP3A.260905.002.E1
+- incremental: 16053217
+- tags: release-keys
+- fingerprint: google/aurora/aurora:17/CP3A.260905.002.E1/16053217:user/release-keys
+- is_ab: true
+- brand: google
+- branch: aurora-user-17-CP3A.260905.002.E1-16053217-release-keys
+- repo: google_aurora_dump

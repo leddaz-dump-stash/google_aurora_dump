@@ -1,0 +1,155 @@
+<rules>
+  <!-- NXP KeyMint AID by Google KeyMint HAL UUID -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A000000062</aid_ref_do>
+      <deviceappid_ref_do>FFFFFFFF5C507C9AEC284EC5B96C66944A22724F</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- NXP KeyMint AID by NXP KeyMint HAL UUID -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A000000062</aid_ref_do>
+      <deviceappid_ref_do>FFFFFFFF636F6D2E6E78702E7365637572697479</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- NXP Weaver Primary AID by Google Weaver HAL UUID -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A0000003961010</aid_ref_do>
+      <deviceappid_ref_do>FFFFFFFFA88E8D89387B4762890202377B3E45E4</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- NXP Weaver Primary AID by NXP Weaver HAL UUID -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A0000003961010</aid_ref_do>
+      <deviceappid_ref_do>FFFFFFFF636F6D2E6E78702E7365637572697479</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- NXP Weaver Secondary AID by Google Weaver HAL UUID -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A0000003965453000000010023000000</aid_ref_do>
+      <deviceappid_ref_do>FFFFFFFFA88E8D89387B4762890202377B3E45E4</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- NXP Weaver Secondary AID by NXP Weaver HAL UUID -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A0000003965453000000010023000000</aid_ref_do>
+      <deviceappid_ref_do>FFFFFFFF636F6D2E6E78702E7365637572697479</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- CASD by GMSCore Release Legacy -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A00000015153504341534400</aid_ref_do>
+      <deviceappid_ref_do>F0FD6C5B410F25CB25C3B53346C8972FAE30F8EE7411DF910480AD6B2D60DB83</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- CRS by GMSCore Release Legacy -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A00000015143525300</aid_ref_do>
+      <deviceappid_ref_do>F0FD6C5B410F25CB25C3B53346C8972FAE30F8EE7411DF910480AD6B2D60DB83</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- SEMS by GMSCore Release Legacy -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A00000015153454D5300000001</aid_ref_do>
+      <deviceappid_ref_do>F0FD6C5B410F25CB25C3B53346C8972FAE30F8EE7411DF910480AD6B2D60DB83</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- SEMS Update by GMSCore Release Legacy -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A00000015153454D53FFFFFF01</aid_ref_do>
+      <deviceappid_ref_do>F0FD6C5B410F25CB25C3B53346C8972FAE30F8EE7411DF910480AD6B2D60DB83</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- CASD by GMSCore Test Legacy -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A00000015153504341534400</aid_ref_do>
+      <deviceappid_ref_do>1975B2F17177BC89A5DFF31F9E64A6CAE281A53DC1D1D59B1D147FE1C82AFA00</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- CRS by GMSCore Test Legacy -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A00000015143525300</aid_ref_do>
+      <deviceappid_ref_do>1975B2F17177BC89A5DFF31F9E64A6CAE281A53DC1D1D59B1D147FE1C82AFA00</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- SEMS by GMSCore Test Legacy -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A00000015153454D5300000001</aid_ref_do>
+      <deviceappid_ref_do>1975B2F17177BC89A5DFF31F9E64A6CAE281A53DC1D1D59B1D147FE1C82AFA00</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+
+  <!-- SEMS Update by GMSCore Test Legacy -->
+  <ref_ar_do>
+    <ref_do>
+      <aid_ref_do>A00000015153454D53FFFFFF01</aid_ref_do>
+      <deviceappid_ref_do>1975B2F17177BC89A5DFF31F9E64A6CAE281A53DC1D1D59B1D147FE1C82AFA00</deviceappid_ref_do>
+    </ref_do>
+    <ar_do>
+      <apdu_ar_do>01</apdu_ar_do>
+    </ar_do>
+  </ref_ar_do>
+</rules>

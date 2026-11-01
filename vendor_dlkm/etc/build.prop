@@ -1,0 +1,23 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.vendor_dlkm.brand=google
+ro.product.vendor_dlkm.device=aurora
+ro.product.vendor_dlkm.manufacturer=Google
+ro.product.vendor_dlkm.model=Google Pixel Watch 2
+ro.product.vendor_dlkm.name=aurora
+ro.vendor_dlkm.build.date=Mon Aug 10 18:59:08 UTC 2026
+ro.vendor_dlkm.build.date.utc=1786388348
+ro.vendor_dlkm.build.fingerprint=google/aurora/aurora:17/CP3A.260905.002.E1/16053217:user/release-keys
+ro.vendor_dlkm.build.id=CP3A.260905.002.E1
+ro.vendor_dlkm.build.uuid=rIayt8BPTM4dYGcJea29w8SqppfvKZ722K8ZYU_g2Ys
+ro.vendor_dlkm.build.tags=release-keys
+ro.vendor_dlkm.build.type=user
+ro.vendor_dlkm.build.version.incremental=16053217
+ro.vendor_dlkm.build.version.release=17
+ro.vendor_dlkm.build.version.release_or_codename=17
+ro.vendor_dlkm.build.version.sdk=37
+ro.vendor_dlkm.build.version.sdk_full=37.1
+# end of file
+

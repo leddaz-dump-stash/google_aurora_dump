@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<permissions>
+    <privapp-permissions package="com.google.android.wearable.pixel.settings.provider">
+        <permission name="android.permission.REGISTER_STATS_PULL_ATOM"/>
+    </privapp-permissions>
+</permissions>

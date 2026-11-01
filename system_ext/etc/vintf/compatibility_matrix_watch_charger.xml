@@ -1,0 +1,13 @@
+<!--
+    Input:
+        vendor/google/apps/PersistentBackgroundServices/pdms/chargingquality/compatibility_matrix_watch_charger.xml
+-->
+<compatibility-matrix version="9.0" type="framework">
+    <hal format="aidl">
+        <name>vendor.google.watch_charger</name>
+        <interface>
+            <name>IWatchCharger</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>

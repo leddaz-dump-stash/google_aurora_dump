@@ -1,0 +1,15 @@
+# Soft dependencies extracted from modules themselves.
+softdep si_core_module pre: qcom-scm
+softdep q6_notifier_dlkm pre: qcom_q6v5_pas
+softdep i2c_arbitration_interface pre: mcu_transport_autobahn
+softdep msm_video pre: subsys-pil-tz msm-mmrm
+softdep pat9xxx pre: mcu_transport_autobahn i2c_arbitration_interface
+softdep msm_kgsl pre: arm_smmu nvmem_qfprom socinfo governor_msm_adreno_tz governor_gpubw_mon governor_msm_adreno_ro
+softdep google_wlan_mac pre: cnss_utils
+softdep qsee_ipc_irq_bridge pre: qcom_ipcc
+softdep smem pre: qcom_hwspinlock
+softdep dwc3_msm pre: phy-generic phy-msm-snps-hs phy-msm-ssusb-qmp eud
+softdep pinctrl_msm pre: qcom-pdc
+softdep ipam pre: subsys-pil-tz
+softdep ipam pre: qcom-arm-smmu-mod
+softdep sched_walt pre: socinfo

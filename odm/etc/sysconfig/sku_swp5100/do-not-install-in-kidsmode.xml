@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- This should be used to exclude kidsmode packages from modem-less targets. -->
+    <install-in-user-type package="com.google.android.apps.youth.arcade" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.android.apps.youth.arcade.watchfacepush.eejiewatchface" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.android.wearable.sysui.overlay.kidsmode.pixelwatch" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.frameworks.resources.overlay.kidsmode.pixelwatch" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.wear.services.overlay.kidsmode.pixelwatch" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.wear.services.overlay.kidsmode.pixelwatch.p11p" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.wearable.settings.overlay.kidsmode.pixelwatch" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.android.setupwizard.overlay.kidsmode.pixelwatch" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.frameworks.resources.overlay.kidsmode.dynamic.pixelwatch" >
+        <do-not-install-in user-type="FULL" />
+        <do-not-install-in user-type="SYSTEM" />
+    </install-in-user-type>
+</config>

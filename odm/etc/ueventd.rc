@@ -1,0 +1,51 @@
+# nfc permissions
+/dev/sn220                0660    nfc         nfc
+
+# eSE device
+/dev/p73                  0660    secure_element secure_element
+
+/sys/devices/virtual/devcoredump/devcd* data 0660 system system
+
+/sys/class/remoteproc/remoteproc*   coredump     0660    root  system
+
+# AP <-> MCU comms
+/dev/nanohub             0660   system     system
+/dev/nanohub_comms       0660   system     system
+/dev/nanohub_console     0660   system     system
+/dev/nanohub_display     0660   system     system
+/dev/nanohub_render      0660   system     system
+/dev/nanohub_brightness  0660   system     system
+/dev/nanohub_pele        0660   system     system
+/dev/nanohub_bt          0600   bluetooth  bluetooth
+
+# UWB
+/dev/srxxx    0660 uwb uwb
+
+# Allow access by dumpstate
+/dev/logbuffer_ssoc      0660   system     system
+/dev/logbuffer_ttf       0660   system     system
+
+# Firmware directory for MCU Play Store Update
+firmware_directories /data/vendor/mcu_firmware/
+
+parallel_restorecon_dir /sys
+parallel_restorecon_dir /sys/bus
+parallel_restorecon_dir /sys/bus/platform
+parallel_restorecon_dir /sys/module
+
+parallel_restorecon_dir /sys/devices
+parallel_restorecon_dir /sys/devices/platform
+parallel_restorecon_dir /sys/devices/platform/soc
+parallel_restorecon_dir /sys/devices/platform/soc/soc:qcom,rpm-smd
+parallel_restorecon_dir /sys/devices/platform/soc/4744000.sdhci
+parallel_restorecon_dir /sys/devices/platform/soc/1c40000.qcom,spmi
+parallel_restorecon_dir /sys/devices/virtual/block/dm-1
+
+parallel_restorecon_dir /sys/devices/virtual
+parallel_restorecon_dir /sys/devices/virtual/bdi
+parallel_restorecon_dir /sys/devices/virtual/block
+parallel_restorecon_dir /sys/devices/virtual/devlink
+
+parallel_restorecon enabled
+
+parallel_ueventd_main_loop enabled

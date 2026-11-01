@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Copyright (c) 2014, 2016-2018, 2021. The Linux Foundation. All rights reserved.   -->
+<!--                                                                        -->
+<!-- Redistribution and use in source and binary forms, with or without     -->
+<!-- modification, are permitted provided that the following conditions are -->
+<!-- met:                                                                   -->
+<!--     * Redistributions of source code must retain the above copyright   -->
+<!--       notice, this list of conditions and the following disclaimer.    -->
+<!--     * Redistributions in binary form must reproduce the above          -->
+<!--       copyright notice, this list of conditions and the following      -->
+<!--       disclaimer in the documentation and/or other materials provided  -->
+<!--       with the distribution.                                           -->
+<!--     * Neither the name of The Linux Foundation nor the names of its    -->
+<!--       contributors may be used to endorse or promote products derived  -->
+<!--       from this software without specific prior written permission.    -->
+<!--                                                                        -->
+<!-- THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED           -->
+<!-- WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF   -->
+<!-- MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT -->
+<!-- ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS -->
+<!-- BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR -->
+<!-- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF   -->
+<!-- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR        -->
+<!-- BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,  -->
+<!-- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN -->
+<!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                          -->
+
+<!-- Changes from Qualcomm Innovation Center are provided under the following license:   -->
+<!-- Copyright (c) 2022, 2025 Qualcomm Innovation Center, Inc. All rights reserved.             -->
+<!--                                                                                      -->
+<!-- Redistribution and use in source and binary forms, with or without                   -->
+<!-- modification, are permitted (subject to the limitations in the                       -->
+<!-- disclaimer below) provided that the following conditions are met:                    -->
+<!--                                                                                      -->
+<!--     * Redistributions of source code must retain the above copyright                 -->
+<!--       notice, this list of conditions and the following disclaimer.                  -->
+<!--                                                                                      -->
+<!--     * Redistributions in binary form must reproduce the above                        -->
+<!--       copyright notice, this list of conditions and the following                    -->
+<!--       disclaimer in the documentation and/or other materials provided                -->
+<!--       with the distribution.                                                         -->
+<!--                                                                                      -->
+<!--     * Neither the name of Qualcomm Innovation Center, Inc. nor the names of its      -->
+<!--       contributors may be used to endorse or promote products derived                -->
+<!--       from this software without specific prior written permission.                  -->
+<!--                                                                                      -->
+<!-- NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE                      -->
+<!-- GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT                  -->
+<!-- HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED                          -->
+<!-- WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF                 -->
+<!-- MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.                 -->
+<!-- IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR                 -->
+<!-- ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL               -->
+<!-- DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE                    -->
+<!-- GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS                        -->
+<!-- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER                 -->
+<!-- IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR                      -->
+<!-- OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN                  -->
+<!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                                        -->
+
+<!-- MicrophoneInfoAndDynamicInfo section:
+     This section contains MicrophoneInfoList and MicrophoneDynamicInfoList.
+     MicrophoneInfoList lists MicrophoneInfo requested by getMicrophone API of IModule.aidl
+     MicrophoneInfo elements:
+        id: built_in_mic / back_mic (better to match the name audio_module_config_primary)
+        device: AudioDeviceType, address, connection ( similiar to above)
+        location: location as defined in MicrophoneInfo.aidl
+        group: group as defined in MicrophoneInfo.aidl
+        indexInTheGroup: indexInTheGroup as defined in MicrophoneInfo.aidl
+        directionality: directionality as defined in MicrophoneInfo.aidl
+        frequencyResponse: frequencyResponse as defined in MicrophoneInfo.aidl
+            frequencyHz: list of frequencies
+            leveldB: list of responses
+        position: position coordinates as per MicrophoneInfo.aidl
+        orientation: orientation coordinates as per MicrophoneInfo.aidl
+     MicrophoneDynamicInfo elements:
+        device: pal input device
+        micinfo: list of mics associated with pal device.
+            id: id of each micinfo
+            channelMapping: list of channel mapping defined in MicrohoneDynamicInfo.aidl
+-->
+<MicrophoneInfoAndDynamicInfo>
+    <MicrophoneInfoList>
+        <MicrophoneInfo>
+            <id>built_in_mic</id>
+            <device name="IN_MICROPHONE" address="bottom"/>
+            <location>MAINBODY</location>
+            <group>0</group>
+            <indexInTheGroup>0</indexInTheGroup>
+            <sensitivity leveldBFS="-25.413" maxSpldB="121.0" minSpldB="30.5"/>
+            <directionality>OMNI</directionality>
+            <frequencyResponse>
+                <frequencyHz>100 112 125 140 160 180 200 224 250 280 315 355 400 450 500 560 630 710 800 900 1000 1120 1250 1400 1600 1800 2000 2240 2500 2800 3150 3550 4000 4500 5000 5600 6300 7100 8000 9000 10000</frequencyHz>
+                <leveldB>-35.67013185 -34.72127789 -33.85473631 -32.98989858 -31.93900609 -31.10130832 -30.3996856 -29.71043611 -29.22136917 -28.51108519 -27.94073022 -27.41810345 -27.36964503 -26.8262069 -26.7553144 -26.35272819 -26.06018256 -25.8922211 -25.61791075 -25.47971602 -25.41349899 -25.32001014 -25.22895538 -25.08941176 -24.97806288 -24.81708925 -24.39824544 -24.51876268 -24.28402637 -24.01117647 -23.97852941 -23.84842799 -23.51977688 -23.23287018 -22.77268763 -21.56831643 -20.53593306 -18.96924949 -15.9131643 -12.42962475 -6.782931034</leveldB>
+            </frequencyResponse>
+            <!-- Omit the position tag to indicate POSITION_UNKNOWN: -->
+            <!-- <position x="0.0" y="0.0" z="0.0"/> -->
+            <!-- Set orientation to 0,0,0 to indicate ORIENTATION_UNKNOWN: -->
+            <orientation x="0.0" y="0.0" z="0.0"/>
+        </MicrophoneInfo>
+    </MicrophoneInfoList>
+
+    <MicrophoneDynamicInfoList>
+        <MicrophoneDynamicInfo>
+            <device>PAL_DEVICE_IN_HANDSET_MIC</device>
+            <MicInfo id="built_in_mic" channelMapping="PROCESSED"/>
+        </MicrophoneDynamicInfo>
+
+        <MicrophoneDynamicInfo>
+            <device>PAL_DEVICE_IN_SPEAKER_MIC</device>
+            <MicInfo id="built_in_mic" channelMapping="PROCESSED"/>
+        </MicrophoneDynamicInfo>
+    </MicrophoneDynamicInfoList>
+</MicrophoneInfoAndDynamicInfo>

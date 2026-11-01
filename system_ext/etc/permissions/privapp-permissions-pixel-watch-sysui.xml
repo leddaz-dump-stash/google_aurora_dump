@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Contains the privapp-permissions for the 1P sysui. -->
+<permissions>
+    <!-- 1P SysUi package. -->
+    <privapp-permissions package="com.google.android.wearable.sysui">
+        <permission name="android.permission.ACCESS_CONTEXT_HUB"/>
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
+        <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS" />
+        <permission name="android.permission.GET_TASKS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+        <permission name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+        <permission name="android.permission.MANAGE_ACTIVITY_TASKS" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.READ_FRAME_BUFFER"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.REAL_GET_TASKS" />
+        <permission name="android.permission.REMOVE_TASKS" />
+        <permission name="android.permission.SATELLITE_COMMUNICATION" />
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND" />
+        <permission name="android.permission.START_TASKS_FROM_RECENTS" />
+        <permission name="android.permission.STATUS_BAR_SERVICE" />
+        <permission name="android.permission.SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE" />
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME" />
+        <permission name="android.permission.WATCH_APPOPS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="com.android.clockwork.permission.GO_TO_SLEEP" />
+        <permission name="com.google.android.apps.wearable.retailattractloop.permission.START_RETAIL_ATTRACT"/>
+        <permission name="com.google.android.clockwork.SIDEKICK_TIME_FORMAT_SET" />
+        <permission name="com.google.android.clockwork.settings.WATCH_TOUCH" />
+        <permission name="com.google.android.clockwork.systemui.BROADCAST_KEYGUARD_CHANGED"/>
+        <permission name="com.google.android.wearable.permission.BIND_TILE_PROVIDER"/>
+        <permission name="com.google.android.wearable.permission.BIND_WATCH_FACE_CONTROL" />
+        <permission name="com.google.android.wearable.permission.BIND_WEAR_CORE_PRIVILEGED_SERVICE"/>
+        <permission name="com.google.android.wearable.preview.permission.SEND_REMOTE_INTENT"/>
+        <permission name="com.google.pixelwatch.permission.READ_PRIVATE_SENSORS"/>
+        <permission name="com.google.wear.permission.ACCESS_WEAR_SYSTEM_SERVICE" />
+        <permission name="com.google.wear.permission.BIND_WIDGET_PROVIDER"/>
+        <permission name="com.google.wear.permission.DISPLAY_OFFLOAD" />
+        <permission name="com.google.wear.permission.MANAGE_ACTIVITY_AUTO_RESUME"/>
+        <permission name="com.google.wear.permission.RECEIVE_BACKGROUND_GESTURE_EVENTS"/>
+        <permission name="com.google.wear.permission.SET_COMPLICATION_EXTRAS"/>
+        <permission name="com.google.wear.permission.TRIGGER_REMOTE_EVENT"/>
+        <permission name="com.google.wear.permission.WRITE_BATTERY_SAVER"/>
+        <permission name="com.google.wear.permission.WRITE_FOCUS_MODES"/>
+        <permission name="com.google.wear.permission.WRITE_TOUCH_LOCK"/>
+        <permission name="com.google.wear.permission.FORCE_ENABLE_AMBIENT_MODE"/>
+    </privapp-permissions>
+</permissions>

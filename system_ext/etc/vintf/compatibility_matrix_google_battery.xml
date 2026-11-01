@@ -1,0 +1,14 @@
+<!--
+    Input:
+        vendor/google/apps/PersistentBackgroundServices/pdms/adaptivecharging/compatibility_matrix_google_battery.xml
+-->
+<compatibility-matrix version="9.0" type="framework">
+    <hal format="aidl">
+        <name>vendor.google.google_battery</name>
+        <version>4-5</version>
+        <interface>
+            <name>IGoogleBattery</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
