@@ -1,0 +1,8 @@
+# Dynamic Thermal Profile user build triggers
+
+# NTN triggers
+on property:telephony.ntn.satcomms.active=0
+    setprop vendor.thermal.reload_dynamic_config default
+
+on property:telephony.ntn.satcomms.active=1
+    setprop vendor.thermal.reload_dynamic_config ntn

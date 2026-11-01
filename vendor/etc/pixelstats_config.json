@@ -1,0 +1,9 @@
+{
+  "CycleCountBinsPath": "/sys/devices/platform/soc/soc:google,battery/power_supply/battery/cycle_counts",
+  "F2fsStatsPath": "/sys/fs/f2fs/",
+  "AudioUevent": "/kernel/q6audio/q6voice_uevent",
+  "BatterySSOCPath": "/sys/class/power_supply/battery/ssoc_details",
+  "DmVerityPartitionReadAmount": "false",
+  "enableDropDetect": true,
+  "WatchTouchAtomPath": "/sys/devices/virtual/wear_touch_interface/wti/fetch_atoms"
+}

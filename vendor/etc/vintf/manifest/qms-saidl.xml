@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/qcom/proprietary/monaco/qms/daemon/lw/qms-saidl.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.qti.data.ntn</name>
+        <fqname>IQmsSatelliteService/default</fqname>
+    </hal>
+</manifest>

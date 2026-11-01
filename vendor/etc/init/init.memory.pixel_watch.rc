@@ -1,0 +1,3 @@
+# Mirror the mmd.zram.enabled sysprop for vendor scripts
+on property:mmd.zram.enabled=*
+    setprop vendor.mmd.zram.enabled ${mmd.zram.enabled}

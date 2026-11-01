@@ -1,0 +1,11 @@
+on post-fs
+    mkdir /mnt/vendor/persist/gbms_virt_storage 0700 root system
+    start gbms_virt_storage
+
+on charger
+    mkdir /mnt/vendor/persist/gbms_virt_storage 0700 root system
+    start gbms_virt_storage
+
+service gbms_virt_storage /vendor/bin/gbms_virt_storage
+    user root
+    group system

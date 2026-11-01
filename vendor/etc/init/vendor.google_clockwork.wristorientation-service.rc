@@ -1,0 +1,13 @@
+service vendor.wristorientation-hal-service /vendor/bin/hw/vendor.google_clockwork.wristorientation-service
+    class hal
+    user system
+    group system
+
+service vendor.wrist_orientation_set /vendor/bin/misc_writer --set-wrist-orientation ${persist.sys.wrist_orientation}
+    user root
+    disabled
+    oneshot
+
+on property:persist.sys.wrist_orientation=*
+    start vendor.wrist_orientation_set
+

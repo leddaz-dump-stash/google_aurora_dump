@@ -1,0 +1,35 @@
+<!--
+    Input:
+        device/google/sw5100/manifest-7.xml
+        device/google/sw5100/bsp/sw5100-lw6/manifest.xml
+        device/google/eos/manifest_bt.xml
+-->
+<manifest version="9.0" type="device" target-level="7">
+    <hal format="hidl">
+        <name>android.hardware.bluetooth</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IBluetoothHci/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.gatekeeper</name>
+        <fqname>IGatekeeper/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>hardware.google.bluetooth.sar</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::IBluetoothSar/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.bluetooth_audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.btconfigstore</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IBTConfigStore/default</fqname>
+    </hal>
+    <sepolicy>
+        <version>202604</version>
+    </sepolicy>
+</manifest>

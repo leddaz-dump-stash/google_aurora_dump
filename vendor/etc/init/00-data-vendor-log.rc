@@ -1,0 +1,13 @@
+# 00- prefix on this filename ensures it is imported early by init,
+# which means early execution relative to the many other
+# post-fs-data actions.
+
+on post-fs-data
+    mkdir /data/vendor/log 0771 system system
+
+    # Ideally, actions/services that require /data/vendor/log to exist
+    # will trigger on post-fs-data-vendor-log. But because init is
+    # single threaded, this defers those actions until after all
+    # post-fs-data actions have been executed serially. That may cause
+    # unacceptable boot time delays for critical services.
+    trigger post-fs-data-vendor-log

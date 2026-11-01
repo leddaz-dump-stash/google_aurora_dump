@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/google/services/PixelWatchDisplayOffload/aidl/vendor.google_clockwork.displayoffload-service.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.google_clockwork.displayoffload2</name>
+        <fqname>IDisplayOffload/default</fqname>
+    </hal>
+</manifest>

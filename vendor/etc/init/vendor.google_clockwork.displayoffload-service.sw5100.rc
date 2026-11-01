@@ -1,0 +1,18 @@
+service vendor.displayoffload-hal /vendor/bin/hw/vendor.google_clockwork.displayoffload-service
+    disabled
+    gentle_kill
+    class hal
+    user system
+    group system
+    file /dev/kmsg w
+
+on property:vendor.wac.state=booting
+    write /sys/devices/virtual/display/display_comms/display_select 1
+    stop vendor.displayoffload-hal
+
+on property:vendor.wac.state=running
+    start vendor.displayoffload-hal
+
+on property:vendor.all.modules.ready=1
+    chmod 0660 /sys/devices/virtual/display/display_comms/display_select
+    chown system system /sys/devices/virtual/display/display_comms/display_select

@@ -1,0 +1,23 @@
+# Early initialization of display and animation class which includes surfaceflinger and bootanim.
+# This enables faster boot.
+on early-fs
+   start qti_display_boot
+
+on early-fs && property:ro.boot.docked_orientation=*
+    setprop ro.bootanim.set_orientation_logical_0 ${ro.boot.docked_orientation}
+
+on early-fs && property:ro.boot.wrist_orientation=0
+    setprop ro.bootanim.set_orientation_logical_0 ORIENTATION_0
+
+on early-fs && property:ro.boot.wrist_orientation=1
+    setprop ro.bootanim.set_orientation_logical_0 ORIENTATION_180
+
+on early-fs && property:ro.boot.wrist_orientation=2
+    setprop ro.bootanim.set_orientation_logical_0 ORIENTATION_0
+
+on early-fs && property:ro.boot.wrist_orientation=3
+    setprop ro.bootanim.set_orientation_logical_0 ORIENTATION_180
+
+on late-fs
+    start bootanim
+    class_start animation

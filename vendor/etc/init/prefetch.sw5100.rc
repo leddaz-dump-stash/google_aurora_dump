@@ -1,0 +1,11 @@
+# This is set to 2K for speeding up boot up boot without prefetch. However, with prefetch it will be
+# counter intuitive to keep it at 2K. Setting it back to the default of 512 bytes.
+on post-fs-data
+   write /sys/block/dm-0/queue/read_ahead_kb 512
+   write /sys/block/dm-1/queue/read_ahead_kb 512
+
+on post-fs-data && property:ro.prefetch_boot.enabled=true
+   start prefetch_replay
+
+on zygote-start && property:ro.prefetch_boot.enabled=true
+   start prefetch_record

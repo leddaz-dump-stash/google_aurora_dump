@@ -1,0 +1,22 @@
+<!--
+    Input:
+        device/qcom/sw5100-lw6/common/compatibility_matrix.xml
+-->
+<compatibility-matrix version="9.0" type="device">
+    <hal format="aidl">
+        <name>android.frameworks.sensorservice</name>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.qti.hardware.qccsyshal_aidl</name>
+        <interface>
+            <name>IQccsyshal</name>
+            <instance>qccsyshal</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.qti.hardware.sigma_miracast_aidl</name>
+    </hal>
+    <system-sdk>
+        <version>37</version>
+    </system-sdk>
+</compatibility-matrix>

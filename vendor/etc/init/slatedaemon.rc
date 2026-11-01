@@ -1,0 +1,19 @@
+#####################################################################
+# Copyright (c) 2021, 2023-2024 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#####################################################################
+
+on property:ro.vendor.qc_aon_presence=0
+    stop slatedaemon
+
+on post-fs-data
+    # Create directory for aon data files
+    mkdir /data/vendor/aon 0700 system system
+
+service slatedaemon /vendor/bin/slatedaemon
+    class hal
+    user system
+    group system wakelock net_bt
+    shutdown critical
+    capabilities BLOCK_SUSPEND

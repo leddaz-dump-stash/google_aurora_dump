@@ -1,0 +1,9 @@
+# Battery health assistance setting toggles aafv state.
+on property:persist.vendor.pulsar.opt_out=
+    write /sys/class/power_supply/battery/aafv_state 1
+
+on property:persist.vendor.pulsar.opt_out=0
+    write /sys/class/power_supply/battery/aafv_state 1
+
+on property:persist.vendor.pulsar.opt_out=1
+    write /sys/class/power_supply/battery/aafv_state 0

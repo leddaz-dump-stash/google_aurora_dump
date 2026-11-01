@@ -1,0 +1,20 @@
+service vendor.google.wearable.wac.whs-hal-4-0 /apex/com.google.pixelwatchambient/bin/hw/vendor.google.wearable.wac.whshal@4.0-service
+    class hal
+    user system
+    group system context_hub
+    file /dev/kmsg w
+    updatable
+    capabilities BLOCK_SUSPEND
+
+on post-fs-data
+    # Create WHS HAL data directory
+    mkdir /data/vendor/whshal 0771 system system
+
+    # Set permissions for Tourbillon character devices
+    chown system system /dev/tourbillon-ctrl
+    chmod 0660 /dev/tourbillon-ctrl
+    chown system system /dev/tourbillon-data
+    chmod 0660 /dev/tourbillon-data
+
+on boot
+    setprop log.tag.WHSHAL DEBUG

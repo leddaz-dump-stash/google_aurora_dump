@@ -1,0 +1,59 @@
+# Logic to force-enable/disable USB data
+
+# Upon any non-empty change to the property, default to not disabling PHY
+on property:persist.sys.usb.config=*
+    setprop vendor.usb.force_disable 0
+
+# Property becomes empty when ADB is turned off through UI. Disable PHY
+on property:persist.sys.usb.config=
+    setprop vendor.usb.force_disable 1
+
+# Property is set to "none" by default on user builds. Disable PHY
+on property:persist.sys.usb.config=none
+    setprop vendor.usb.force_disable 1
+
+# Property is set to "mass_storage" by charger trigger in init.qcom.rc
+# Disable PHY
+on property:persist.sys.usb.config=mass_storage
+    setprop vendor.usb.force_disable 1
+
+# Finally, commit the new PHY state
+on property:persist.sys.usb.config=* && property:vendor.common.modules.ready=1
+    write /sys/devices/platform/soc/soc\:google,extcon-usb-shim/force_disable ${vendor.usb.force_disable}
+
+# Factory bootmode needs to default to keeping the USB on, for MLB-only stations
+on pixel-watch-init-factory-usb
+    setprop vendor.usb.factory ${ro.vendor.usb.force_enable_in_factory:-0}
+    setprop vendor.usb.force_enable ${ro.vendor.usb.force_enable_in_factory:-0}
+
+on init && property:ro.boot.mode=factory
+    trigger pixel-watch-init-factory-usb
+
+on init && property:ro.boot.mode=ffbm-00
+    trigger pixel-watch-init-factory-usb
+
+# Special mode where the USB PHY remains on regardless of USB VBUS (power)
+# Note:
+#  - The USB PHY driver keeps the AP awake when active
+#  - persist.vendor.usb.force_enable overrides vendor.usb.force_disable
+on property:persist.vendor.usb.force_enable=1
+    setprop vendor.usb.force_enable 1
+
+on property:persist.vendor.usb.force_enable=
+    setprop vendor.usb.force_enable ${vendor.usb.factory:-0}
+
+on property:persist.vendor.usb.force_enable=0
+    setprop vendor.usb.force_enable ${vendor.usb.factory:-0}
+
+on property:vendor.usb.force_enable=1 && property:ro.vendor.pmic.apsd_enable_path=*
+    # Disable APSD, since its functionality can interfere if VBUS connects while the PHY is on
+    setprop vendor.pmic.apsd_en 0
+
+on property:vendor.usb.force_enable=0 && property:ro.vendor.pmic.apsd_enable_path=*
+    setprop vendor.pmic.apsd_en 1
+
+on property:vendor.usb.force_enable=* && property:vendor.common.modules.ready=1 && property:ro.vendor.pmic.apsd_enable_path=*
+    write ${ro.vendor.pmic.apsd_enable_path} ${vendor.pmic.apsd_en}
+
+on property:vendor.usb.force_enable=* && property:vendor.common.modules.ready=1
+    write /sys/devices/platform/soc/soc\:google,extcon-usb-shim/spoof_connected ${vendor.usb.force_enable}

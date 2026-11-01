@@ -1,0 +1,74 @@
+# Support for dynamically switching Thermal Engine / Thermal HAL profiles
+# based on hardware state and software modes.
+#
+# The active profile is determined by two properties:
+# 1. vendor.thermal.reload_dynamic_config (Hardware state):
+#    - default:  Use software mode (see thermal.dynamic_config_profile)
+#    - oncradle: Config while on-cradle (higher thresholds)
+#    - ntn:      Config during satellite eSOS communication
+#
+# 2. thermal.dynamic_config_profile (Software mode, used when hardware state is 'default'):
+#    - default:    Normal profile for adult mode
+#    - kids:       Profile for kids mode
+#    - setup:      Profile for adult setup wizard
+#    - kids_setup: Profile for kids setup wizard
+#
+# The resolved profile is stored in vendor.thermal.current_profile, which triggers
+# reload-thermal-profile to set the appropriate config paths and restart the daemons.
+
+# --- Profile Resolution ---
+
+on property:vendor.thermal.reload_dynamic_config=oncradle
+    setprop vendor.thermal.current_profile ${vendor.thermal.reload_dynamic_config}
+    trigger reload-thermal-profile
+
+on property:vendor.thermal.reload_dynamic_config=ntn
+    setprop vendor.thermal.current_profile ${vendor.thermal.reload_dynamic_config}
+    trigger reload-thermal-profile
+
+on property:thermal.dynamic_config_profile="" && property:vendor.thermal.reload_dynamic_config=default
+    setprop vendor.thermal.current_profile default
+    trigger reload-thermal-profile
+
+on property:thermal.dynamic_config_profile=* && property:vendor.thermal.reload_dynamic_config=default
+    setprop vendor.thermal.current_profile ${thermal.dynamic_config_profile}
+    trigger reload-thermal-profile
+
+# --- Profile Application ---
+
+# Keep these file patterns up to date with init.target.rc
+on reload-thermal-profile && property:vendor.thermal.soc_config_suffix=""
+    # reload thermal-hal
+    setprop vendor.thermal.config ${vendor.thermal.config_revision}-${ro.boot.hardware}-${vendor.thermal.current_profile}.json
+    trigger reload-thermal-hal
+
+    # reload thermal-engine (See init_thermal-engine-v2.rc)
+    setprop vendor.thermal.thermal-engine.config ${vendor.thermal.thermal-engine.config_revision}-${ro.boot.hardware}-${vendor.thermal.current_profile}.conf
+    trigger reload-thermal-engine
+
+on reload-thermal-profile && property:vendor.thermal.soc_config_suffix=*
+    # reload thermal-hal
+    setprop vendor.thermal.config ${vendor.thermal.config_revision}-${ro.boot.hardware}-${vendor.thermal.current_profile}.json
+    trigger reload-thermal-hal
+
+    # reload thermal-engine (See init_thermal-engine-v2.rc)
+    setprop vendor.thermal.thermal-engine.config ${vendor.thermal.thermal-engine.config_revision}-${ro.boot.hardware}-${vendor.thermal.current_profile}${vendor.thermal.soc_config_suffix}.conf
+    trigger reload-thermal-engine
+
+# --- HAL Restart Triggers (defined here because it's platform specific) ---
+
+on property:vendor.thermal.reload_config=1
+    trigger reload-thermal-hal
+
+on reload-thermal-hal
+    restart vendor.thermal-hal
+
+# --- Extra oncradle configuration ---
+
+# when the oncradle config is triggered, also override the critical sdm-skin-therm trip point
+on property:vendor.thermal.reload_dynamic_config=oncradle && property:sys.boot_completed=1 && property:vendor.thermal.link_ready=1
+    write /dev/thermal/tz-by-name/sdm-skin-therm/trip_point_1_temp 60000
+
+# when the default config is restored, also restore the critical sdm-skin-therm trip point
+on property:vendor.thermal.reload_dynamic_config=default && property:sys.boot_completed=1 && property:vendor.thermal.link_ready=1
+    write /dev/thermal/tz-by-name/sdm-skin-therm/trip_point_1_temp 56000
